@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <title>Valorant (EUNE)</title>
+    <id>valorant</id>
+    <version>41.0.5.4098838</version>
+    <authors>Riot Games, Inc</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/valorant</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/4068a86e0e709e70a4f71d720eccf6174ed16ebc/assets/valorant.png</iconUrl>
+    <projectUrl>https://playvalorant.com/</projectUrl>
+    <docsUrl>https://playvalorant.com/en-us/news/announcements/beginners-guide/</docsUrl>
+    <copyright><![CDATA[© 2022 Riot Games, inc. All rights reserved.]]></copyright>
+    <licenseUrl>https://www.riotgames.com/en/terms-of-service</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <summary>EUNE (Europe North and East) Installer for Valorant from Riot Games.</summary>
+    <tags>valorant eune riot riotgames launcher</tags>
+    <description><![CDATA[
+# Valorant
+
+![Banner](https://rawcdn.githack.com/kamack38/chocopkgs/589610af2d48965d0f1c09d6ab4bba58f84fa1ba/assets/ValorantBanner.png)
+
+## Defy the limits
+
+Blend your style and experience on a global, competitive stage. You have 13 rounds to attack and defend your side using sharp gunplay and tactical abilities. And, with one life per-round, you'll need to think faster than your opponent if you want to survive. Take on foes across Competitive and Unranked modes as well as Deathmatch and Spike Rush.
+
+## Creativity is your greatest weapon
+
+More than guns and bullets, you'll choose an Agent armed with adaptive, swift, and lethal abilities that create opportunities to let your gunplay shine. No two Agents play alike, just as no two highlight reels will look the same.
+
+## Fight around the world
+
+Each map is a playground to showcase your creative thinking. Purpose-built for team strategies, spectacular plays, and clutch moments. Make the play others will imitate for years to come.
+    ]]>    </description>
+    <releaseNotes>https://playvalorant.com/en-gb/news/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

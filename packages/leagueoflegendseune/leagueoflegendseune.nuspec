@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>leagueoflegendseune</id>
+    <version>41.0.5.4098838</version>
+    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/leagueoflegendseune</packageSourceUrl>
+    <owners>Kamack38</owners>
+    <title>League Of Legends (EUNE)</title>
+    <authors>Riot Games, Inc</authors>
+    <projectUrl>https://www.leagueoflegends.com/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/8c8ba1ed2152f8f0b997618627010a980bfe6661/assets/LeagueOfLegends.svg</iconUrl>
+    <copyright><![CDATA[© 2021 Riot Games, inc. All rights reserved.]]></copyright>
+    <licenseUrl>https://www.riotgames.com/en/terms-of-service</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://www.leagueoflegends.com/en-gb/how-to-play/</docsUrl>
+    <tags>leagueoflegends eune riot riotgames launcher</tags>
+    <summary>EUNE (Europe North and East) Installer for League of Legends from Riot Games.</summary>
+    <description><![CDATA[
+# League Of Legends
+
+![Logo](https://rawcdn.githack.com/kamack38/chocopkgs/master/assets/LeagueOfLegendsBanner.png)
+
+League of Legends Installer of EUNE region.
+
+## What is League of Legends?
+
+League of Legends is a team-based strategy game where two teams of five powerful champions face off to destroy the other's base. Choose from over 140 champions to make epic plays, secure kills, and take down towers as you battle your way to victory.
+
+## Destroy The Base
+
+The Nexus is the heart of both teams' bases. Destroy the enemy's Nexus first to win the game.
+
+## Clear The Path
+
+Your team needs to clear at least one lane to get to the enemy Nexus. Blocking your path are defense structures called turrets and inhibitors. Each lane has three turrets and one inhibitor, and each Nexus is guarded by two turrets.
+
+## Take on The Jungle
+
+In between the lanes is the jungle, where neutral monsters and jungle plants reside. The two most important monsters are Baron Nashor and the Drakes. Killing these units grants unique buffs for your team and can also turn the tide of the game.
+
+## Choose your lane
+
+There are five positions that make up the recommended team comp for the game. Each lane lends itself to certain kinds of champions and roles-try them all or lock in to the lane that calls you.
+
+## Power Up Your Champ
+
+Champions get stronger by earning experience to level up and gold to buy more powerful items as the game progresses. Staying on top of these two factors is crucial to overpowering the enemy team and destroying their base.
+
+## Unlock Your Abilities
+
+Champions have five core abilities, two special spells, and up to seven items at a time. Figuring out the optimal ability order, summoner spells, and item build for your champion will help you succeed as a team.
+    ]]>    </description>
+    <releaseNotes>https://www.leagueoflegends.com/en-gb/news/tags/patch-notes/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

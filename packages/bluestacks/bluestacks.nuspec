@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <title>BlueStacks</title>
+    <id>bluestacks</id>
+    <version>5.5.101.1001</version>
+    <authors>Bluestacks Systems, Inc.</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/bluestacks</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/master/assets/BlueStacks.png</iconUrl>
+    <docsUrl>https://support.bluestacks.com/hc/</docsUrl>
+    <projectUrl>https://www.bluestacks.com/pl/bluestacks-5.html</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://www.bluestacks.com/terms-and-privacy.html</licenseUrl>
+    <copyright>Copyright (c) 2010-2021 BlueStack Systems Inc.</copyright>
+    <tags>android games apk</tags>
+    <summary>The all-new BlueStacks 5 app player for PC is a powerhouse of speed and performance with 500M+ gamers worldwide and a library of 2M+ Android apps.</summary>
+    <description>
+      <![CDATA[
+# BlueStacks
+
+The all-new BlueStacks 5 app player for PC is a powerhouse of speed and performance with 500M+ gamers worldwide and a library of 2M+ Android apps.
+
+## Less RAM Usage
+
+Uses upto 50% less RAM than other platforms for a faster and smoother gaming experience.
+Note: This data was recorded by running 3 simultaneous instances each of BlueStacks 4 and BlueStacks 5.
+
+## Lightning Fast
+
+Upto 50% faster setup than ever before. Be game ready in no time.
+
+## App Performance
+
+BlueStacks 5 consumes significantly less CPU while maintaining stable FPS over long gaming sessions.
+
+## Efficient Multitasking
+
+Play multiple games simultaneously. Enable Eco Mode to reduce CPU usage by 87% and GPU usage by 97%.
+
+## Largest Game Library
+
+Discover more games and unique titles from over 2M+ apps.
+
+## Built for Stability
+
+Bring on those marathon gaming sessions.
+
+## Consistent FPS
+
+Run your favorite games at the FPS you want. Say goodbye to FPS dips.
+
+## 100% Gaming. 100% Privacy
+
+The safest gaming platform. Trusted by over 500 million gamers worldwide.
+    ]]>
+    </description>
+    <dependencies>
+      <dependency id="autohotkey.portable" version="1.1.33.10" />
+    </dependencies>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <title>Blitz.gg</title>
+    <id>blitz.gg</id>
+    <version>1.16.46</version>
+    <authors>Blitz Inc.</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/blitz.gg</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/8c8ba1ed2152f8f0b997618627010a980bfe6661/assets/Blitz.gg.png</iconUrl>
+    <projectUrl>https://blitz.gg/</projectUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://blitz.gg/terms-of-service</licenseUrl>
+    <copyright><![CDATA[Copyright © 2021 Blitz, Inc.]]></copyright>
+    <docsUrl>https://support.blitz.gg/hc/en-us</docsUrl>
+    <tags>blitz leageoflegends lol tracker status fortnite valorant</tags>
+    <summary>Everything you need to win - all bundled into a revolutionary desktop app powered by AI, and built with professional players.</summary>
+    <description><![CDATA[
+# Blitz.gg
+
+
+![Logo](https://rawcdn.githack.com/kamack38/chocopkgs/master/assets/Blitz.ggBanner.png)
+
+## Performance Analysis
+
+Learn faster and get smarter with post-match performance analysis and key insights on how to play.
+
+## Auto Pre-Game Setup
+
+Optimal startup items, skills, runes and other game-specific elements. Updated with every new patch. Blitz keeps up with the meta for you.
+
+## In-Game Overlays
+
+Blitz tells you what goals to achieve and delivers them to you directly in game with overlays.
+
+## See Player Profiles
+
+Find out everything about how you and your opponents play with in-depth profile statistics.
+
+[See how it works](https://www.youtube.com/watch?v=lMFQLbPkW8Y)
+    ]]>
+    </description>
+    <releaseNotes><![CDATA[
+    **League of Legends**
+
+    - Don't filter out summoner's pick from suggestions
+    - Update ranked icons
+
+    **Teamfight Tactics**
+
+    - Add set update page for Set 6.5
+    - Restore Matchup Tracking overlay
+    ]]>    </releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

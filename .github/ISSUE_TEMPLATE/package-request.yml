@@ -1,0 +1,40 @@
+name: ⭐ Package request
+description: Suggest an idea for a new package
+title: "[Package Request] Software Name"
+labels: ["enhancement"]
+assignees: 
+  - kamack38
+body:
+- type: markdown
+  attributes:
+    value: |
+      Please make sure to [search for existing packages](https://community.chocolatey.org/packages) before filing this issue!
+
+- type: input
+  attributes:
+    label: Software Name
+    placeholder: Software Name
+
+- type: textarea
+  attributes:
+    label: Short Description
+
+- type: input
+  attributes:
+    label: Software Site
+
+- type: input
+  attributes: 
+    label: Software Sorce Url [If exists]
+
+- type: input
+  attributes: 
+    label: Current Latest Version
+
+- type: textarea
+  attributes: 
+    label: Dependencies
+
+- type: textarea
+  attributes: 
+    label: Additional Info

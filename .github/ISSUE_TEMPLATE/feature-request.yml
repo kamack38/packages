@@ -1,0 +1,19 @@
+name: ✨ Feature request
+description: Suggest an idea for a new feature
+title: '[Feature Request] Short Description'
+labels: ['enhancement']
+assignees:
+  - kamack38
+body:
+  - type: input
+    attributes:
+      label: Software Name
+      placeholder: Is this feature connected with any of the existing packages? If yes with which?
+
+  - type: textarea
+    attributes:
+      label: Short Description
+
+  - type: textarea
+    attributes:
+      label: Additional Info

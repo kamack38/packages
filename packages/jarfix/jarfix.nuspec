@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>jarfix</id>
+    <version>3.0.0</version>
+    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/jarfix</packageSourceUrl>
+    <owners>Kamack38</owners>
+    <title>Jarfix</title>
+    <authors><![CDATA[Johann Nepomuk Löfflmann]]></authors>
+    <projectUrl>https://johann.loefflmann.net/en/software/jarfix/index.html</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/8c8ba1ed2152f8f0b997618627010a980bfe6661/assets/Jarfix.png</iconUrl>
+    <copyright><![CDATA[Jarfix Copyright © 2002-2019 by Dipl.-Inf. (FH) Johann Nepomuk Löfflmann o]]></copyright>
+    <licenseUrl>https://johann.loefflmann.net/downloads/jarfix-license.txt</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://johann.loefflmann.net/en/software/jarfix/index.html#Description</docsUrl>
+    <tags>java fix problem jar file</tags>
+    <summary>If you doubleclick on a jar file, and your Java application does not start, your .jar association has been hijacked. You can fix the problem with Jarfix.</summary>
+    <description><![CDATA[
+# JarFix
+
+![Logo](https://rawcdn.githack.com/kamack38/chocopkgs/master/assets/Jarfix.png)
+
+## The problem
+
+The root cause for the problem above is, that a program has stolen the .jar association. If you have installed the Java Runtime Environment the first time, the file type called "jar" is assigned to javaw.exe correctly. "jar" is an abbreviation for "java archive" and javaw.exe is the correct program to execute a .jar. However, on Windows any program can steal a file type at any time even if it is already associated with a program. Many zip/unzip programs prefer to do this, because a jar is stored in the .zip format.  If you doubleclick on a .jar, your pack program opens the file, rather than javaw runs the program, because your pack program ignores the meta information which are also stored in a .jar. In the Oracle bug database there is the low-priority report 4912211 "add mechanism to restore hijacked .jar and .jnlp file extensions", but it has been closed as "Closed, Will Not Fix".
+
+You may also miss the file connection with .jar if you are using a free OpenJDK without an installer.
+
+## The workaround
+
+Reinstall the Java Runtime Environment or fix the Windows Registry manually each time this problem occurs.
+
+## The solution
+
+You can fix this problem very easy with the small but reliable jarfix.exe program. Just doubleclick on it to restore the .jar association with javaw.exe.
+
+## Usage
+
+After installation you can use the package from the commandline (`jarfix.exe`)
+    ]]>    </description>
+    <releaseNotes>https://johann.loefflmann.net/en/software/jarfix/index.html#ReleaseNotes</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

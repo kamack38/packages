@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <title>croc</title>
+    <id>croc</id>
+    <version>9.5.2</version>
+    <authors>schollz, contributors</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/croc</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/486b9960e0cb890d7ff49059ebe520fa78133ca3/assets/croc.png</iconUrl>
+    <bugTrackerUrl>https://github.com/schollz/croc/issues</bugTrackerUrl>
+    <projectUrl>https://schollz.com/blog/croc6/</projectUrl>
+    <projectSourceUrl>https://github.com/schollz/croc</projectSourceUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/schollz/croc/blob/master/LICENSE</licenseUrl>
+    <copyright>Copyright (c) 2017-2021 Zack</copyright>
+    <tags>croc file transfer send encryption</tags>
+    <summary>Easily and securely send things from one computer to another 🐊 📦</summary>
+    <description><![CDATA[
+# croc
+
+![Banner](https://rawcdn.githack.com/kamack38/chocopkgs/486b9960e0cb890d7ff49059ebe520fa78133ca3/assets/CrocBanner.png)
+
+`croc` is a tool that allows any two computers to simply and securely transfer files and folders. AFAIK, _croc_ is the only CLI file-transfer tool that does **all** of the following:
+
+- allows **any two computers** to transfer data (using a relay)
+- provides **end-to-end encryption** (using PAKE)
+- enables easy **cross-platform** transfers (Windows, Linux, Mac)
+- allows **multiple file** transfers
+- allows **resuming transfers** that are interrupted
+- local server or port-forwarding **not needed**
+- **ipv6-first** with ipv4 fallback
+- can **use proxy**, like tor
+
+## Usage
+
+To send a file, simply do:
+
+```
+$ croc send [file(s)-or-folder]
+Sending 'file-or-folder' (X MB)
+Code is: code-phrase
+```
+
+Then to receive the file (or folder) on another computer, you can just do
+
+```
+croc code-phrase
+```
+
+The code phrase is used to establish password-authenticated key agreement ([PAKE](https://en.wikipedia.org/wiki/Password-authenticated_key_agreement)) which generates a secret key for the sender and recipient to use for end-to-end encryption.
+
+There are a number of configurable options (see `--help`). A set of options (like custom relay, ports, and code phrase) can be set using `--remember`.
+
+### Custom code phrase
+
+You can send with your own code phrase (must be more than 6 characters).
+
+```
+croc send --code [code-phrase] [file(s)-or-folder]
+```
+
+### Allow overwriting without prompt
+
+By default, croc will prompt whether to overwrite a file. You can automatically overwrite files by using the `--overwrite` flag (recipient only). For example, receive a file to automatically overwrite:
+
+```
+croc --yes --overwrite <code>
+```
+
+### Send text
+
+Sometimes you want to send URLs or short text. In addition to piping, you can easily send text with `croc`:
+
+```
+croc send --text "hello world"
+```
+
+This will automatically tell the receiver to use `stdout` when they receive the text so it will be displayed.
+
+Check out the [official repository](https://github.com/schollz/croc) for more information.
+    ]]>    </description>
+    <releaseNotes>https://github.com/schollz/croc/releases/latest</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
