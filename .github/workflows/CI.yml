@@ -7,7 +7,6 @@ on:
       - '**.nupkg'
 
 jobs:
-  test-choco-packages:
     strategy:
       fail-fast: false
       matrix:
@@ -31,8 +30,7 @@ jobs:
             'windhawk',
             'valorant',
           ]
+  test-choco-packages:
     runs-on: windows-latest
-    steps:
-      - name: 🔧 Test packages
-        uses: kamack38/packages/.github/workflows/_test-package.yml@master
-        with: ${{ matrix.packages }}
+    uses: kamack38/packages/.github/workflows/_test-package.yml@master
+    with: ${{ matrix.packages }}
