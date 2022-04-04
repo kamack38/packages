@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>action</id>
+    <version>4.27.0</version>
+    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/action</packageSourceUrl>
+    <owners>Kamack38</owners>
+    <title>Action!</title>
+    <authors>Mirillis</authors>
+    <projectUrl>https://mirillis.com/en/products/action.html</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/8c8ba1ed2152f8f0b997618627010a980bfe6661/assets/ActionBlack.png</iconUrl>
+    <copyright>Copyright (c) 2021 Mirillis Ltd.</copyright>
+    <licenseUrl>https://mirillis.com/pdf/eula/Action!-Game-and-screen-recorder-eula.pdf</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <docsUrl>https://mirillis.com/gameplay-recording-action-tutorials</docsUrl>
+    <tags>action record game mirillis</tags>
+    <summary>Mirillis Action! screen recorder allows streaming and real-time recording of Windows desktop in a superb HD video quality.</summary>
+    <description>
+      <![CDATA[
+# Mrillis - Action!
+
+Mirillis Action! screen recorder allows streaming and real-time recording of Windows desktop in a superb HD video quality. With Action! you can record and stream your gameplay, web player videos, record music, capture screenshots, add webcams, microphone commentary... and more!
+
+![Logo](https://rawcdn.githack.com/kamack38/chocopkgs/master/assets/Action.png)
+
+
+## Installation arguments
+
+`/NoDesktopIcon` - Doesn't create shortcuts on the desktop
+`/NoStartMenuIcon` - Doesn't create shortcuts in the Start menu
+
+## 1. The most user friendly and stylish interface of all screen recorders
+
+Action! is compact, stylish and user friendly. Built-in screen and gameplay recording manager allows to browse, delete selected items and export recordings to popular formats and devices. Action! screen recorder defines new standard of user experience for games benchmarking, gameplay and Windows desktop real-time recording software.
+Greenscreen Mode
+
+## 2. Greenscreen Mode
+
+Action! gives you Greenscreen Mode. Now you can cut out the background, while recording with your webcam, from your video recording. You don't need to have special camera for that - all you need is Action! screen recorder and any solid color background, what is much cheaper solution and gives the same, if not better, results.
+Record webcam or USB/HDMI Capture Devices
+
+## 3. Record webcam or USB/HDMI Capture Devices
+
+Select device recording mode to capture video from gaming consoles, other PC, TV broadcasts, webcams or camcorders. Add your own logo, webcam, microphone commentary and record video to your local disk or live stream to popular services.
+Try screen recording with Selected Application recording option.
+
+## 4. Try screen recording with Selected Application recording option
+
+This brand new recording mode allows you to record your Windows desktop screen in complete privacy! Record only the application you want to show to others on your screen recording, while the rest of your desktop screen will be blackened-out and not recorded on your video.
+Record gameplay in HD. Benchmark games performance.
+
+## 5. Record gameplay in HD. Benchmark games performance
+
+Outstanding screen and gameplay recording performance and GPU utilization allows the smoothest real-time HD gameplay recording ever! Display current and average game framerate (FPS) during gameplay and save your benchmark results.
+The outstanding screen recording performance!
+
+## 6. The outstanding screen recording performance
+
+Action! defines a new standard of performance for gameplay and desktop recording software. It uses Mirillis ultra-fast, multicore optimized, proprietary video codec (FICV - Fast Intra Compression Video standard) which together with highly optimized application engine provides the ultimate performance of real-time HD video recording. Action! screen recorder also captures video directly to MP4 format utilizing NVIDIA NVENC, AMD APP or Intel® Quick Sync Video hardware acceleration.
+Live stream gameplay and desktop activity to popular services!
+
+## 7. Live stream gameplay and desktop activity to popular services
+
+Action! LIVE Streaming service allows to stream all your gameplays, videos or desktop activity to popular streaming services like Twitch.tv, YouTube, Smashcast (hitbox), Ustream, Livestream, Facebook, Aliez and more! With Action! screen recorder live streaming is easy and fun!
+
+Read more about Action! LIVE Streaming
+Never miss a gaming moment with Time-Shift option
+
+## [And More!!!](https://mirillis.com/en/products/action.html)
+    ]]>
+    </description>
+    <releaseNotes>https://mirillis.com/action-history</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

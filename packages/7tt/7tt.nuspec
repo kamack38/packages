@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>7tt</id>
+    <version>5.12.3</version>
+    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/7tt</packageSourceUrl>
+    <owners>Kamack38</owners>
+    <title>7+ Taskbar Tweaker</title>
+    <authors>Michael Maltsev</authors>
+    <projectUrl>https://tweaker.ramensoftware.com/</projectUrl>
+    <iconUrl>https://ramensoftware.com/wp-content/uploads/2011/01/7_taskbar_tweaker.png</iconUrl>
+    <copyright>By RaMMicHaeL</copyright>
+    <licenseUrl>https://github.com/m417z/7-Taskbar-Tweaker/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/m417z/7-Taskbar-Tweaker</projectSourceUrl>
+    <tags>taskbartweaker taskbar tweaks</tags>
+    <summary>A program for tweaking the taskbar of Windows 7, 8 and 10. 7+ Taskbar Tweaker provides many customization options, like disabling grouping and middle-click to close.</summary>
+    <description>
+      <![CDATA[
+# 7+ Taskbar Tweaker
+
+Customize the Windows taskbar with dozens of exclusive options. Adapt the taskbar to your workflow, not the other way around. 
+
+![Preview](https://tweaker.ramensoftware.com/images/7-taskbar-tweaker.png)
+
+## Reasons to use 7+ Taskbar Tweaker
+
+- **Simple yet powerful** - Dozens of customization options that just work, configure and forget.
+- **Reliable** - Being maintained and polished for more than 10 years.
+- **Free** - 7+ Taskbar Tweaker is free. If you like it, donations are welcome.
+    ]]>
+    </description>
+    <releaseNotes>https://ramensoftware.com/downloads/7tt_setup.exe?changelog</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

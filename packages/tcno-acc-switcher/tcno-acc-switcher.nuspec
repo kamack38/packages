@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <title>TcNo Account Switcher</title>
+    <id>tcno-acc-switcher</id>
+    <version>2022.03.29.00</version>
+    <authors>TcNobo</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/tcno-acc-switcher</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/TcNobo/TcNo-Acc-Switcher/7490c2de7ff1e1a524c4357e9ba4b1e701b73ed8/other/img/icon/icon256.png</iconUrl>
+    <docsUrl>https://github.com/TcNobo/TcNo-Acc-Switcher/wiki</docsUrl>
+    <bugTrackerUrl>https://github.com/TcNobo/TcNo-Acc-Switcher/issues</bugTrackerUrl>
+    <projectUrl>https://github.com/TcNobo/TcNo-Acc-Switcher</projectUrl>
+    <projectSourceUrl>https://github.com/TcNobo/TcNo-Acc-Switcher/tree/master</projectSourceUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/TcNobo/TcNo-Acc-Switcher/blob/master/LICENSE</licenseUrl>
+    <copyright>TechNobbo (Wesley Pyblum) (C) 2021</copyright>
+    <summary>A Super fast account switcher for Steam, Battle.net, Epic Games, Origin, Riot Games and Ubisoft</summary>
+    <tags>account switcher steam discord origin tcnobo</tags>
+    <description>
+      <![CDATA[
+# TcNo Account Switcher
+
+![Banner](https://rawcdn.githack.com/TcNobo/TcNo-Acc-Switcher/7490c2de7ff1e1a524c4357e9ba4b1e701b73ed8/other/img/Banner.png)
+
+A Super fast account switcher for Steam, Battle.net, Epic Games, Origin, Riot Games and Ubisoft (and more soon) **Saves NO passwords or any user information**\*. Most switchers, including Steam work purely off changing a file and a few registry keys. Wastes no time closing, switching and restarting Steam and other platforms.
+NOTE: Not created for cheating purposes. All it does is change accounts. Use it as you see fit, accepting responsibility.
+
+## How does it work?
+
+Simple. It swaps out files and registry values, pointing to your last logged in account while the program is closed. Think of it as freezing a platform like Steam in time, and replacing the "account block" with a previously frozen "account block", then unfreezing it. To Steam and your Steam account, it "looks" like you pulled your plug out and put it back in a week or so later, meanwhile you were playing on other accounts. Swapping the account block lets the program: Not interact with passwords, and not interact with 2-factor, so you can "Skip" both of those in the login process.
+
+#### Things not working? See the [FAQ](https://github.com/TcNobo/TcNo-Acc-Switcher/wiki/Frequently-Asked-Questions)
+    ]]>
+    </description>
+    <dependencies>
+      <dependency id="webview2-runtime" version="99.0.1150.36" />
+      <dependency id="dotnet-6.0-runtime" version="6.0.1" />
+      <dependency id="dotnet-6.0-aspnetruntime" version="6.0.1" />
+    </dependencies>
+    <releaseNotes>https://github.com/TcNobo/TcNo-Acc-Switcher/releases/latest</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

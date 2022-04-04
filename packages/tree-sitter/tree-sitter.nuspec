@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>tree-sitter</id>
+    <version>0.20.6</version>
+    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/tree-sitter</packageSourceUrl>
+    <owners>Kamack38</owners>
+    <title>tree-sitter</title>
+    <authors>Max Brunsfeld, contributors</authors>
+    <projectUrl>https://tree-sitter.github.io/tree-sitter/</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/tree-sitter/tree-sitter/7bac34c925ac6fc5493c9ebd4cfc07cf5e1e92f0/docs/assets/images/tree-sitter-small.png</iconUrl>
+    <copyright>Copyright (c) 2018-2021 Max Brunsfeld</copyright>
+    <licenseUrl>https://github.com/tree-sitter/tree-sitter/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/tree-sitter/tree-sitter/tree/master</projectSourceUrl>
+    <docsUrl>https://tree-sitter.github.io/tree-sitter/</docsUrl>
+    <bugTrackerUrl>https://github.com/tree-sitter/tree-sitter/issues</bugTrackerUrl>
+    <tags>tree-sitter</tags>
+    <summary>Tree-sitter is a parser generator tool and an incremental parsing library. It can build a concrete syntax tree for a source file and efficiently update the syntax tree as the source file is edited.</summary>
+    <description><![CDATA[
+# tree-sitter
+
+![Logo](https://rawcdn.githack.com/tree-sitter/tree-sitter/7bac34c925ac6fc5493c9ebd4cfc07cf5e1e92f0/docs/assets/images/tree-sitter-small.png)
+
+Tree-sitter is a parser generator tool and an incremental parsing library. It can build a concrete syntax tree for a source file and efficiently update the syntax tree as the source file is edited. Tree-sitter aims to be:
+
+- **General** enough to parse any programming language
+- **Fast** enough to parse on every keystroke in a text editor
+- **Robust** enough to provide useful results even in the presence of syntax errors
+- **Dependency-free** so that the runtime library (which is written in pure C) can be embedded in any application
+
+## Links
+
+- [Documentation](https://tree-sitter.github.io)
+- [Rust binding](lib/binding_rust/README.md)
+- [WASM binding](lib/binding_web/README.md)
+- [Command-line interface](cli/README.md)
+      ]]>    </description>
+    <releaseNotes>https://github.com/o2sh/onefetch/releases/latest</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <title>Windhawk</title>
+    <id>windhawk</id>
+    <version>0.9.1</version>
+    <authors>Ramen Software</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/windhawk</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/14f5a2a65f040ec4e7e2aa3542323c5c9f0fd402/assets/windhawk.png</iconUrl>
+    <docsUrl>https://github.com/ramensoftware/windhawk/wiki/</docsUrl>
+    <bugTrackerUrl>https://github.com/ramensoftware/windhawk/issues</bugTrackerUrl>
+    <projectUrl>https://windhawk.net/</projectUrl>
+    <copyright><![CDATA[Copyright © Ramen Software]]></copyright>
+    <tags>windows mods ramensoftware</tags>
+    <summary>The customization marketplace for Windows programs</summary>
+    <description>
+      <![CDATA[
+# Windhawk
+
+![Preview](https://rawcdn.githack.com/kamack38/chocopkgs/14f5a2a65f040ec4e7e2aa3542323c5c9f0fd402/assets/windhawkPreview.png)
+
+## Installation arguments
+
+`/Portable` - Installs the portable version
+
+## Robust
+
+Stability and performance are a very high priority for Windhawk. It was designed to be constantly running in the background without having a noticeable impact on the system.
+
+## Simple
+
+There's no need to be a computer expert to use Windhawk, it can be used by everybody. Sophisticated mods can be installed with just a couple of clicks, and customized via user friendly options.
+
+## Transparent
+
+The mods that Windhawk offers are not black boxes. Each mod comes in the form of source code, which can be reviewed to make sure that the mod does exactly what it says.
+    ]]>
+    </description>
+    <releaseNotes>https://github.com/ramensoftware/windhawk/releases/latest</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>

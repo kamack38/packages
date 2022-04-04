@@ -1,0 +1,32 @@
+name: CI
+
+on:
+  push:
+    paths:
+      - '.github/workflows/_test-package.yml'
+      - '**.nupkg'
+
+jobs:
+  test:
+    uses: kamack38/packages/.github/workflows/_test-package.yml@master
+    with:
+      packages: >-
+        [
+          "7tt",
+          "action",
+          "betterdiscord",
+          "blitz.gg",
+          "borderlessminecraft",
+          "croc",
+          "dcforoffice",
+          "jarfix",
+          "leagueoflegendseune",
+          "nvm.install",
+          "nvm.portable",
+          "onefetch",
+          "portmaster",
+          "tcno-acc-switcher",
+          "tree-sitter",
+          "windhawk",
+          "valorant"
+          ]

@@ -1,0 +1,65 @@
+name: 🐛 Bug report
+description: Report errors or unexpected behavior
+title: '[Bug]: '
+labels: ['bug']
+assignees:
+  - kamack38
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please make sure to [search for existing issues](https://github.com/kamack38/chocopkgs/issues) before filing a new one!
+
+  - type: dropdown
+    id: package-name
+    attributes:
+      label: Package
+      description: Pick the package you have issue with.
+      options:
+        - 7tt
+        - action
+        - betterdiscord
+        - blitz.gg
+        - borderlessminecraft
+        - dcforoffice
+        - jarfix
+        - leagueoflegendseune
+        - nvm.install
+        - nvm.portable
+        - onefetch
+        - portmaster
+        - tree-sitter
+
+  - type: textarea
+    id: what-happened
+    attributes:
+      label: Describe the bug
+      description: Describe the bug, include steps to reproduce and if applicable, add screenshots or any other additional information to help explain your problem.
+      placeholder: A clear and concise description of what the bug is.
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected-behavior
+    attributes:
+      label: Expected behavior
+      placeholder: A clear and concise description of what you expected to happen.
+    validations:
+      required: true
+
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant log output
+      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
+      render: shell
+
+  - type: textarea
+    id: environment
+    attributes:
+      label: Desktop
+      value: |
+        - Package Version [e.g. 1.15.64]
+        - Chocolatey Version [e.g. 0.11.3]
+    validations:
+      required: true

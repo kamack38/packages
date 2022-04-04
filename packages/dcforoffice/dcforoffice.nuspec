@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <id>dcforoffice</id>
+    <version>1.2</version>
+    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/dcforoffice</packageSourceUrl>
+    <owners>Kamack38</owners>
+    <title>DiscordForOffice</title>
+    <authors>7coil (Leondro Lio)</authors>
+    <projectUrl>https://github.com/7coil/DiscordForOffice</projectUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/master/assets/DiscordForOffice.png</iconUrl>
+    <copyright>Copyright (c) 2021 Leondro Lio</copyright>
+    <licenseUrl>https://github.com/7coil/DiscordForOffice/blob/master/LICENCE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <projectSourceUrl>https://github.com/7coil/DiscordForOffice/tree/master/</projectSourceUrl>
+    <bugTrackerUrl>https://github.com/7coil/DiscordForOffice/issues</bugTrackerUrl>
+    <tags>discord office microsoft-office rpc</tags>
+    <summary>Show what you're doing in Microsoft Office to your friends on Discord.</summary>
+    <description><![CDATA[
+# Discord For Office
+
+Show the world how much you love presenting, spreadsheets and writing with the full DiscordForOffice suite of products
+
+![Logo](https://rawcdn.githack.com/kamack38/chocopkgs/0de7906dd2114c9e197bac60a37b5640124b5280/assets/DiscordForOffice.png)
+
+## Compatability
+
+### Versions
+- Microsoft Office 2013
+- Microsoft Office 2016
+- Microsoft Office 2019
+- Microsoft Office 365
+
+### Products
+- Word
+- PowerPoint
+- Excel
+- Outlook
+    - This has no functionality yet.
+    - Give ideas at ([#20](https://github.com/7coil/DiscordForOffice/issues/20))
+
+### Not Compatible
+- Access (see [#16](https://github.com/7coil/DiscordForOffice/issues/16))
+- Publisher (see [#5](https://github.com/7coil/DiscordForOffice/issues/5))
+- OneNote (see [#9](https://github.com/7coil/DiscordForOffice/issues/9))
+- Teams (see [#19](https://github.com/7coil/DiscordForOffice/issues/19))
+- All other Microsoft products
+
+## Compiling
+1. Enable `Office/SharePoint development` in the Visual Studio Installer
+2. Right click the solution and select the build option
+3. The installer, which is ready to distribute, can be found here:
+    - `/Bundler/bin/Debug/DiscordForOffice.exe`
+    - `/Bundler/bin/Release/DiscordForOffice.exe`
+    ]]>    </description>
+    <releaseNotes>https://github.com/7coil/DiscordForOffice/releases/</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\**" target="tools" />
+  </files>
+</package>
