@@ -1,4 +1,4 @@
-name: CI
+name: 🎡 CI
 
 on:
   push:
@@ -7,7 +7,7 @@ on:
       - '**.nupkg'
 
 jobs:
-  test:
+  test-choco-packages:
     uses: kamack38/packages/.github/workflows/_test-package.yml@master
     with:
       packages: >-

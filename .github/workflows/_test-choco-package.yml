@@ -1,4 +1,4 @@
-name: CI - Test Package
+name: 🍫 CI - Test Choco Package
 
 on:
   workflow_call:
@@ -9,7 +9,7 @@ on:
         type: string
 
 jobs:
-  test-packages:
+  test-choco-packages:
     strategy:
       fail-fast: false
       matrix:
