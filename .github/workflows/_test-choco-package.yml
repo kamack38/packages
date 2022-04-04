@@ -7,6 +7,14 @@ on:
         description: 'YAML array containing IDs of the packages'
         required: true
         type: string
+  workflow_dispatch:
+    inputs:
+      packages:
+        description: 'YAML array containing IDs of the packages'
+        required: true
+        type: choice
+        options:
+          - action
 
 jobs:
   test-choco-packages:
@@ -18,17 +26,20 @@ jobs:
     steps:
       - name: Checkout
         uses: actions/checkout@v2.3.4
-      - name: Add New Package Source
+      - name: 🔧 Build package
+        run: |
+          .\build.ps1 ${{ matrix.package-name }}
+      - name: ➕ Add New Package Source
         uses: crazy-max/ghaction-chocolatey@v1
         with:
-          args: source add --name='repo' --source='./nupkgs/' --priority='1'
-      - name: Install ${{ matrix.package-name }}
+          args: source add --name='repo' --source='./dist/' --priority='1'
+      - name: 🟢 Install ${{ matrix.package-name }}
         uses: crazy-max/ghaction-chocolatey@v1
         timeout-minutes: 3
         continue-on-error: true
         with:
           args: install ${{ matrix.package-name }} -dvy
-      - name: Uninstall ${{ matrix.package-name }}
+      - name: 🔴 Uninstall ${{ matrix.package-name }}
         uses: crazy-max/ghaction-chocolatey@v1
         continue-on-error: false
         with:
