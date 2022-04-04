@@ -24,11 +24,15 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: 🔧 Update checksums & makepkg
+      - name: 🔧 Install pacman
         run: |
           sudo apt-get update -y
           sudo apt-get install -y pacman
-          sudo pacman -S base-devel
+      - name: 🔧 Install dependencies
+        run: |
+          pacman -Sy base-devel
+      - name: 🔧 Update checksums & makepkg
+        run: |
           cd ./packages/${{ github.event.inputs.pkgname }}
           makepkg -Sc PKGBUILD
           updpkgsums PKGBUILD
