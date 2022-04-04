@@ -12,9 +12,7 @@ on:
       packages:
         description: 'YAML array containing IDs of the packages'
         required: true
-        type: choice
-        options:
-          - action
+        type: string
 
 jobs:
   test-choco-packages:
