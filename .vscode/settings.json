@@ -1,5 +1,6 @@
 {
     "cSpell.words": [
+        "Archlinux",
         "backticks",
         "betterdiscord",
         "borderless",
@@ -14,13 +15,16 @@
         "kamack",
         "leagueoflegends",
         "leagueoflegendseune",
+        "makepkg",
         "Minecraft",
         "nupkg",
         "nupkgs",
         "onefetch",
+        "PKGBUILD",
         "pkgname",
         "portmaster",
         "tcno-acc-switcher",
+        "updpkgsums",
         "valorant",
         "windhawk"
     ]
