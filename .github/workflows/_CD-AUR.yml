@@ -24,11 +24,11 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: 🔧 Update checksums & makepkg
-        run: |
-          cd ./packages/${{ github.event.inputs.pkgname }}
-          makepkg -Sc PKGBUILD
-          updpkgsums PKGBUILD
+      # - name: 🔧 Update checksums & makepkg
+      #   run: |
+      #     cd ./packages/${{ github.event.inputs.pkgname }}
+      #     makepkg -Sc PKGBUILD
+      #     updpkgsums PKGBUILD
       - name: 🚀 Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@v2.2.5
         with:
