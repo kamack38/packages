@@ -1,4 +1,4 @@
-name: Package Update
+name: 🔃 Package Update
 
 on:
   schedule:
@@ -10,7 +10,7 @@ on:
         required: false
 
 jobs:
-  update-packages:
+  update-choco-packages:
     runs-on: windows-2019
     steps:
       - name: Checkout
