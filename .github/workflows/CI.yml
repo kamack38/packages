@@ -7,33 +7,26 @@ on:
       - 'packages/**'
 
 jobs:
-  reusable_workflow_job:
-    runs-on: windows-latest
-    environment: production
-    strategy:
-      fail-fast: false
-      matrix:
-        packages:
-          [
-            '7tt',
-            'action',
-            'betterdiscord',
-            'blitz.gg',
-            'borderlessminecraft',
-            'croc',
-            'dcforoffice',
-            'jarfix',
-            'leagueoflegendseune',
-            'nvm.install',
-            'nvm.portable',
-            'onefetch',
-            'portmaster',
-            'tcno-acc-switcher',
-            'tree-sitter',
-            'windhawk',
-            'valorant',
-          ]
-    steps:
-      - uses: kamack38/packages/.github/workflows/_test-package.yml@main
-        with:
-          pkgname: ${{ matrix.packages }}
+  test-choco-package:
+    uses: kamack38/packages/.github/workflows/_test-package.yml@main
+    with:
+      pkgname: >-
+        [
+          '7tt',
+          'action',
+          'betterdiscord',
+          'blitz.gg',
+          'borderlessminecraft',
+          'croc',
+          'dcforoffice',
+          'jarfix',
+          'leagueoflegendseune',
+          'nvm.install',
+          'nvm.portable',
+          'onefetch',
+          'portmaster',
+          'tcno-acc-switcher',
+          'tree-sitter',
+          'windhawk',
+          'valorant',
+        ]
