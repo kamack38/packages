@@ -37,7 +37,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        package-name: ${{ fromJSON(inputs.packages) }}
+        package-name: ${{ fromJSON(github.event.inputs.packages) }}
     runs-on: windows-latest
     steps:
       - name: Checkout
@@ -49,7 +49,7 @@ jobs:
         uses: crazy-max/ghaction-chocolatey@v1
         with:
           args: source add --name='repo' --source='./dist/' --priority='1'
-      - name: 🟢 Install ${{ github.event.inputs.pkgname }}
+      - name: 🟢 Install ${{ matrix.package-name }}
         uses: crazy-max/ghaction-chocolatey@v1
         timeout-minutes: 4
         with:
