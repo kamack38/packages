@@ -14,11 +14,12 @@ param(
     [switch]$p
 )
 
-mkdir "$PSScriptRoot\dist"
+if (!(Test-Path "$PSScriptRoot\dist\")) {
+    mkdir "$PSScriptRoot\dist"
+}
 
 if ($PackageName -like "all") {
     $packages = Get-ChildItem -Path $PSScriptRoot\packages\
-
 
     foreach ($item in $packages) {
         if ((Get-ChildItem $item.FullName -Filter *.nuspec).Length -gt 0) {
@@ -28,10 +29,16 @@ if ($PackageName -like "all") {
     }
 }
 else {
-    choco pack (Get-ChildItem $item.FullName -Filter *.nuspec).FullName --outdir (Join-Path $PSScriptRoot "dist")
-    
-    if ($p -and $?) {
-        $nupkg = Get-ChildItem -Path $PSScriptRoot\nupkgs | Where-Object Name -match "$PackageName*"
-        choco push $nupkg
+    $packagePath = "$PSScriptRoot\packages\$PackageName"
+    if (Test-Path $packagePath) {
+        choco pack "$packagePath\$packageName.nuspec" --outdir (Join-Path $PSScriptRoot "dist")
+        
+        if ($p -and $?) {
+            $nupkg = Get-ChildItem -Path $PSScriptRoot\dist | Where-Object Name -match "$PackageName*"
+            choco push $nupkg
+        }
+    }
+    else {
+        Write-Host "This package does not exists!" -ForegroundColor Red
     }
 }
