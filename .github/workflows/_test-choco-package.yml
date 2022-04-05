@@ -33,7 +33,12 @@ on:
           - 'valorant'
 
 jobs:
-  test-choco-packages:
+  test:
+    runs-on: windows-latest
+    steps:
+      - run: |
+          echo ${{ inputs.packages }}
+  test-package:
     strategy:
       fail-fast: false
       matrix:
