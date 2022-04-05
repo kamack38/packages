@@ -5,6 +5,7 @@ on:
     paths:
       - '.github/workflows/_test-choco-package.yml'
       - 'packages/**'
+  workflow_dispatch:
 
 jobs:
   test-choco-package:
