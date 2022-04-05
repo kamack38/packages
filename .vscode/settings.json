@@ -27,5 +27,9 @@
         "updpkgsums",
         "valorant",
         "windhawk"
-    ]
+    ],
+    "files.eol": "\r\n",
+    "[PKGBUILD][sh]": {
+        "files.eol": "\n"
+    }
 }

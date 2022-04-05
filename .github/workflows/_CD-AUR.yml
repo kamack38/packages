@@ -24,18 +24,10 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: 🔧 Install pacman
-        run: |
-          sudo apt-get update -y
-          sudo apt-get install -y pacman
-      - name: 🔧 Install dependencies
-        run: |
-          pacman -Sy base-devel
-      - name: 🔧 Update checksums & makepkg
+      - name: 🔧 Update package
         run: |
           cd ./packages/${{ github.event.inputs.pkgname }}
-          makepkg -Sc PKGBUILD
-          updpkgsums PKGBUILD
+          bash update.sh
       - name: 🚀 Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@v2.2.5
         with:
