@@ -8,7 +8,7 @@ on:
 
 jobs:
   test-choco-package:
-    uses: kamack38/packages/.github/workflows/_test-package.yml@main
+    uses: kamack38/packages/.github/workflows/_test-choco-package.yml@main
     with:
       pkgname: >-
         [
