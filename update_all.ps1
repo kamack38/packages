@@ -47,12 +47,6 @@ $Options = [ordered]@{
         }
     }
 
-    History        = @{
-        Lines           = 120                                # Number of lines to show
-        Github_UserRepo = $Env:github_user_repo              # User repo to be link to commits
-        Path            = "$PSScriptRoot\Update-History.md"  # Path where to save history
-    }
-
     Git            = @{
         User     = ''                                        # Git username, leave empty if github api key is used
         Password = $Env:github_api_key                       # Password if username is not empty, otherwise api key
@@ -62,26 +56,6 @@ $Options = [ordered]@{
         ApiToken    = $Env:github_api_key                    # Your github api key
         ReleaseType = 'package'                              # Either 1 release per date, or 1 release per package
     }
-
-    RunInfo        = @{
-        Exclude = 'password', 'apikey', 'apitoken'           # Option keys which contain those words will be removed
-        Path    = "$PSScriptRoot\update_info.xml"            # Path where to save the run info
-    }
-
-    Mail           = if ($Env:mail_user) {
-        @{
-            To          = $Env:mail_user
-            Server      = $Env:mail_server
-            UserName    = $Env:mail_user
-            Password    = $Env:mail_pass
-            Port        = $Env:mail_port
-            EnableSsl   = $Env:mail_enablessl -eq 'true'
-            Attachment  = "$PSScriptRoot\update_info.xml"
-            UserMessage = ''
-            SendAlways  = $false                             # Send notifications every time
-        }
-    }
-    else {}
 
     ForcedPackages = $ForcedPackages -split ' '
     BeforeEach     = {
