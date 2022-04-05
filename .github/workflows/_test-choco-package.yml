@@ -37,7 +37,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: |
-          echo "::set-output name=matrix::${{ github.event.inputs.packages }}${{ inputs.packages }}""
+          echo "::set-output name=matrix::${{ github.event.inputs.packages }}${{ inputs.packages }}"
   test-package:
     strategy:
       fail-fast: false
