@@ -14,10 +14,11 @@ param(
     [switch]$p
 )
 
+mkdir "$PSScriptRoot\dist"
+
 if ($PackageName -like "all") {
     $packages = Get-ChildItem -Path $PSScriptRoot\packages\
 
-    mkdir "$PSScriptRoot\dist"
 
     foreach ($item in $packages) {
         if ((Get-ChildItem $item.FullName -Filter *.nuspec).Length -gt 0) {
@@ -27,7 +28,7 @@ if ($PackageName -like "all") {
     }
 }
 else {
-    choco pack "$PSScriptRoot\packages\$PackageName\$PackageName.nuspec" --outputdirectory $PSScriptRoot\nupkgs
+    choco pack (Get-ChildItem $item.FullName -Filter *.nuspec).FullName --outdir (Join-Path $PSScriptRoot "dist")
     
     if ($p -and $?) {
         $nupkg = Get-ChildItem -Path $PSScriptRoot\nupkgs | Where-Object Name -match "$PackageName*"

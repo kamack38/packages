@@ -36,6 +36,8 @@
 
 > A prompt theme engine for any shell.
 
+[[Source](https://ohmyposh.dev/)] [[AUR](https://aur.archlinux.org/packages/oh-my-posh-bin)] [[Package](/packages/oh-my-posh-bin)]
+
 ```shell
 yay -S oh-my-posh-bin
 ```
