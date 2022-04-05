@@ -42,7 +42,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        package-name: ${{ fromJSON(format('{{{0}{1}}}', ${{ github.event.inputs.packages }}, ${{ inputs.packages }})) }}
+        package-name: ${{ fromJSON(format('{{{0}{1}}}', github.event.inputs.packages, inputs.packages)) }}
     runs-on: windows-latest
     steps:
       - name: Checkout
