@@ -11,7 +11,7 @@ jobs:
   test-choco-package:
     uses: kamack38/packages/.github/workflows/_test-choco-package.yml@main
     with:
-      pkgname: >-
+      packages: >-
         [
           '7tt',
           'action',
