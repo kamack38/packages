@@ -19,7 +19,7 @@ on:
           - 'betterdiscord'
           - 'blitz.gg'
           - 'borderlessminecraft'
-          - "['croc']"
+          - "{['croc']}"
           - 'dcforoffice'
           - 'jarfix'
           - 'leagueoflegendseune'
