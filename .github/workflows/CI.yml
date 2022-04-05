@@ -34,6 +34,6 @@ jobs:
             'valorant',
           ]
     steps:
-      - uses: kamack38/packages/.github/workflows/_test-package.yml@master
+      - uses: kamack38/packages/.github/workflows/_test-package.yml
         with:
           pkgname: ${{ matrix.packages }}
