@@ -5,7 +5,7 @@
         <img alt="GitHub issues" src="https://img.shields.io/github/issues/kamack38/packages?style=flat-square">
     </a>
     <a href="https://github.com/kamack38/chocopkgs/actions">
-        <img alt="GitHub issues" src="https://img.shields.io/github/workflow/status/kamack38/packages/CI?event=push&style=flat-square&logo=GitHub&label=Packages%20Test">
+        <img alt="GitHub issues" src="https://img.shields.io/github/workflow/status/kamack38/packages/%F0%9F%8E%A1%20CI?event=push&style=flat-square&logo=GitHub&label=Packages%20Test">
     </a>
 </p>
 
