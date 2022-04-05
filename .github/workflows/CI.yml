@@ -3,10 +3,12 @@ name: 🎡 CI
 on:
   push:
     paths:
-      - '.github/workflows/_test-package.yml'
-      - '**.nupkg'
+      - '.github/workflows/_test-choco-package.yml'
+      - 'packages/**'
 
 jobs:
+  reusable_workflow_job:
+    runs-on: windows-latest
     strategy:
       fail-fast: false
       matrix:
@@ -30,7 +32,7 @@ jobs:
             'windhawk',
             'valorant',
           ]
-  test-choco-packages:
-    runs-on: windows-latest
-    uses: kamack38/packages/.github/workflows/_test-package.yml@master
-    with: ${{ matrix.packages }}
+    steps:
+      - uses: kamack38/packages/.github/workflows/_test-package.yml@master
+        with:
+          pkgname: ${{ matrix.packages }}
