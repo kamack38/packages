@@ -9,6 +9,7 @@ on:
 jobs:
   reusable_workflow_job:
     runs-on: windows-latest
+    environment: production
     strategy:
       fail-fast: false
       matrix:
