@@ -37,7 +37,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        package-name: ${{ fromJSON(github.event.inputs.packages) }}
+        package-name: ${{ fromJSON(github.event.inputs.packages + inputs.packages) }}
     runs-on: windows-latest
     steps:
       - name: Checkout
