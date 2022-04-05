@@ -47,12 +47,10 @@ jobs:
           args: source add --name='repo' --source='./dist/' --priority='1'
       - name: 🟢 Install ${{ github.event.inputs.pkgname }}
         uses: crazy-max/ghaction-chocolatey@v1
-        timeout-minutes: 3
-        continue-on-error: true
+        timeout-minutes: 4
         with:
-          args: install${{ github.event.inputs.pkgname }} -dvy
+          args: install ${{ github.event.inputs.pkgname }} -dvy
       - name: 🔴 Uninstall ${{ github.event.inputs.pkgname }}
         uses: crazy-max/ghaction-chocolatey@v1
-        continue-on-error: false
         with:
           args: uninstall ${{ github.event.inputs.pkgname }} -dvy
