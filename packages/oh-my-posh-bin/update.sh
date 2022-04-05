@@ -1,12 +1,17 @@
 #!/bin/bash
 source PKGBUILD
 
-pkgver=$(pkgver)
-
-echo "Package version: $pkgver"
+echo "Package url: $url"
+echo "Current package version: $pkgver"
+echo "Current package source: $source"
+ver=$(pkgver)
+source=$(echo $source | sed -e "s/$pkgver/$ver/")
+pkgver=$ver
+echo "Updated version: $pkgver"
+echo "Updated source: $source"
 
 sha256sums() {
-    curl -s "https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v$pkgver/posh-linux-amd64" | sha256sum | head -c 64
+    curl -sL "$source" | sha256sum | head -c 64
 }
 
 file=$(cat PKGBUILD)

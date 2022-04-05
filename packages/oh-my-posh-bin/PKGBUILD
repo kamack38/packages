@@ -11,7 +11,7 @@ makedepends=('curl')
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
 source=("https://github.com/JanDeDobbeleer/oh-my-posh/releases/download/v$pkgver/posh-linux-amd64")
-sha256sums=('50af25b18720852f62f3cadec472115dcfcf33c7c0e2c5c83dc964f56e3e8afa')
+sha256sums=('ba8bb9a97a5e9147022a0178d2b2b067f404ffe676838d75f401d6bd7d3f2589')
 
 pkgver() {
     curl --silent -L "https://api.github.com/repos/JanDeDobbeleer/oh-my-posh/releases/latest" | # Get latest release from GitHub api
