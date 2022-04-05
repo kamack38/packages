@@ -8,7 +8,7 @@ on:
   workflow_dispatch:
 
 jobs:
-  test-choco-package:
+  choco:
     uses: kamack38/packages/.github/workflows/_test-choco-package.yml@main
     with:
       packages: >-
