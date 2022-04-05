@@ -12,25 +12,25 @@ on:
       packages:
         description: Name of the package
         required: true
-        type: choice
-        options:
-          - '7tt'
-          - 'action'
-          - 'betterdiscord'
-          - 'blitz.gg'
-          - 'borderlessminecraft'
-          - "{['croc']}"
-          - 'dcforoffice'
-          - 'jarfix'
-          - 'leagueoflegendseune'
-          - 'nvm.install'
-          - 'nvm.portable'
-          - 'onefetch'
-          - 'portmaster'
-          - 'tcno-acc-switcher'
-          - 'tree-sitter'
-          - 'windhawk'
-          - 'valorant'
+        type: string
+        # options:
+        #   - '7tt'
+        #   - 'action'
+        #   - 'betterdiscord'
+        #   - 'blitz.gg'
+        #   - 'borderlessminecraft'
+        #   - "{['croc']}"
+        #   - 'dcforoffice'
+        #   - 'jarfix'
+        #   - 'leagueoflegendseune'
+        #   - 'nvm.install'
+        #   - 'nvm.portable'
+        #   - 'onefetch'
+        #   - 'portmaster'
+        #   - 'tcno-acc-switcher'
+        #   - 'tree-sitter'
+        #   - 'windhawk'
+        #   - 'valorant'
 
 jobs:
   test-package:
