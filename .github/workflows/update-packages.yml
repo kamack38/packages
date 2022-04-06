@@ -13,7 +13,7 @@ jobs:
   update-choco-packages:
     runs-on: windows-2019
     steps:
-      - name: Checkout
+      - name: 📚 Checkout
         uses: actions/checkout@v2.3.4
       - name: Install & Import AU
         shell: powershell
@@ -21,7 +21,15 @@ jobs:
           Set-PSRepository PSGallery -InstallationPolicy Trusted
           Install-Module au
           Import-Module au
-      - name: Run script
+      - name: 🔧 Run update script
         shell: powershell
         run: |
           .\update_all.ps1 ${{ github.event.inputs.parameters }}
+  update-aur-packages:
+    runs-on: ubuntu-latest
+    steps:
+      - name: 📚 Checkout
+        uses: actions/checkout@v2.3.4
+      - name: 🔧 Run update script
+        run: |
+          bash update-pkgs.sh

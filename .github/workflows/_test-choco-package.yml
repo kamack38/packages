@@ -40,7 +40,7 @@ jobs:
         package-name: ${{ fromJSON(format('{0}{1}', github.event.inputs.packages, inputs.packages)) }}
     runs-on: windows-latest
     steps:
-      - name: Checkout
+      - name: 📚 Checkout
         uses: actions/checkout@v2.3.4
       - name: 🔧 Build package
         run: |

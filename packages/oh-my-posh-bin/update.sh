@@ -1,4 +1,5 @@
 #!/bin/bash
+cd "$(dirname "$0")"
 source PKGBUILD
 
 echo "Package url: $url"
