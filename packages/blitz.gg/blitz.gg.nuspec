@@ -6,7 +6,7 @@
     <version>1.16.46</version>
     <authors>Blitz Inc.</authors>
     <owners>Kamack38</owners>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/blitz.gg</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/blitz.gg</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/8c8ba1ed2152f8f0b997618627010a980bfe6661/assets/Blitz.gg.png</iconUrl>
     <projectUrl>https://blitz.gg/</projectUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>

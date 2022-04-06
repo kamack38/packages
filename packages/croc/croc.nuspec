@@ -6,7 +6,7 @@
     <version>9.5.2</version>
     <authors>schollz, contributors</authors>
     <owners>Kamack38</owners>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/croc</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/croc</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/486b9960e0cb890d7ff49059ebe520fa78133ca3/assets/croc.png</iconUrl>
     <bugTrackerUrl>https://github.com/schollz/croc/issues</bugTrackerUrl>
     <projectUrl>https://schollz.com/blog/croc6/</projectUrl>

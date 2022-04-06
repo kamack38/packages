@@ -8,7 +8,7 @@ body:
   - type: markdown
     attributes:
       value: |
-        Please make sure to [search for existing issues](https://github.com/kamack38/chocopkgs/issues) before filing a new one!
+        Please make sure to [search for existing issues](https://github.com/kamack38/packages/issues) before filing a new one!
 
   - type: dropdown
     id: package-name

@@ -6,7 +6,7 @@
     <version>5.5.101.1001</version>
     <authors>Bluestacks Systems, Inc.</authors>
     <owners>Kamack38</owners>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/bluestacks</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/bluestacks</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/master/assets/BlueStacks.png</iconUrl>
     <docsUrl>https://support.bluestacks.com/hc/</docsUrl>
     <projectUrl>https://www.bluestacks.com/pl/bluestacks-5.html</projectUrl>

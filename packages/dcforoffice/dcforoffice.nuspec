@@ -3,7 +3,7 @@
   <metadata>
     <id>dcforoffice</id>
     <version>1.2</version>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/dcforoffice</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/dcforoffice</packageSourceUrl>
     <owners>Kamack38</owners>
     <title>DiscordForOffice</title>
     <authors>7coil (Leondro Lio)</authors>

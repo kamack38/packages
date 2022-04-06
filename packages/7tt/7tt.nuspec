@@ -3,7 +3,7 @@
   <metadata>
     <id>7tt</id>
     <version>5.12.3</version>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/7tt</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/7tt</packageSourceUrl>
     <owners>Kamack38</owners>
     <title>7+ Taskbar Tweaker</title>
     <authors>Michael Maltsev</authors>

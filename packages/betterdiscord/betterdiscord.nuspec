@@ -3,7 +3,7 @@
   <metadata>
     <id>betterdiscord</id>
     <version>1.1.1</version>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/betterdiscord</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/betterdiscord</packageSourceUrl>
     <owners>Kamack38</owners>
     <title>BetterDiscord</title>
     <authors>BetterDiscord Team</authors>
