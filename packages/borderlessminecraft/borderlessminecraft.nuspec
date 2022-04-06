@@ -6,7 +6,7 @@
     <version>1.3.2</version>
     <authors>Mr-Technician, contributors</authors>
     <owners>Kamack38</owners>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/borderlessminecraft</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/borderlessminecraft</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/56594ddb42f1bcb613dbf1883602d15db6a54ca9/assets/BorderlessMinecraft.png</iconUrl>
     <docsUrl>https://github.com/Mr-Technician/BorderlessMinecraft/wiki/Installation</docsUrl>
     <bugTrackerUrl>https://github.com/Mr-Technician/BorderlessMinecraft/issues</bugTrackerUrl>

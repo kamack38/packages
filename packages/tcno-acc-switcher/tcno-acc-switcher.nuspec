@@ -6,7 +6,7 @@
     <version>2022.03.29.00</version>
     <authors>TcNobo</authors>
     <owners>Kamack38</owners>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/tcno-acc-switcher</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/tcno-acc-switcher</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/TcNobo/TcNo-Acc-Switcher/7490c2de7ff1e1a524c4357e9ba4b1e701b73ed8/other/img/icon/icon256.png</iconUrl>
     <docsUrl>https://github.com/TcNobo/TcNo-Acc-Switcher/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/TcNobo/TcNo-Acc-Switcher/issues</bugTrackerUrl>

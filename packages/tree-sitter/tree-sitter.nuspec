@@ -3,7 +3,7 @@
   <metadata>
     <id>tree-sitter</id>
     <version>0.20.6</version>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/tree-sitter</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/tree-sitter</packageSourceUrl>
     <owners>Kamack38</owners>
     <title>tree-sitter</title>
     <authors>Max Brunsfeld, contributors</authors>

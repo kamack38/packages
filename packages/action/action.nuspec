@@ -3,7 +3,7 @@
   <metadata>
     <id>action</id>
     <version>4.27.0</version>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/action</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/action</packageSourceUrl>
     <owners>Kamack38</owners>
     <title>Action!</title>
     <authors>Mirillis</authors>

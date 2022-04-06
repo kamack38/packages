@@ -3,7 +3,7 @@
   <metadata>
     <id>leagueoflegendseune</id>
     <version>41.0.5.4098838</version>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/leagueoflegendseune</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/leagueoflegendseune</packageSourceUrl>
     <owners>Kamack38</owners>
     <title>League Of Legends (EUNE)</title>
     <authors>Riot Games, Inc</authors>

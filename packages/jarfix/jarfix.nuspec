@@ -3,7 +3,7 @@
   <metadata>
     <id>jarfix</id>
     <version>3.0.0</version>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/jarfix</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/jarfix</packageSourceUrl>
     <owners>Kamack38</owners>
     <title>Jarfix</title>
     <authors><![CDATA[Johann Nepomuk Löfflmann]]></authors>

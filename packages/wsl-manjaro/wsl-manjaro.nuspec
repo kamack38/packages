@@ -6,7 +6,7 @@
     <version>2022.03.16</version>
     <authors>Silesh K Nair, yuk7, contributors</authors>
     <owners>Kamack38</owners>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/wsl-manjaro</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/wsl-manjaro</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/486b9960e0cb890d7ff49059ebe520fa78133ca3/assets/manjaro.svg</iconUrl>
     <bugTrackerUrl>https://github.com/sileshn/ManjaroWSL/issues</bugTrackerUrl>
     <projectUrl>https://github.com/sileshn/ManjaroWSL</projectUrl>

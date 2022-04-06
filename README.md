@@ -1,34 +1,34 @@
 # 📦 Packages
 
 <p align="center">
-    <a href="https://github.com/kamack38/chocopkgs/issues">
+    <a href="https://github.com/kamack38/packages/issues">
         <img alt="GitHub issues" src="https://img.shields.io/github/issues/kamack38/packages?style=flat-square">
     </a>
-    <a href="https://github.com/kamack38/chocopkgs/actions">
+    <a href="https://github.com/kamack38/packages/actions">
         <img alt="GitHub issues" src="https://img.shields.io/github/workflow/status/kamack38/packages/%F0%9F%8E%A1%20CI?event=push&style=flat-square&logo=GitHub&label=Packages%20Test">
     </a>
 </p>
 
 - [📦 Packages](#-packages)
-    - [<img src="./assets/aur.png" height="32"/> AUR Packages](#-aur-packages)
-        - [<img src="https://rawcdn.githack.com/jandedobbeleer/oh-my-posh/19b8cf2cf8401bba068f7d417a4fcc33947c64f2/docs/static/img/logo.png" height="24"/> oh-my-posh](#-oh-my-posh)
-    - [<img src="./assets/Chocolatey.svg" height="32" /> Chocolatey Packages](#-chocolatey-packages)
-        - [<img src="./assets/7tt.png" height="24"/> 7+ Taskbar Tweaker](#-7-taskbar-tweaker)
-        - [<img src="./assets/Action.png" height="24"/> Action](#-action)
-        - [<img src="https://betterdiscord.app/resources/branding/logo_small.svg" height="24"/> BetterDiscord](#-betterdiscord)
-        - [<img src="./assets/Blitz.gg.png" height="24"/> Blitz.gg](#-blitzgg)
-        - [<img src="./assets/BorderlessMinecraft.png" height="24" /> BorderlessMinecraft](#-borderlessminecraft)
-        - [<img src="./assets/croc.png" height="24" /> Croc](#-croc)
-        - [<img src="./assets/DiscordForOffice.png" height="24"/> DiscordForOffice](#-discordforoffice)
-        - [<img src="./assets/Jarfix.png" height="24"/> Jarfix](#-jarfix)
-        - [<img src="./assets/nodejs.png" height="24" /> NVM](#-nvm)
-        - [<img src="./assets/LeagueOfLegends.svg" height="24"/> League Of Legends](#-league-of-legends)
-        - [<img src="https://rawcdn.githack.com/o2sh/onefetch/main/assets/onefetch.svg" height="24" /> Oneftech](#-oneftech)
-        - [<img src="https://rawcdn.githack.com/safing/web/e0e0e480affba5cc09d8eaa50f0c2a4b411278fb/assets/img/logo/logo.svg" height="24"/> Portmaster](#-portmaster)
-        - [<img src="https://rawcdn.githack.com/TcNobo/TcNo-Acc-Switcher/7490c2de7ff1e1a524c4357e9ba4b1e701b73ed8/other/img/icon/icon256.png" height="24" /> TcNo Account Switcher](#-tcno-account-switcher)
-        - [<img src="https://rawcdn.githack.com/tree-sitter/tree-sitter/7bac34c925ac6fc5493c9ebd4cfc07cf5e1e92f0/docs/assets/images/tree-sitter-small.png" height="24" /> tree-sitter](#-tree-sitter)
-        - [<img src="https://raw.githubusercontent.com/kamack38/chocopkgs/master/assets/windhawk.png" height="24" /> Windhawk](#-windhawk)
-        - [<img src="https://rawcdn.githack.com/kamack38/chocopkgs/4068a86e0e709e70a4f71d720eccf6174ed16ebc/assets/valorant.png" height="24" /> Valorant](#-valorant)
+  - [<img src="./assets/aur.png" height="32"/> AUR Packages](#-aur-packages)
+    - [<img src="https://rawcdn.githack.com/jandedobbeleer/oh-my-posh/19b8cf2cf8401bba068f7d417a4fcc33947c64f2/docs/static/img/logo.png" height="24"/> oh-my-posh](#-oh-my-posh)
+  - [<img src="./assets/Chocolatey.svg" height="32" /> Chocolatey Packages](#-chocolatey-packages)
+    - [<img src="./assets/7tt.png" height="24"/> 7+ Taskbar Tweaker](#-7-taskbar-tweaker)
+    - [<img src="./assets/Action.png" height="24"/> Action](#-action)
+    - [<img src="https://betterdiscord.app/resources/branding/logo_small.svg" height="24"/> BetterDiscord](#-betterdiscord)
+    - [<img src="./assets/Blitz.gg.png" height="24"/> Blitz.gg](#-blitzgg)
+    - [<img src="./assets/BorderlessMinecraft.png" height="24" /> BorderlessMinecraft](#-borderlessminecraft)
+    - [<img src="./assets/croc.png" height="24" /> Croc](#-croc)
+    - [<img src="./assets/DiscordForOffice.png" height="24"/> DiscordForOffice](#-discordforoffice)
+    - [<img src="./assets/Jarfix.png" height="24"/> Jarfix](#-jarfix)
+    - [<img src="./assets/nodejs.png" height="24" /> NVM](#-nvm)
+    - [<img src="./assets/LeagueOfLegends.svg" height="24"/> League Of Legends](#-league-of-legends)
+    - [<img src="https://rawcdn.githack.com/o2sh/onefetch/main/assets/onefetch.svg" height="24" /> Oneftech](#-oneftech)
+    - [<img src="https://rawcdn.githack.com/safing/web/e0e0e480affba5cc09d8eaa50f0c2a4b411278fb/assets/img/logo/logo.svg" height="24"/> Portmaster](#-portmaster)
+    - [<img src="https://rawcdn.githack.com/TcNobo/TcNo-Acc-Switcher/7490c2de7ff1e1a524c4357e9ba4b1e701b73ed8/other/img/icon/icon256.png" height="24" /> TcNo Account Switcher](#-tcno-account-switcher)
+    - [<img src="https://rawcdn.githack.com/tree-sitter/tree-sitter/7bac34c925ac6fc5493c9ebd4cfc07cf5e1e92f0/docs/assets/images/tree-sitter-small.png" height="24" /> tree-sitter](#-tree-sitter)
+    - [<img src="https://raw.githubusercontent.com/kamack38/chocopkgs/master/assets/windhawk.png" height="24" /> Windhawk](#-windhawk)
+    - [<img src="https://rawcdn.githack.com/kamack38/chocopkgs/4068a86e0e709e70a4f71d720eccf6174ed16ebc/assets/valorant.png" height="24" /> Valorant](#-valorant)
 
 ## <img src="./assets/aur.png" height="32"/> AUR Packages
 

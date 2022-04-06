@@ -6,7 +6,7 @@
     <version>0.9.1</version>
     <authors>Ramen Software</authors>
     <owners>Kamack38</owners>
-    <packageSourceUrl>https://github.com/kamack38/chocopkgs/tree/master/packages/windhawk</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/windhawk</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/14f5a2a65f040ec4e7e2aa3542323c5c9f0fd402/assets/windhawk.png</iconUrl>
     <docsUrl>https://github.com/ramensoftware/windhawk/wiki/</docsUrl>
     <bugTrackerUrl>https://github.com/ramensoftware/windhawk/issues</bugTrackerUrl>
