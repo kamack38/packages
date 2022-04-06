@@ -28,6 +28,10 @@ jobs:
         run: |
           cd ./packages/${{ github.event.inputs.pkgname }}
           bash update.sh
+      - name: 🔃 Get package version
+        run: |
+          source packages/${{ github.event.inputs.pkgname }}/PKGBUILD
+          echo "PKGVER=$pkgver" >> $GITHUB_ENV
       - name: 🚀 Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@v2.2.5
         with:
@@ -36,4 +40,4 @@ jobs:
           commit_username: ${{ secrets.AUR_USERNAME }}
           commit_email: ${{ secrets.AUR_EMAIL }}
           ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
-          commit_message: Update AUR package to ${{ steps.get-latest-tag.outputs.tag }}
+          commit_message: Update AUR package to ${{ env.PKGVER }}

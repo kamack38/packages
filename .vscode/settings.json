@@ -22,6 +22,7 @@
         "onefetch",
         "PKGBUILD",
         "pkgname",
+        "PKGVER",
         "portmaster",
         "tcno-acc-switcher",
         "updpkgsums",
