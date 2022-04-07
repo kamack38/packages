@@ -6,7 +6,7 @@
     <version>0.7.0</version>
     <authors>safing</authors>
     <owners>Kamack38</owners>
-    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/portmaster</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/portmaster</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/safing/web/e0e0e480affba5cc09d8eaa50f0c2a4b411278fb/assets/img/logo/logo.svg</iconUrl>
     <docsUrl>https://docs.safing.io/portmaster/</docsUrl>
     <bugTrackerUrl>https://github.com/safing/portmaster/issues</bugTrackerUrl>

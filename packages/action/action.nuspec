@@ -1,18 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
+    <title>Action!</title>
     <id>action</id>
     <version>4.27.0</version>
-    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/action</packageSourceUrl>
-    <owners>Kamack38</owners>
-    <title>Action!</title>
     <authors>Mirillis</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/action</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/packages/e955e4a1bd6e62aa2aa4a4d6b28c693509ac3fb7/assets/ActionBlack.png</iconUrl>
+    <docsUrl>https://mirillis.com/gameplay-recording-action-tutorials</docsUrl>
     <projectUrl>https://mirillis.com/en/products/action.html</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/8c8ba1ed2152f8f0b997618627010a980bfe6661/assets/ActionBlack.png</iconUrl>
-    <copyright>Copyright (c) 2021 Mirillis Ltd.</copyright>
     <licenseUrl>https://mirillis.com/pdf/eula/Action!-Game-and-screen-recorder-eula.pdf</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://mirillis.com/gameplay-recording-action-tutorials</docsUrl>
+    <copyright>Copyright (c) 2021 Mirillis Ltd.</copyright>
     <tags>action record game mirillis</tags>
     <summary>Mirillis Action! screen recorder allows streaming and real-time recording of Windows desktop in a superb HD video quality.</summary>
     <description>
@@ -21,7 +21,7 @@
 
 Mirillis Action! screen recorder allows streaming and real-time recording of Windows desktop in a superb HD video quality. With Action! you can record and stream your gameplay, web player videos, record music, capture screenshots, add webcams, microphone commentary... and more!
 
-![Logo](https://rawcdn.githack.com/kamack38/chocopkgs/master/assets/Action.png)
+![Logo](https://rawcdn.githack.com/kamack38/chocopkgs/main/assets/Action.png)
 
 
 ## Installation arguments

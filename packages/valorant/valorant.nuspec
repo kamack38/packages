@@ -6,8 +6,8 @@
     <version>41.0.5.4098838</version>
     <authors>Riot Games, Inc</authors>
     <owners>Kamack38</owners>
-    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/valorant</packageSourceUrl>
-    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/4068a86e0e709e70a4f71d720eccf6174ed16ebc/assets/valorant.png</iconUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/valorant</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/packages/e955e4a1bd6e62aa2aa4a4d6b28c693509ac3fb7/assets/Valorant.png</iconUrl>
     <projectUrl>https://playvalorant.com/</projectUrl>
     <docsUrl>https://playvalorant.com/en-us/news/announcements/beginners-guide/</docsUrl>
     <copyright><![CDATA[© 2022 Riot Games, inc. All rights reserved.]]></copyright>

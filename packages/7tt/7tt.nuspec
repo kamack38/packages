@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
+    <title>7+ Taskbar Tweaker</title>
     <id>7tt</id>
     <version>5.12.3</version>
-    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/7tt</packageSourceUrl>
-    <owners>Kamack38</owners>
-    <title>7+ Taskbar Tweaker</title>
     <authors>Michael Maltsev</authors>
-    <projectUrl>https://tweaker.ramensoftware.com/</projectUrl>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/7tt</packageSourceUrl>
     <iconUrl>https://ramensoftware.com/wp-content/uploads/2011/01/7_taskbar_tweaker.png</iconUrl>
-    <copyright>By RaMMicHaeL</copyright>
+    <projectUrl>https://tweaker.ramensoftware.com/</projectUrl>
+    <projectSourceUrl>https://github.com/m417z/7-Taskbar-Tweaker</projectSourceUrl>
     <licenseUrl>https://github.com/m417z/7-Taskbar-Tweaker/blob/master/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/m417z/7-Taskbar-Tweaker</projectSourceUrl>
-    <tags>taskbartweaker taskbar tweaks</tags>
+    <copyright>By RaMMicHaeL</copyright>
     <summary>A program for tweaking the taskbar of Windows 7, 8 and 10. 7+ Taskbar Tweaker provides many customization options, like disabling grouping and middle-click to close.</summary>
+    <tags>taskbartweaker taskbar tweaks</tags>
     <description>
       <![CDATA[
 # 7+ Taskbar Tweaker

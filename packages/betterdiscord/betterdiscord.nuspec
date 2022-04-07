@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
+    <title>BetterDiscord</title>
     <id>betterdiscord</id>
     <version>1.1.1</version>
-    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/betterdiscord</packageSourceUrl>
-    <owners>Kamack38</owners>
-    <title>BetterDiscord</title>
     <authors>BetterDiscord Team</authors>
-    <projectUrl>https://betterdiscord.app/</projectUrl>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/betterdiscord</packageSourceUrl>
     <iconUrl>https://betterdiscord.app/resources/favicon/android-icon-192x192.png</iconUrl>
-    <copyright><![CDATA[© 2015-2022 BetterDiscord Team]]></copyright>
+    <docsUrl>https://github.com/BetterDiscord/BetterDiscord/wiki</docsUrl>
+    <projectUrl>https://betterdiscord.app/</projectUrl>
+    <projectSourceUrl>https://github.com/BetterDiscord/Installer</projectSourceUrl>
     <licenseUrl>https://github.com/BetterDiscord/BetterDiscord/blob/main/LICENSE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/BetterDiscord/Installer</projectSourceUrl>
-    <docsUrl>https://github.com/BetterDiscord/BetterDiscord/wiki</docsUrl>
+    <copyright><![CDATA[© 2015-2022 BetterDiscord Team]]></copyright>
     <tags>better discord dc betterdc</tags>
     <summary>BetterDiscord extends the functionality of DiscordApp by enhancing it with new features.</summary>
     <description>

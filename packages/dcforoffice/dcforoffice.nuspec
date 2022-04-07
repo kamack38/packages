@@ -1,19 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
+    <title>DiscordForOffice</title>
     <id>dcforoffice</id>
     <version>1.2</version>
-    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/dcforoffice</packageSourceUrl>
-    <owners>Kamack38</owners>
-    <title>DiscordForOffice</title>
     <authors>7coil (Leondro Lio)</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/dcforoffice</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/packages/e955e4a1bd6e62aa2aa4a4d6b28c693509ac3fb7/assets/DiscordForOffice.png</iconUrl>
+    <bugTrackerUrl>https://github.com/7coil/DiscordForOffice/issues</bugTrackerUrl>
     <projectUrl>https://github.com/7coil/DiscordForOffice</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/master/assets/DiscordForOffice.png</iconUrl>
-    <copyright>Copyright (c) 2021 Leondro Lio</copyright>
+    <projectSourceUrl>https://github.com/7coil/DiscordForOffice/tree/master/</projectSourceUrl>
     <licenseUrl>https://github.com/7coil/DiscordForOffice/blob/master/LICENCE</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/7coil/DiscordForOffice/tree/master/</projectSourceUrl>
-    <bugTrackerUrl>https://github.com/7coil/DiscordForOffice/issues</bugTrackerUrl>
+    <copyright>Copyright (c) 2021 Leondro Lio</copyright>
     <tags>discord office microsoft-office rpc</tags>
     <summary>Show what you're doing in Microsoft Office to your friends on Discord.</summary>
     <description><![CDATA[

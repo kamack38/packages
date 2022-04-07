@@ -1,20 +1,20 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
+    <title>tree-sitter</title>
     <id>tree-sitter</id>
     <version>0.20.6</version>
-    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/tree-sitter</packageSourceUrl>
-    <owners>Kamack38</owners>
-    <title>tree-sitter</title>
     <authors>Max Brunsfeld, contributors</authors>
-    <projectUrl>https://tree-sitter.github.io/tree-sitter/</projectUrl>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/tree-sitter</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/tree-sitter/tree-sitter/7bac34c925ac6fc5493c9ebd4cfc07cf5e1e92f0/docs/assets/images/tree-sitter-small.png</iconUrl>
-    <copyright>Copyright (c) 2018-2021 Max Brunsfeld</copyright>
-    <licenseUrl>https://github.com/tree-sitter/tree-sitter/blob/master/LICENSE</licenseUrl>
-    <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <projectSourceUrl>https://github.com/tree-sitter/tree-sitter/tree/master</projectSourceUrl>
     <docsUrl>https://tree-sitter.github.io/tree-sitter/</docsUrl>
     <bugTrackerUrl>https://github.com/tree-sitter/tree-sitter/issues</bugTrackerUrl>
+    <projectUrl>https://tree-sitter.github.io/tree-sitter/</projectUrl>
+    <projectSourceUrl>https://github.com/tree-sitter/tree-sitter/tree/master</projectSourceUrl>
+    <licenseUrl>https://github.com/tree-sitter/tree-sitter/blob/master/LICENSE</licenseUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <copyright>Copyright (c) 2018-2021 Max Brunsfeld</copyright>
     <tags>tree-sitter</tags>
     <summary>Tree-sitter is a parser generator tool and an incremental parsing library. It can build a concrete syntax tree for a source file and efficiently update the syntax tree as the source file is edited.</summary>
     <description><![CDATA[

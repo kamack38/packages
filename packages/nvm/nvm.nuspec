@@ -7,8 +7,8 @@
     <version>1.1.9</version>
     <authors>coreybutler</authors>
     <owners>Kamack38</owners>
-    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/nvm.install</packageSourceUrl>
-    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/9bb968ea5a6c72ed74ac22406b93a9f1ca4491a5/assets/nodejs.png</iconUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/nvm.install</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/packages/e955e4a1bd6e62aa2aa4a4d6b28c693509ac3fb7/assets/nodejs.png</iconUrl>
     <docsUrl>https://github.com/coreybutler/nvm-windows/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/coreybutler/nvm-windows/issues</bugTrackerUrl>
     <projectUrl>https://github.com/coreybutler/nvm-windows</projectUrl>

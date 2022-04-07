@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
+    <title>League Of Legends (EUNE)</title>
     <id>leagueoflegendseune</id>
     <version>41.0.5.4098838</version>
-    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/leagueoflegendseune</packageSourceUrl>
-    <owners>Kamack38</owners>
-    <title>League Of Legends (EUNE)</title>
     <authors>Riot Games, Inc</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/leagueoflegendseune</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/packages/e955e4a1bd6e62aa2aa4a4d6b28c693509ac3fb7/assets/LeagueOfLegends.svg</iconUrl>
+    <docsUrl>https://www.leagueoflegends.com/en-gb/how-to-play/</docsUrl>
     <projectUrl>https://www.leagueoflegends.com/</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/8c8ba1ed2152f8f0b997618627010a980bfe6661/assets/LeagueOfLegends.svg</iconUrl>
-    <copyright><![CDATA[© 2021 Riot Games, inc. All rights reserved.]]></copyright>
     <licenseUrl>https://www.riotgames.com/en/terms-of-service</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://www.leagueoflegends.com/en-gb/how-to-play/</docsUrl>
+    <copyright><![CDATA[© 2021 Riot Games, inc. All rights reserved.]]></copyright>
     <tags>leagueoflegends eune riot riotgames launcher</tags>
     <summary>EUNE (Europe North and East) Installer for League of Legends from Riot Games.</summary>
     <description><![CDATA[
 # League Of Legends
 
-![Logo](https://rawcdn.githack.com/kamack38/chocopkgs/master/assets/LeagueOfLegendsBanner.png)
+![Logo](https://rawcdn.githack.com/kamack38/packages/e955e4a1bd6e62aa2aa4a4d6b28c693509ac3fb7/assets/LeagueOfLegendsBanner.png)
 
 League of Legends Installer of EUNE region.
 
