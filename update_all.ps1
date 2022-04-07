@@ -73,8 +73,8 @@ $Options = [ordered]@{
         $nupkg = Get-ChildItem -Exclude 'nupkgs' | Get-ChildItem -Recurse | Where-Object Name -Match .*.nupkg
         if ($nupkg -ne $null) {
             $pkgName = ($nupkg.Name -split ".\d+")[0]
-            Remove-Item "..\..\nupkgs\$pkgName.*"
-            Get-ChildItem -Depth 1 | Where-Object Name -Match .*.nupkg | Move-Item -Destination ..\..\nupkgs\ -Force
+            Remove-Item "..\..\dist\$pkgName.*"
+            Get-ChildItem -Depth 1 | Where-Object Name -Match .*.nupkg | Move-Item -Destination ..\..\dist\ -Force
         }
     }
 }
