@@ -23,7 +23,7 @@
     - [<img src="./assets/Jarfix.png" height="24"/> Jarfix](#-jarfix)
     - [<img src="./assets/nodejs.png" height="24" /> NVM](#-nvm)
     - [<img src="./assets/LeagueOfLegends.svg" height="24"/> League Of Legends](#-league-of-legends)
-    - [<img src="https://rawcdn.githack.com/o2sh/onefetch/main/assets/onefetch.svg" height="24" /> Oneftech](#-oneftech)
+    - [<img src="https://rawcdn.githack.com/o2sh/onefetch/main/assets/onefetch.svg" height="24" /> Onefetch](#-onefetch)
     - [<img src="https://rawcdn.githack.com/safing/web/e0e0e480affba5cc09d8eaa50f0c2a4b411278fb/assets/img/logo/logo.svg" height="24"/> Portmaster](#-portmaster)
     - [<img src="https://rawcdn.githack.com/TcNobo/TcNo-Acc-Switcher/7490c2de7ff1e1a524c4357e9ba4b1e701b73ed8/other/img/icon/icon256.png" height="24" /> TcNo Account Switcher](#-tcno-account-switcher)
     - [<img src="https://rawcdn.githack.com/tree-sitter/tree-sitter/7bac34c925ac6fc5493c9ebd4cfc07cf5e1e92f0/docs/assets/images/tree-sitter-small.png" height="24" /> tree-sitter](#-tree-sitter)
@@ -132,7 +132,7 @@ choco install dcforoffice
 
 ### <img src="./assets/Jarfix.png" height="24"/> Jarfix
 
-> If you doubleclick on a jar file, and your Java application does not start, your .jar association has been hijacked. You can fix the problem with Jarfix.
+> If you double click on a jar file, and your Java application does not start, your .jar association has been hijacked. You can fix the problem with Jarfix.
 
 [[Source](https://johann.loefflmann.net/en/software/jarfix/index.html)] [[Chocolatey](https://community.chocolatey.org/packages/jarfix/)] [[Package](/packages/jarfix)]
 
@@ -166,7 +166,7 @@ _This package is automatically updated using [AU](https://github.com/majkinetor/
 choco install leagueoflegendseune
 ```
 
-### <img src="https://rawcdn.githack.com/o2sh/onefetch/main/assets/onefetch.svg" height="24" /> Oneftech
+### <img src="https://rawcdn.githack.com/o2sh/onefetch/main/assets/onefetch.svg" height="24" /> Onefetch
 
 _This package is automatically updated using [AU](https://github.com/majkinetor/au)_
 
