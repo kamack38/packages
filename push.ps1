@@ -5,7 +5,7 @@ param(
                 $WordToComplete,
                 $CommandAst,
                 $FakeBoundParameters )
-            $packages = (Get-ChildItem -Path $PSScriptRoot\nupkgs).Name
+            $packages = (Get-ChildItem -Path $PSScriptRoot\dist).Name
             $searchBlock = { $_ -like "$WordToComplete*" }
             $completion = $packages | Where-Object $searchBlock 
             return $completion
@@ -14,4 +14,4 @@ param(
     [switch]$p
 )
 
-choco push "$PSScriptRoot\nupkgs\$PackageName"
+choco push "$PSScriptRoot\dist\$PackageName"
