@@ -1,24 +1,24 @@
 <?xml version="1.0" encoding="utf-8"?>
 <package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
   <metadata>
+    <title>Jarfix</title>
     <id>jarfix</id>
     <version>3.0.0</version>
-    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/jarfix</packageSourceUrl>
-    <owners>Kamack38</owners>
-    <title>Jarfix</title>
     <authors><![CDATA[Johann Nepomuk Löfflmann]]></authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/jarfix</packageSourceUrl>
+    <iconUrl>https://rawcdn.githack.com/kamack38/packages/e955e4a1bd6e62aa2aa4a4d6b28c693509ac3fb7/assets/Jarfix.png</iconUrl>
+    <docsUrl>https://johann.loefflmann.net/en/software/jarfix/index.html#Description</docsUrl>
     <projectUrl>https://johann.loefflmann.net/en/software/jarfix/index.html</projectUrl>
-    <iconUrl>https://rawcdn.githack.com/kamack38/chocopkgs/8c8ba1ed2152f8f0b997618627010a980bfe6661/assets/Jarfix.png</iconUrl>
-    <copyright><![CDATA[Jarfix Copyright © 2002-2019 by Dipl.-Inf. (FH) Johann Nepomuk Löfflmann o]]></copyright>
     <licenseUrl>https://johann.loefflmann.net/downloads/jarfix-license.txt</licenseUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <docsUrl>https://johann.loefflmann.net/en/software/jarfix/index.html#Description</docsUrl>
+    <copyright><![CDATA[Jarfix Copyright © 2002-2019 by Dipl.-Inf. (FH) Johann Nepomuk Löfflmann o]]></copyright>
     <tags>java fix problem jar file</tags>
     <summary>If you doubleclick on a jar file, and your Java application does not start, your .jar association has been hijacked. You can fix the problem with Jarfix.</summary>
     <description><![CDATA[
 # JarFix
 
-![Logo](https://rawcdn.githack.com/kamack38/chocopkgs/master/assets/Jarfix.png)
+![Logo](https://rawcdn.githack.com/kamack38/packages/e955e4a1bd6e62aa2aa4a4d6b28c693509ac3fb7/assets/Jarfix.png)
 
 ## The problem
 

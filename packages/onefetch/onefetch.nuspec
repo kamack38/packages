@@ -6,7 +6,7 @@
     <version>2.12.0</version>
     <authors>o2sh, contributors</authors>
     <owners>Kamack38</owners>
-    <packageSourceUrl>https://github.com/kamack38/packages/tree/master/packages/onefetch</packageSourceUrl>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/onefetch</packageSourceUrl>
     <iconUrl>https://rawcdn.githack.com/o2sh/onefetch/main/assets/onefetch.svg</iconUrl>
     <docsUrl>https://github.com/o2sh/onefetch/wiki</docsUrl>
     <bugTrackerUrl>https://github.com/o2sh/onefetch/issues</bugTrackerUrl>
