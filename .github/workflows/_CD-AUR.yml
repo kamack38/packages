@@ -28,6 +28,10 @@ jobs:
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
+      - name: 🔧 Run update script
+        id: updatePKGs
+        run: |
+          bash update-pkg.sh ${{ matrix.pkgname }}
       - name: 🔃 Get package version
         run: |
           source packages/${{ matrix.pkgname }}/PKGBUILD
