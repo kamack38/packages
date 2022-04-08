@@ -44,4 +44,4 @@ fi
 
 updatedPackages+="]"
 
-echo $updatedPackages
+echo "::set-output name=updatedPackages::$updatedPackages"

@@ -31,9 +31,14 @@ jobs:
       - name: 📚 Checkout
         uses: actions/checkout@v2.3.4
       - name: 🔧 Run update script
+        id: updatePKGs
         run: |
-          bash update-pkgs.sh
-      - name: 📌 Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+          bash update-pkg.sh
+      # - name: 📌 Commit changes
+      #   uses: stefanzweifel/git-auto-commit-action@v4
+      #   with:
+      #     commit_message: 'feat: 🔼 Update AUR packages'
+      - name: 🚀 Publish updated packages
+        uses: kamack38/packages/.github/workflows/_CD-AUR.yml@main
         with:
-          commit_message: 'feat: 🔼 Update AUR packages'
+          packages: ${{ steps.updatePKGs.outputs.updatedPackages }}
