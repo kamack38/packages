@@ -3,41 +3,41 @@ name: 🚀 Publish AUR package
 on:
   workflow_call:
     inputs:
-      pkgname:
+      packages:
         description: Name of the package
         required: true
         type: string
   workflow_dispatch:
     inputs:
-      pkgname:
+      packages:
         description: Name of the package
         required: true
         type: choice
         options:
-          - oh-my-posh-bin
+          - "['oh-my-posh-bin']"
 
 jobs:
   publish-aur:
+    strategy:
+      fail-fast: false
+      matrix:
+        pkgname: ${{ fromJSON(format('{0}{1}', github.event.inputs.packages, inputs.packages)) }}
     runs-on: ubuntu-latest
     steps:
       - name: 📚 Checkout
         uses: actions/checkout@v2
         with:
           fetch-depth: 0
-      - name: 🔧 Update package
-        run: |
-          cd ./packages/${{ github.event.inputs.pkgname }}
-          bash update.sh
       - name: 🔃 Get package version
         run: |
-          source packages/${{ github.event.inputs.pkgname }}/PKGBUILD
+          source packages/${{ matrix.pkgname }}/PKGBUILD
           echo "PKGVER=$pkgver" >> $GITHUB_ENV
       - name: 🚀 Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@v2.2.5
         with:
-          pkgname: ${{ github.event.inputs.pkgname }}
-          pkgbuild: ./packages/${{ github.event.inputs.pkgname }}/PKGBUILD
+          pkgname: ${{ matrix.pkgname }}
+          pkgbuild: ./packages/${{ matrix.pkgname }}/PKGBUILD
           commit_username: ${{ secrets.AUR_USERNAME }}
           commit_email: ${{ secrets.AUR_EMAIL }}
           ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
-          commit_message: Update AUR package to ${{ env.PKGVER }}
+          commit_message: Update ${{ matrix.pkgname }} package to ${{ env.PKGVER }}
