@@ -8,6 +8,12 @@ on:
       parameters:
         description: 'Parameters for updater'
         required: false
+      aur-package:
+        description: Name of the package
+        required: false
+        type: choice
+        options:
+          - "['oh-my-posh-bin']"
 
 jobs:
   update-choco-packages:
