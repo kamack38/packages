@@ -8,10 +8,6 @@ on:
       parameters:
         description: 'Parameters for updater'
         required: false
-      aur-package:
-        description: Name of the package
-        required: false
-        type: string
 
 jobs:
   update-choco-packages:
