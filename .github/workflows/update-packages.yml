@@ -11,7 +11,7 @@ on:
 
 jobs:
   update-choco-packages:
-    runs-on: windows-2019
+    runs-on: windows-latest
     steps:
       - name: 📚 Checkout
         uses: actions/checkout@v2.3.4
