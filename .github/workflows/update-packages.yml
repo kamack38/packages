@@ -37,7 +37,7 @@ jobs:
       - name: 📚 Checkout
         uses: actions/checkout@v2.3.4
       - name: 🔧 Run update script
-        id: updatePKGs
+        id: updatePKGs ${{ github.event.inputs.aur-package }}
         run: |
           bash update-pkg.sh
       - name: 📌 Commit changes
