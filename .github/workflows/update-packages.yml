@@ -23,7 +23,7 @@ jobs:
           Import-Module au
       - name: 🍫 Set Chocolatey api key
         run: |
-          choco apikey --key  ${{ secrets.CHOCO_API_KEY }} --source https://push.chocolatey.org/
+          choco apikey --key ${{ secrets.CHOCO_API_KEY }} --source https://push.chocolatey.org/
       - name: 🔧 Run update script
         shell: powershell
         run: |
