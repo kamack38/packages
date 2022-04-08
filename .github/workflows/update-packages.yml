@@ -33,3 +33,7 @@ jobs:
       - name: 🔧 Run update script
         run: |
           bash update-pkgs.sh
+      - name: 📌 Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'feat: 🔼 Update AUR packages'
