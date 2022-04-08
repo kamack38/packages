@@ -4,6 +4,8 @@ param([string[]] $Name, [string] $ForcedPackages, [string] $Root = (Join-Path $P
 
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
+if (Test-Path $PSScriptRoot/update_vars.ps1) { mkdir $PSScriptRoot/dist }
+
 $Options = [ordered]@{
     WhatIf         = $au_WhatIf                              # Whatif all packages
     Force          = $false                                  # Force all packages
@@ -70,10 +72,10 @@ $Options = [ordered]@{
         $global:au_Version = $Matches['version']
     }
     AfterEach      = {
-        $nupkg = Get-ChildItem -Exclude 'nupkgs' | Get-ChildItem -Recurse | Where-Object Name -Match .*.nupkg
+        $nupkg = Get-ChildItem -Exclude 'dist' | Get-ChildItem -Recurse | Where-Object Name -Match .*.nupkg
         if ($nupkg -ne $null) {
             $pkgName = ($nupkg.Name -split ".\d+")[0]
-            Remove-Item "..\..\dist\$pkgName.*"
+            if (Test-Path -Path "..\..\dist\$pkgName.*") { Remove-Item "..\..\dist\$pkgName.*" }
             Get-ChildItem -Depth 1 | Where-Object Name -Match .*.nupkg | Move-Item -Destination ..\..\dist\ -Force
         }
     }
