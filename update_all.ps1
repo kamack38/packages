@@ -4,7 +4,7 @@ param([string[]] $Name, [string] $ForcedPackages, [string] $Root = (Join-Path $P
 
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
-if (Test-Path $PSScriptRoot/dist) { mkdir $PSScriptRoot/dist }
+if (!(Test-Path $PSScriptRoot/dist)) { mkdir $PSScriptRoot/dist }
 
 $Options = [ordered]@{
     WhatIf         = $au_WhatIf                              # Whatif all packages
