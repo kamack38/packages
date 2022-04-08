@@ -28,7 +28,7 @@ jobs:
         shell: powershell
         run: |
           $Env:au_Push = true
-          $Env:github_api_key = ${{ secrets.GH_PAT }} 
+          $Env:github_api_key = "${{ secrets.GH_PAT }}"
           .\update_all.ps1 ${{ github.event.inputs.parameters }}
   update-aur-packages:
     runs-on: ubuntu-latest
