@@ -11,10 +11,7 @@ on:
       aur-package:
         description: Name of the package
         required: false
-        type: choice
-        options:
-          - ''
-          - "['oh-my-posh-bin']"
+        type: string
 
 jobs:
   update-choco-packages:
