@@ -40,14 +40,10 @@ jobs:
         id: updatePKGs
         run: |
           bash update-pkg.sh
-      # - name: 📌 Commit changes
-      #   uses: stefanzweifel/git-auto-commit-action@v4
-      #   with:
-      #     commit_message: 'feat: 🔼 Update AUR packages'
-      # - name: 🚀 Publish updated packages
-      #   uses: kamack38/packages/.github/workflows/_CD-AUR.yml@main
-      #   with:
-      #     packages: ${{ steps.updatePKGs.outputs.updatedPackages }}
+      - name: 📌 Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'feat: 🔼 Update AUR packages (${{ steps.updatePKGs.outputs.updatedPackages }})'
   publish-aur-packages:
     name: 🚀 Publish updated packages
     needs: update-aur-packages
