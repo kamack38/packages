@@ -12,6 +12,7 @@
 - [📦 Packages](#-packages)
   - [<img src="./assets/aur.png" height="32"/> AUR Packages](#-aur-packages)
     - [<img src="https://rawcdn.githack.com/jandedobbeleer/oh-my-posh/19b8cf2cf8401bba068f7d417a4fcc33947c64f2/docs/static/img/logo.png" height="24"/> oh-my-posh](#-oh-my-posh)
+    - [solve3-cli](#solve3-cli)
   - [<img src="./assets/Chocolatey.svg" height="32" /> Chocolatey Packages](#-chocolatey-packages)
     - [<img src="./assets/7tt.png" height="24"/> 7+ Taskbar Tweaker](#-7-taskbar-tweaker)
     - [<img src="./assets/Action.png" height="24"/> Action](#-action)
@@ -37,6 +38,16 @@
 > A prompt theme engine for any shell.
 
 [[Source](https://ohmyposh.dev/)] [[AUR](https://aur.archlinux.org/packages/oh-my-posh-bin)] [[Package](/packages/oh-my-posh-bin)]
+
+```shell
+yay -S oh-my-posh-bin
+```
+
+### solve3-cli
+
+> A simple cli to use Solve3 from your terminal
+
+[[Source](https://github.com/kamack38/solve3-cli)] [[AUR](https://aur.archlinux.org/packages/solve3-cli)] [[Package](/packages/solve3-cli)]
 
 ```shell
 yay -S oh-my-posh-bin
