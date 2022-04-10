@@ -27,6 +27,7 @@
         "pkgname",
         "PKGVER",
         "portmaster",
+        "shfmt",
         "tcno-acc-switcher",
         "Ubisoft",
         "updpkgsums",
