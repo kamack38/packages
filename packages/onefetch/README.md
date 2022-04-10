@@ -1,4 +1,4 @@
-﻿# Chocolatey-Onefetch
+﻿# Onefetch
 
 <h3 align="center"><img src="https://rawcdn.githack.com/o2sh/onefetch/main/assets/onefetch.svg" height="130px"></h3>
 
