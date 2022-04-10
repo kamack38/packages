@@ -26,6 +26,7 @@
     - [<img src="./assets/LeagueOfLegends.svg" height="24"/> League Of Legends](#-league-of-legends)
     - [<img src="https://rawcdn.githack.com/o2sh/onefetch/main/assets/onefetch.svg" height="24" /> Onefetch](#-onefetch)
     - [<img src="https://rawcdn.githack.com/safing/web/e0e0e480affba5cc09d8eaa50f0c2a4b411278fb/assets/img/logo/logo.svg" height="24"/> Portmaster](#-portmaster)
+    - [shfmt](#shfmt)
     - [<img src="https://rawcdn.githack.com/TcNobo/TcNo-Acc-Switcher/7490c2de7ff1e1a524c4357e9ba4b1e701b73ed8/other/img/icon/icon256.png" height="24" /> TcNo Account Switcher](#-tcno-account-switcher)
     - [<img src="https://rawcdn.githack.com/tree-sitter/tree-sitter/7bac34c925ac6fc5493c9ebd4cfc07cf5e1e92f0/docs/assets/images/tree-sitter-small.png" height="24" /> tree-sitter](#-tree-sitter)
     - [<img src="https://raw.githubusercontent.com/kamack38/chocopkgs/master/assets/windhawk.png" height="24" /> Windhawk](#-windhawk)
@@ -199,6 +200,18 @@ _This package is automatically updated using [AU](https://github.com/majkinetor/
 
 ```powershell
 choco install portmaster
+```
+
+### shfmt
+
+_This package is automatically updated using [AU](https://github.com/majkinetor/au)_
+
+> Portmaster is a free and open-source application that puts you back in charge over all your computer's network connections.
+
+[[Source](https://github.com/mvdan/sh)] [[Chocolatey](https://community.chocolatey.org/packages/shfmt/)] [[Package](/packages/shfmt)]
+
+```powershell
+choco install shfmt
 ```
 
 ### <img src="https://rawcdn.githack.com/TcNobo/TcNo-Acc-Switcher/7490c2de7ff1e1a524c4357e9ba4b1e701b73ed8/other/img/icon/icon256.png" height="24" /> TcNo Account Switcher
