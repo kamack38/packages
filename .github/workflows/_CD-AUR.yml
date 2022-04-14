@@ -37,7 +37,7 @@ jobs:
           source packages/${{ matrix.pkgname }}/PKGBUILD
           echo "PKGVER=$pkgver" >> $GITHUB_ENV
       - name: 🚀 Publish AUR package
-        uses: ManiaciaChao/aur-sync-action@v1.2
+        uses: KSXGitHub/github-actions-deploy-aur@master
         with:
           pkgname: ${{ matrix.pkgname }}
           pkgbuild: ./packages/${{ matrix.pkgname }}/PKGBUILD
