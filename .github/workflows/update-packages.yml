@@ -40,7 +40,7 @@ jobs:
       - name: 🔧 Run update script
         id: updatePKGs
         run: |
-          bash update-pkg.sh ${{ github.event.inputs.aur-package }}
+          bash update-pkg.sh
       - name: 📌 Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
