@@ -43,7 +43,7 @@ jobs:
       packages: ${{ steps.gen-matrix.outputs.packages }}
   aur:
     runs-on: ubuntu-latest
-    needs: generate-matrix
+    needs: generate-aur-matrix
     strategy:
       fail-fast: false
       matrix:
