@@ -41,13 +41,13 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: Install SSH key
+      - name: 🔧 Install SSH key
         uses: shimataro/ssh-key-action@v2
         with:
           key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
-      - name: Check PKGBUILD
+      - name: 🛠️ Check PKGBUILD
         id: build-test
         uses: ouuan/pkgbuild-action@f2b314d7fd3bfbe8432ca42da2f37b1fa9a208d2
         with:
@@ -70,7 +70,7 @@ jobs:
 
       - name: Clone AUR and update
         run: |
-          message="$(git log -n1 --pretty='%B' "${{ matrix.pkgname }}")"
+          message="Update ${{ matrix.pkgname }}"
           git clone ssh://aur@aur.archlinux.org/${{ matrix.pkgname }}.git ../aur
           shopt -s dotglob
           shopt -s extglob
