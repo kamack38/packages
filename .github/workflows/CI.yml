@@ -50,7 +50,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        pkgname: ${{ fromJson(needs.generate-matrix.outputs.packages) }}
+        pkgname: ${{ fromJson(needs.generate-aur-matrix.outputs.packages) }}
     steps:
       - name: 📚 Checkout
         uses: actions/checkout@v2
