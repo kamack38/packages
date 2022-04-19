@@ -24,7 +24,6 @@ jobs:
           'jarfix',
           'leagueoflegendseune',
           'nvm.install',
-          'nvm.portable',
           'onefetch',
           'portmaster',
           'shfmt',
@@ -33,6 +32,7 @@ jobs:
           'windhawk',
           'valorant',
         ]
+
   generate-aur-matrix:
     runs-on: ubuntu-latest
     steps:
