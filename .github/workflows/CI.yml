@@ -3,6 +3,7 @@ name: 🎡 CI
 on:
   push:
     paths:
+      - '.github/workflows/CI.yml'
       - '.github/workflows/_test-choco-package.yml'
       - 'packages/**'
   workflow_dispatch:
