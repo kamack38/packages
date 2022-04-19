@@ -41,7 +41,7 @@
 [[Source](https://ohmyposh.dev/)] [[AUR](https://aur.archlinux.org/packages/oh-my-posh-bin)] [[Package](/packages/oh-my-posh-bin)]
 
 ```shell
-yay -S oh-my-posh-bin
+paru -S oh-my-posh-bin
 ```
 
 ### solve3-cli
@@ -51,7 +51,7 @@ yay -S oh-my-posh-bin
 [[Source](https://github.com/kamack38/solve3-cli)] [[AUR](https://aur.archlinux.org/packages/solve3-cli)] [[Package](/packages/solve3-cli)]
 
 ```shell
-yay -S oh-my-posh-bin
+paru -S oh-my-posh-bin
 ```
 
 ## <img src="./assets/Chocolatey.svg" height="32" /> Chocolatey Packages
