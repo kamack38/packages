@@ -84,7 +84,7 @@ jobs:
           path: ${{ steps.epoch.outputs.pkgfile }}
 
       - name: Get new version
-        id: old-ver
+        id: new-ver
         run: |
           source ./packages/${{ matrix.pkgname }}/PKGBUILD
           echo "$pkgver"
