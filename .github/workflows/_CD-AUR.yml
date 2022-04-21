@@ -66,7 +66,6 @@ jobs:
         uses: hapakaien/archlinux-package-action@v2
         with:
           path: packages/${{ matrix.pkgname }}
-          flags: '-g && echo "s"'
 
       # - name: 🛠️ Check PKGBUILD
       #   id: build-test
