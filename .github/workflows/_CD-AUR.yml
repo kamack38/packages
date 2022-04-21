@@ -7,6 +7,14 @@ on:
         description: Name of the package
         required: true
         type: string
+    secrets:
+      AUR_SSH_PRIVATE_KEY:
+        description: Private key for the AUR account
+        required: true
+      KNOWN_HOSTS:
+        description: Known hosts file
+        required: true
+
   workflow_dispatch:
     inputs:
       packages:
@@ -53,6 +61,10 @@ jobs:
         with:
           path: ./packages/${{ matrix.pkgname }}
 
+      - name: 🔃 Show diff
+        run: |
+          git diff
+
       - name: Handle epoch
         id: epoch
         run: |
@@ -91,6 +103,9 @@ jobs:
 
           https://github.com/${{github.repository}}/actions/runs/${{github.run_id}}" && echo "::warning::Pushed to AUR:%0A$(escape "$message")" )
           git push
+      - name: 🔃 Show diff
+        run: |
+          git diff
 
   # publish-aur:
   #   strategy:
