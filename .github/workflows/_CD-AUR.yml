@@ -68,6 +68,10 @@ jobs:
         with:
           path: ./packages/${{ matrix.pkgname }}
 
+      - name: Show status
+        run: |
+          git status
+
       - name: Handle epoch
         id: epoch
         run: |
