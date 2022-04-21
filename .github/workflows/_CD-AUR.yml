@@ -66,31 +66,32 @@ jobs:
         uses: hapakaien/archlinux-package-action@v2
         with:
           path: ./packages/${{ matrix.pkgname }}
+          flags: '-g && echo "s"'
 
-      - name: 🛠️ Check PKGBUILD
-        id: build-test
-        uses: ouuan/pkgbuild-action@master
-        with:
-          path: ./packages/${{ matrix.pkgname }}
+      # - name: 🛠️ Check PKGBUILD
+      #   id: build-test
+      #   uses: ouuan/pkgbuild-action@master
+      #   with:
+      #     path: ./packages/${{ matrix.pkgname }}
 
       - name: Show status
         run: |
           git status
 
-      - name: Handle epoch
-        id: epoch
-        run: |
-          oldname="${{ steps.build-test.outputs.pkgfile }}"
-          newname="$(echo "$oldname" | sed -e 's/[^A-Za-z0-9._-]/_/g')"
-          if [[ "$oldname" != "$newname" ]]; then
-            mv "$oldname" "$newname"
-          fi
-          echo "::set-output name=pkgfile::$newname"
+      # - name: Handle epoch
+      #   id: epoch
+      #   run: |
+      #     oldname="${{ steps.build-test.outputs.pkgfile }}"
+      #     newname="$(echo "$oldname" | sed -e 's/[^A-Za-z0-9._-]/_/g')"
+      #     if [[ "$oldname" != "$newname" ]]; then
+      #       mv "$oldname" "$newname"
+      #     fi
+      #     echo "::set-output name=pkgfile::$newname"
 
-      - uses: actions/upload-artifact@v2
-        with:
-          name: ${{ matrix.pkgname }}-${{ github.run_id }}
-          path: ${{ steps.epoch.outputs.pkgfile }}
+      # - uses: actions/upload-artifact@v2
+      #   with:
+      #     name: ${{ matrix.pkgname }}-${{ github.run_id }}
+      #     path: ${{ steps.epoch.outputs.pkgfile }}
 
       - name: Get new version
         id: new-ver
