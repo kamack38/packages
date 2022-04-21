@@ -55,15 +55,17 @@ jobs:
           key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
+      - name: Get old version
+        id: old-ver
+        run: |
+          source ./packages/${{ matrix.pkgname }}/PKGBUILD
+          echo "::set-output name=old-ver::$pkgver"
+
       - name: 🛠️ Check PKGBUILD
         id: build-test
-        uses: ouuan/pkgbuild-action@f2b314d7fd3bfbe8432ca42da2f37b1fa9a208d2
+        uses: ouuan/pkgbuild-action@master
         with:
           path: ./packages/${{ matrix.pkgname }}
-
-      - name: 🔃 Show diff
-        run: |
-          git diff
 
       - name: Handle epoch
         id: epoch
@@ -80,32 +82,29 @@ jobs:
           name: ${{ matrix.pkgname }}-${{ github.run_id }}
           path: ${{ steps.epoch.outputs.pkgfile }}
 
-      - name: 🔃 Clone AUR and update
-        run: |
-          message="Update ${{ matrix.pkgname }}"
-          git clone ssh://aur@aur.archlinux.org/${{ matrix.pkgname }}.git ../aur
-          shopt -s dotglob
-          shopt -s extglob
-          rm ../aur/!(.git|.|..) || true
-          cp -r packages/${{ matrix.pkgname }}/*  ../aur
-          cd ../aur
-          git config user.name "GitHub Action"
-          git config user.email "action@github.com"
-          git add -A
-          escape() {
-            local content="$1"
-            content="${content//'%'/'%25'}"
-            content="${content//$'\n'/'%0A'}"
-            content="${content//$'\r'/'%0D'}"
-            echo "$content"
-          }
-          git diff-index @ --exit-code --quiet || ( git commit -m "Update from GitHub Actions: $message
+      # - name: 🔃 Clone AUR and update
+      #   run: |
+      #     message="Update ${{ matrix.pkgname }}"
+      #     git clone ssh://aur@aur.archlinux.org/${{ matrix.pkgname }}.git ../aur
+      #     shopt -s dotglob
+      #     shopt -s extglob
+      #     rm ../aur/!(.git|.|..) || true
+      #     cp -r packages/${{ matrix.pkgname }}/*  ../aur
+      #     cd ../aur
+      #     git config user.name "GitHub Action"
+      #     git config user.email "action@github.com"
+      #     git add -A
+      #     escape() {
+      #       local content="$1"
+      #       content="${content//'%'/'%25'}"
+      #       content="${content//$'\n'/'%0A'}"
+      #       content="${content//$'\r'/'%0D'}"
+      #       echo "$content"
+      #     }
+      #     git diff-index @ --exit-code --quiet || ( git commit -m "Update from GitHub Actions: $message
 
-          https://github.com/${{github.repository}}/actions/runs/${{github.run_id}}" && echo "::warning::Pushed to AUR:%0A$(escape "$message")" )
-          git push
-      - name: 🔃 Show diff
-        run: |
-          git diff
+      #     https://github.com/${{github.repository}}/actions/runs/${{github.run_id}}" && echo "::warning::Pushed to AUR:%0A$(escape "$message")" )
+      #     git push
 
   # publish-aur:
   #   strategy:

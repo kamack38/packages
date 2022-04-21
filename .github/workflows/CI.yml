@@ -58,6 +58,6 @@ jobs:
           fetch-depth: 0
       - name: 🛠️ Check PKGBUILD
         id: build-test
-        uses: ouuan/pkgbuild-action@f2b314d7fd3bfbe8432ca42da2f37b1fa9a208d2
+        uses: ouuan/pkgbuild-action@master
         with:
           path: ./packages/${{ matrix.pkgname }}
