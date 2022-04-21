@@ -47,7 +47,7 @@ jobs:
   #         commit_message: 'feat: 🔼 Update AUR packages (${{ steps.updatePKGs.outputs.updatedPackages }})'
   publish-aur-packages:
     name: 🚀 Publish updated packages
-    needs: update-aur-packages
+    # needs: update-aur-packages
     if: ${{ needs.update-aur-packages.outputs.updatedPackages != '[ ]' }}
     uses: kamack38/packages/.github/workflows/_CD-AUR.yml@main
     with:
