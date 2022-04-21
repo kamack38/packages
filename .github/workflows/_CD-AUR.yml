@@ -58,14 +58,14 @@ jobs:
       - name: Get old version
         id: old-ver
         run: |
-          source ./packages/${{ matrix.pkgname }}/PKGBUILD
+          source packages/${{ matrix.pkgname }}/PKGBUILD
           echo "$pkgver"
           echo "::set-output name=old-ver::$pkgver"
 
       - name: Validate package
         uses: hapakaien/archlinux-package-action@v2
         with:
-          path: ./packages/${{ matrix.pkgname }}
+          path: packages/${{ matrix.pkgname }}
           flags: '-g && echo "s"'
 
       # - name: 🛠️ Check PKGBUILD
@@ -96,7 +96,7 @@ jobs:
       - name: Get new version
         id: new-ver
         run: |
-          source ./packages/${{ matrix.pkgname }}/PKGBUILD
+          source packages/${{ matrix.pkgname }}/PKGBUILD
           echo "$pkgver"
           echo "::set-output name=new-ver::$pkgver"
 
