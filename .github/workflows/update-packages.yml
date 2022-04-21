@@ -10,26 +10,26 @@ on:
         required: false
 
 jobs:
-  update-choco-packages:
-    runs-on: windows-latest
-    steps:
-      - name: 📚 Checkout
-        uses: actions/checkout@v2.3.4
-      - name: 🛠️ Install & Import AU
-        shell: powershell
-        run: |
-          Set-PSRepository PSGallery -InstallationPolicy Trusted
-          Install-Module au
-          Import-Module au
-      - name: 🍫 Set Chocolatey api key
-        run: |
-          choco apikey --key ${{ secrets.CHOCO_API_KEY }} --source https://push.chocolatey.org/
-      - name: 🔧 Run update script
-        shell: powershell
-        run: |
-          $Env:au_Push = $true
-          $Env:github_api_key = "${{ secrets.GH_PAT }}"
-          .\update_all.ps1 ${{ github.event.inputs.parameters }}
+  # update-choco-packages:
+  #   runs-on: windows-latest
+  #   steps:
+  #     - name: 📚 Checkout
+  #       uses: actions/checkout@v2.3.4
+  #     - name: 🛠️ Install & Import AU
+  #       shell: powershell
+  #       run: |
+  #         Set-PSRepository PSGallery -InstallationPolicy Trusted
+  #         Install-Module au
+  #         Import-Module au
+  #     - name: 🍫 Set Chocolatey api key
+  #       run: |
+  #         choco apikey --key ${{ secrets.CHOCO_API_KEY }} --source https://push.chocolatey.org/
+  #     - name: 🔧 Run update script
+  #       shell: powershell
+  #       run: |
+  #         $Env:au_Push = $true
+  #         $Env:github_api_key = "${{ secrets.GH_PAT }}"
+  #         .\update_all.ps1 ${{ github.event.inputs.parameters }}
   # update-aur-packages:
   #   runs-on: ubuntu-latest
   #   outputs:

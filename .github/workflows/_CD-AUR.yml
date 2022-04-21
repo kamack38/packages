@@ -59,6 +59,7 @@ jobs:
         id: old-ver
         run: |
           source ./packages/${{ matrix.pkgname }}/PKGBUILD
+          echo "$pkgver"
           echo "::set-output name=old-ver::$pkgver"
 
       - name: 🛠️ Check PKGBUILD
@@ -81,6 +82,13 @@ jobs:
         with:
           name: ${{ matrix.pkgname }}-${{ github.run_id }}
           path: ${{ steps.epoch.outputs.pkgfile }}
+
+      - name: Get new version
+        id: old-ver
+        run: |
+          source ./packages/${{ matrix.pkgname }}/PKGBUILD
+          echo "$pkgver"
+          echo "::set-output name=new-ver::$pkgver"
 
       # - name: 🔃 Clone AUR and update
       #   run: |
