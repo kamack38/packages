@@ -63,9 +63,10 @@ jobs:
           echo "::set-output name=old-ver::$pkgver"
 
       - name: Validate package
-        uses: hapakaien/archlinux-package-action@v2
+        uses: hapakaien/archlinux-package-action@main
         with:
           path: packages/${{ matrix.pkgname }}
+          aur: true
 
       # - name: 🛠️ Check PKGBUILD
       #   id: build-test
