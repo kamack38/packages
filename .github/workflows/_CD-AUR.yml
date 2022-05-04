@@ -55,7 +55,7 @@ jobs:
           echo "::set-output name=old-ver::$pkgver"
 
       - name: Validate package
-        uses: hapakaien/archlinux-package-action@main
+        uses: kamack38/arch-package-action@main
         with:
           path: packages/${{ matrix.pkgname }}
           aur: true
