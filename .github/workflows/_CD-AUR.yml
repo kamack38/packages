@@ -1,4 +1,4 @@
-name: 🚀 Publish AUR package
+name: 🚀 Update & publish AUR package
 
 on:
   workflow_call:
@@ -23,11 +23,13 @@ on:
         type: choice
         options:
           - "['oh-my-posh-bin']"
+          - "['dwall-git']"
+          - "['openasar-git']"
+          - "['solve3-cli']"
 
 jobs:
   aur:
     runs-on: ubuntu-latest
-    needs: generate-matrix
     strategy:
       fail-fast: false
       matrix:
