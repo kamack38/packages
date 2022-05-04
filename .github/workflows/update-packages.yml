@@ -66,3 +66,5 @@ jobs:
     secrets:
       AUR_SSH_PRIVATE_KEY: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
       KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
+      AUR_EMAIL: ${{ secrets.AUR_EMAIL }}
+      AUR_USERNAME: ${{ secrets.AUR_USERNAME }}
