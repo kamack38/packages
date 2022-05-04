@@ -45,6 +45,7 @@ jobs:
   #       uses: stefanzweifel/git-auto-commit-action@v4
   #       with:
   #         commit_message: 'feat: 🔼 Update AUR packages (${{ steps.updatePKGs.outputs.updatedPackages }})'
+
   get-aur-packages:
     runs-on: ubuntu-latest
     steps:
@@ -54,6 +55,7 @@ jobs:
         run: echo "::set-output name=packages::$(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)"
     outputs:
       packages: ${{ steps.gen-matrix.outputs.packages }}
+
   update-aur-packages:
     name: 🚀 Publish updated packages
     uses: kamack38/packages/.github/workflows/_CD-AUR.yml@main
