@@ -52,7 +52,9 @@ jobs:
       - uses: actions/checkout@v2
       - name: 🧬 Generate matrix
         id: gen-matrix
-        run: echo "::set-output name=packages::$(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)"
+        run: |
+          echo $(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)
+          echo "::set-output name=packages::$(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)"
     outputs:
       packages: ${{ steps.gen-matrix.outputs.packages }}
 
