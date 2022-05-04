@@ -14,6 +14,12 @@ on:
       KNOWN_HOSTS:
         description: Known hosts file
         required: true
+      AUR_EMAIL:
+        description: Email address for the AUR account
+        required: true
+      AUR_USERNAME:
+        description: Username for the AUR account
+        required: true
 
   workflow_dispatch:
     inputs:
