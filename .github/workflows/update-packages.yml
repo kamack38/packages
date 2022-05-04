@@ -45,13 +45,20 @@ jobs:
   #       uses: stefanzweifel/git-auto-commit-action@v4
   #       with:
   #         commit_message: 'feat: 🔼 Update AUR packages (${{ steps.updatePKGs.outputs.updatedPackages }})'
-  publish-aur-packages:
+  get-aur-packages:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: 🧬 Generate matrix
+        id: gen-matrix
+        run: echo "::set-output name=packages::$(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)"
+    outputs:
+      packages: ${{ steps.gen-matrix.outputs.packages }}
+  update-aur-packages:
     name: 🚀 Publish updated packages
-    # needs: update-aur-packages
-    if: ${{ needs.update-aur-packages.outputs.updatedPackages != '[ ]' }}
     uses: kamack38/packages/.github/workflows/_CD-AUR.yml@main
     with:
-      packages: ${{ needs.update-aur-packages.outputs.updatedPackages }}
+      packages: ${{ needs.get-aur-packages.outputs.packages }}
     secrets:
       AUR_SSH_PRIVATE_KEY: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
       KNOWN_HOSTS: ${{ secrets.KNOWN_HOSTS }}
