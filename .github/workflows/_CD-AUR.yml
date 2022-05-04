@@ -25,23 +25,13 @@ on:
           - "['oh-my-posh-bin']"
 
 jobs:
-  generate-matrix:
-    runs-on: ubuntu-latest
-    steps:
-      - uses: actions/checkout@v2
-      - name: Generate matrix
-        id: gen-matrix
-        run: echo "::set-output name=packages::$(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)"
-    outputs:
-      packages: ${{ steps.gen-matrix.outputs.packages }}
-
   aur:
     runs-on: ubuntu-latest
     needs: generate-matrix
     strategy:
       fail-fast: false
       matrix:
-        pkgname: ${{ fromJson(needs.generate-matrix.outputs.packages) }}
+        pkgname: ${{ fromJson(format('{0}{1}', github.event.inputs.packages, inputs.packages)) }}
 
     steps:
       - name: 📚 Checkout
