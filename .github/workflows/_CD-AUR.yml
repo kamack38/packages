@@ -39,7 +39,7 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        pkgname: ${{ fromJson(github.event.inputs.packages) }}
+        pkgname: ${{ fromJson(format('{0}{1}', github.event.inputs.packages, inputs.packages)) }}
 
     steps:
       - name: 📚 Checkout
