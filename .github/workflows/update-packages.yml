@@ -53,8 +53,9 @@ jobs:
       - name: 🧬 Generate matrix
         id: gen-matrix
         run: |
-          echo $(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)
-          echo "::set-output name=packages::$(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)"
+          matrix=$(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)
+          echo $matrix
+          echo "::set-output name=packages::$matrix"
     outputs:
       packages: ${{ steps.gen-matrix.outputs.packages }}
 
