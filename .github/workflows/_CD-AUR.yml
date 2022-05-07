@@ -34,15 +34,6 @@ on:
           - "['solve3-cli']"
 
 jobs:
-  parse-matrix:
-    runs-on: ubuntu-latest
-    steps:
-      - name: ⛏️ Parse matrix
-        run: |
-          if [ ${{  github.event.inputs.packages }} == '']; then echo "MATRIX=${{ inputs.packages }}" >> $GITHUB_ENV; else echo "MATRIX=${{ github.event.inputs.packages }}" >> $GITHUB_ENV; fi
-          echo ${{ format('{0}{1}', github.event.inputs.packages, inputs.packages) }}
-          echo ${{ inputs.packages }}
-          echo ${{ github.event.inputs.packages }}
   aur:
     runs-on: ubuntu-latest
     strategy:
@@ -89,6 +80,11 @@ jobs:
         run: |
           source packages/${{ matrix.pkgname }}/PKGBUILD
           echo "PKGVER=$pkgver" >> $GITHUB_ENV
+
+      - name: 💄 Commit changes
+        uses: stefanzweifel/git-auto-commit-action@v4
+        with:
+          commit_message: 'feat: 🔼 Update ${{ matrix.pkgname }} to ${{ env.PKGVER }}'
 
       - name: 🚀 Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@master
