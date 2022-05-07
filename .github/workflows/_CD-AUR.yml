@@ -53,38 +53,37 @@ jobs:
           key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
           known_hosts: ${{ secrets.KNOWN_HOSTS }}
 
-      - name: Get old version
+      - name: 🔃 Get old version
         id: old-ver
         run: |
           source packages/${{ matrix.pkgname }}/PKGBUILD
           echo "$pkgver"
-          echo "::set-output name=old-ver::$pkgver"
+          echo "::set-output name=OLD-PKGVER::$pkgver"
 
-      - name: Validate package
+      - name: 🔄 Validate package
         uses: kamack38/arch-package-action@main
         with:
           path: packages/${{ matrix.pkgname }}
           aur: true
 
-      - name: Update package sums
+      - name: 🔼 Update package sums
         uses: kamack38/arch-package-action@main
         with:
           path: packages/${{ matrix.pkgname }}
           updpkgsums: true
-
-      - name: Show status
-        run: |
-          git status
 
       - name: 🔃 Get package version
         run: |
           source packages/${{ matrix.pkgname }}/PKGBUILD
           echo "PKGVER=$pkgver" >> $GITHUB_ENV
 
+      - name: 🔃 Fetch newest repo version
+        run: git pull
+
       - name: 💄 Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'feat: 🔼 Update ${{ matrix.pkgname }} to ${{ env.PKGVER }}'
+          commit_message: 'feat: 🔼 Update ${{ matrix.pkgname }} from ${{ env.OLD-PKGVER }} to ${{ env.PKGVER }}'
 
       - name: 🚀 Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@master
