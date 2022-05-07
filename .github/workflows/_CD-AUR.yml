@@ -58,7 +58,7 @@ jobs:
         run: |
           source packages/${{ matrix.pkgname }}/PKGBUILD
           echo "$pkgver"
-          echo "::set-output name=OLD-PKGVER::$pkgver"
+          echo "OLD-PKGVER=$pkgver" >> $GITHUB_ENV
 
       - name: 🔄 Validate package
         uses: kamack38/arch-package-action@main
