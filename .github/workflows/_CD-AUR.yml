@@ -34,12 +34,15 @@ on:
           - "['solve3-cli']"
 
 jobs:
-  show-matrix:
+  parse-matrix:
     runs-on: ubuntu-latest
     steps:
-      - name: Show matrix
+      - name: ⛏️ Parse matrix
         run: |
+          if [ ${{  github.event.inputs.packages }} == '']; then echo "MATRIX=${{ inputs.packages }}" >> $GITHUB_ENV; else echo "MATRIX=${{ github.event.inputs.packages }}" >> $GITHUB_ENV; fi
           echo ${{ format('{0}{1}', github.event.inputs.packages, inputs.packages) }}
+          echo ${{ inputs.packages }}
+          echo ${{ github.event.inputs.packages }}
   aur:
     runs-on: ubuntu-latest
     strategy:
