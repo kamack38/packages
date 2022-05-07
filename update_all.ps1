@@ -72,12 +72,7 @@ $Options = [ordered]@{
         $global:au_Version = $Matches['version']
     }
     AfterEach      = {
-        $nupkg = Get-ChildItem -Exclude 'dist' | Get-ChildItem -Recurse | Where-Object Name -Match .*.nupkg
-        if ($nupkg -ne $null) {
-            $pkgName = ($nupkg.Name -split ".\d+")[0]
-            if (Test-Path -Path "..\..\dist\$pkgName.*") { Remove-Item "..\..\dist\$pkgName.*" }
-            Get-ChildItem -Depth 1 | Where-Object Name -Match .*.nupkg | Move-Item -Destination ..\..\dist\ -Force
-        }
+        
     }
 }
 
