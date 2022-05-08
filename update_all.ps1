@@ -1,3 +1,4 @@
+#!/usr/bin/env pwsh
 # AU Packages Template: https://github.com/majkinetor/au-packages-template
 
 param([string[]] $Name, [string] $ForcedPackages, [string] $Root = (Join-Path $PSScriptRoot "packages"))
