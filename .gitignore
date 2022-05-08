@@ -5,3 +5,4 @@ Update-Force-Test*.md
 Update-AUPackages*.md
 *.nupkg
 /packages/*/src/**
+/packages/*/pkg/**
