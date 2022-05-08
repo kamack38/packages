@@ -80,6 +80,11 @@ jobs:
       - name: 🔃 Fetch newest repo version
         run: git pull
 
+      - name: Check if package updated
+        run: |
+          if [[ `git status --porcelain` ]]; then echo "UPDATED=true" >> $GITHUB_ENV; else echo "UPDATED=false" >> $GITHUB_ENV; fi
+          echo ${{ env.UPDATED }}
+
       - name: 💄 Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
@@ -87,6 +92,7 @@ jobs:
 
       - name: 🚀 Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@master
+        if: ${{ env.UPDATED }}
         with:
           pkgname: ${{ matrix.pkgname }}
           pkgbuild: ./packages/${{ matrix.pkgname }}/PKGBUILD
