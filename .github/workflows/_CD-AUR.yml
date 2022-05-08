@@ -80,9 +80,9 @@ jobs:
       - name: 🔃 Fetch newest repo version
         run: git pull
 
-      - name: Check if package updated
+      - name: 🤔 Check if package updated
         run: |
-          if [[ `git status --porcelain` ]]; then echo "UPDATED=true" >> $GITHUB_ENV; else echo "UPDATED=false" >> $GITHUB_ENV; fi
+          if [[ $(git status --porcelain) ]]; then echo "UPDATED=true" >> $GITHUB_ENV; else echo "UPDATED=false" >> $GITHUB_ENV; fi
           echo ${{ env.UPDATED }}
 
       - name: 💄 Commit changes
@@ -92,10 +92,11 @@ jobs:
 
       - name: 🚀 Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@master
-        if: ${{ env.UPDATED }}
+        if: env.UPDATED == 'true'
         with:
           pkgname: ${{ matrix.pkgname }}
           pkgbuild: ./packages/${{ matrix.pkgname }}/PKGBUILD
+          assets: ./packages/${{ matrix.pkgname }}/${{ matrix.pkgname }}.install
           commit_username: ${{ secrets.AUR_USERNAME }}
           commit_email: ${{ secrets.AUR_EMAIL }}
           ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
