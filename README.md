@@ -11,7 +11,9 @@
 
 - [📦 Packages](#-packages)
   - [<img src="./assets/aur.png" height="32"/> AUR Packages](#-aur-packages)
+    - [<img src="https://raw.githubusercontent.com/adi1090x/files/master/dynamic-wallpaper/logo.png" height="24"/> dwall](#-dwall)
     - [<img src="https://rawcdn.githack.com/jandedobbeleer/oh-my-posh/19b8cf2cf8401bba068f7d417a4fcc33947c64f2/docs/static/img/logo.png" height="24"/> oh-my-posh](#-oh-my-posh)
+    - [OpenAsar](#openasar)
     - [solve3-cli](#solve3-cli)
   - [<img src="./assets/Chocolatey.svg" height="32" /> Chocolatey Packages](#-chocolatey-packages)
     - [<img src="./assets/7tt.png" height="24"/> 7+ Taskbar Tweaker](#-7-taskbar-tweaker)
@@ -34,6 +36,16 @@
 
 ## <img src="./assets/aur.png" height="32"/> AUR Packages
 
+### <img src="https://raw.githubusercontent.com/adi1090x/files/master/dynamic-wallpaper/logo.png" height="24"/> dwall
+
+> A simple bash script to set wallpapers according to current time, using cron job scheduler.
+
+[[Source](https://github.com/adi1090x/dynamic-wallpaper)] [[AUR](https://aur.archlinux.org/packages/dwall-git)] [[Package](/packages/dwall-git)]
+
+```shell
+paru -S dwall-git
+```
+
 ### <img src="https://rawcdn.githack.com/jandedobbeleer/oh-my-posh/19b8cf2cf8401bba068f7d417a4fcc33947c64f2/docs/static/img/logo.png" height="24"/> oh-my-posh
 
 > A prompt theme engine for any shell.
@@ -44,6 +56,16 @@
 paru -S oh-my-posh-bin
 ```
 
+### OpenAsar
+
+> Open-source alternative of Discord desktop's app.asar
+
+[[Source](https://github.com/GooseMod/OpenAsar)] [[AUR](https://aur.archlinux.org/packages/openasar-git)] [[Package](/packages/openasar-git)]
+
+```shell
+paru -S openasar-git
+```
+
 ### solve3-cli
 
 > A simple cli to use Solve3 from your terminal
@@ -51,7 +73,7 @@ paru -S oh-my-posh-bin
 [[Source](https://github.com/kamack38/solve3-cli)] [[AUR](https://aur.archlinux.org/packages/solve3-cli)] [[Package](/packages/solve3-cli)]
 
 ```shell
-paru -S oh-my-posh-bin
+paru -S solve3-cli
 ```
 
 ## <img src="./assets/Chocolatey.svg" height="32" /> Chocolatey Packages
