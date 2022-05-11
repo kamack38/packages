@@ -13,6 +13,7 @@ $packageArgs = @{
   checksum64     = 'da079a17319d83d7935ca799a13da98e9c637d9d46f174b07dd948e0d7d5eb3a'
   checksumType   = 'sha256'
   checksumType64 = 'sha256'
+  fileFullPath   = (Join-Path $toolsDir 'shfmt.exe')
 }
 
-Install-ChocolateyPackage @packageArgs
+Get-ChocolateyWebFile @packageArgs
