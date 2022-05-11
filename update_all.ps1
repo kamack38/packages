@@ -8,22 +8,23 @@ if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 if (!(Test-Path $PSScriptRoot/dist)) { mkdir $PSScriptRoot/dist }
 
 $Options = [ordered]@{
-    WhatIf         = $au_WhatIf                              # Whatif all packages
-    Force          = $false                                  # Force all packages
-    Timeout        = 100                                     # Connection timeout in seconds
-    UpdateTimeout  = 1200                                    # Update timeout in seconds
-    Threads        = 10                                      # Number of background jobs to use
-    Push           = $Env:au_Push -eq 'true'                 # Push to chocolatey
-    PushAll        = $true                                   # Allow to push multiple packages at once
-    PluginPath     = ''                                      # Path to user plugins
-    IgnoreOn       = @(                                      # Error message parts to set the package ignore status
+    WhatIf              = $au_WhatIf                              # Whatif all packages
+    Force               = $false                                  # Force all packages
+    Timeout             = 100                                     # Connection timeout in seconds
+    UpdateTimeout       = 1200                                    # Update timeout in seconds
+    Threads             = 10                                      # Number of background jobs to use
+    Push                = $Env:au_Push -eq 'true'                 # Push to chocolatey
+    PushAll             = $true                                   # Allow to push multiple packages at once
+    PluginPath          = ''                                      # Path to user plugins
+    NoCheckChocoVersion = $false                                  # Check chocolatey package version
+    IgnoreOn            = @(                                      # Error message parts to set the package ignore status
         'Could not create SSL/TLS secure channel'
         'Could not establish trust relationship'
         'The operation has timed out'
         'Internal Server Error'
         'Service Temporarily Unavailable'
     )
-    RepeatOn       = @(                                      # Error message parts on which to repeat package updater
+    RepeatOn            = @(                                      # Error message parts on which to repeat package updater
         'Could not create SSL/TLS secure channel'            # https://github.com/chocolatey/chocolatey-coreteampackages/issues/718
         'Could not establish trust relationship'             # -||-
         'Unable to connect'
@@ -37,7 +38,7 @@ $Options = [ordered]@{
     #RepeatSleep   = 250                                     # How much to sleep between repeats in seconds, by default 0
     #RepeatCount   = 2                                       # How many times to repeat on errors, by default 1
 
-    Report         = @{
+    Report              = @{
         Type   = 'markdown'                                  # Report type: markdown or text
         Path   = "$PSScriptRoot\Update-AUPackages.md"        # Path where to save the report
         Params = @{                                          # Report parameters:
@@ -50,18 +51,18 @@ $Options = [ordered]@{
         }
     }
 
-    Git            = @{
+    Git                 = @{
         User     = ''                                        # Git username, leave empty if github api key is used
         Password = $Env:github_api_key                       # Password if username is not empty, otherwise api key
     }
 
-    GitReleases    = @{
+    GitReleases         = @{
         ApiToken    = $Env:github_api_key                    # Your github api key
         ReleaseType = 'package'                              # Either 1 release per date, or 1 release per package
     }
 
-    ForcedPackages = $ForcedPackages -split ' '
-    BeforeEach     = {
+    ForcedPackages      = $ForcedPackages -split ' '
+    BeforeEach          = {
         param($PackageName, $Options )
 
         $pattern = "^${PackageName}(?:\\(?<stream>[^:]+))?(?:\:(?<version>.+))?$"
@@ -72,14 +73,14 @@ $Options = [ordered]@{
         $global:au_IncludeStream = $Matches['stream']
         $global:au_Version = $Matches['version']
     }
-    AfterEach      = {
+    AfterEach           = {
         
     }
 }
 
 if ($ForcedPackages) { Write-Host "FORCED PACKAGES: $ForcedPackages" }
 $global:au_Root = $Root                                      # Path to the AU packages
-$global:info = updateall -Name $Name -Options $Options
+$global:info = updateall -Name $Name -Options $Options 
 
 #Uncomment to fail the build on AppVeyor on any package error
 #if ($global:info.error_count.total) { throw 'Errors during update' }
