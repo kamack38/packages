@@ -84,7 +84,6 @@ jobs:
       - name: 🤔 Check if package updated
         run: |
           if [[ $(git status --porcelain) ]]; then echo "UPDATED=true" >> $GITHUB_ENV; else echo "UPDATED=false" >> $GITHUB_ENV; fi
-          echo ${{ env.UPDATED }}
 
       - name: 💄 Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4

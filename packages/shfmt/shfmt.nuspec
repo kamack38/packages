@@ -3,7 +3,7 @@
   <metadata>
     <title>Shfmt</title>
     <id>shfmt</id>
-    <version>3.4.3</version>
+    <version>3.5.0</version>
     <authors>mvdan</authors>
     <owners>Kamack38</owners>
     <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/shfmt</packageSourceUrl>
@@ -171,6 +171,6 @@ $ echo 'foo=(1 2)' | shfmt -p >/dev/null
     <releaseNotes>https://github.com/mvdan/sh/blob/master/CHANGELOG.md</releaseNotes>
   </metadata>
   <files>
-    <file src="tools\**" target="tools" />
+    <file src="tools\chocolateyinstall.ps1" target="tools" />
   </files>
 </package>

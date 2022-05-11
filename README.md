@@ -15,6 +15,8 @@
     - [<img src="https://rawcdn.githack.com/jandedobbeleer/oh-my-posh/19b8cf2cf8401bba068f7d417a4fcc33947c64f2/docs/static/img/logo.png" height="24"/> oh-my-posh](#-oh-my-posh)
     - [OpenAsar](#openasar)
     - [solve3-cli](#solve3-cli)
+    - [termdbms](#termdbms)
+    - [up-metro-for-steam-skin](#up-metro-for-steam-skin)
   - [<img src="./assets/Chocolatey.svg" height="32" /> Chocolatey Packages](#-chocolatey-packages)
     - [<img src="./assets/7tt.png" height="24"/> 7+ Taskbar Tweaker](#-7-taskbar-tweaker)
     - [<img src="./assets/Action.png" height="24"/> Action](#-action)
@@ -74,6 +76,26 @@ paru -S openasar-git
 
 ```shell
 paru -S solve3-cli
+```
+
+### termdbms
+
+> A TUI for viewing and editing database files.
+
+[[Source](https://github.com/mathaou/termdbms)] [[AUR](https://aur.archlinux.org/packages/termdbms-git)] [[Package](/packages/termdbms-git)]
+
+```shell
+paru -S termdbms-git
+```
+
+### up-metro-for-steam-skin
+
+> This non-official addon for Metro for Steam fixes bugs with the current version and adds optional content for you to choose from.
+
+[[Source](https://github.com/redsigma/UPMetroSkin)] [[AUR](https://aur.archlinux.org/packages/up-metro-for-steam-skin)] [[Package](/packages/up-metro-for-steam-skin)]
+
+```shell
+paru -S up-metro-for-steam-skin
 ```
 
 ## <img src="./assets/Chocolatey.svg" height="32" /> Chocolatey Packages
