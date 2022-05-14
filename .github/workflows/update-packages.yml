@@ -36,7 +36,9 @@ jobs:
           .\update_all.ps1 ${{ github.event.inputs.parameters }}
 
       - name: 🔃 Fetch newest repo version
-        run: git pull
+        run: |
+          git branch --set-upstream-to=origin/main main
+          git pull
 
       - name: 💄 Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
