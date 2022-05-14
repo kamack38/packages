@@ -12,7 +12,7 @@ makedepends=('git' 'asar' 'nodejs')
 optdepends=()
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
-source=('git+https://github.com/GooseMod/OpenAsar.git')
+source=("git+${url}.git")
 sha1sums=('SKIP')
 install="$pkgname.install"
 

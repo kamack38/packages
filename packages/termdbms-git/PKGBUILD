@@ -10,7 +10,7 @@ license=('MIT')
 makedepends=('git' 'go')
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
-source=("git+https://github.com/mathaou/termdbms.git")
+source=("git+${url}.git")
 sha1sums=('SKIP')
 
 pkgver() {

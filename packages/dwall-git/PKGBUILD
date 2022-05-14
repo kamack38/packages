@@ -14,7 +14,7 @@ optdepends=('xorg-xrandr: XFCE support'
 )
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
-source=('git+https://github.com/adi1090x/dynamic-wallpaper.git')
+source=("git+${url}.git")
 sha1sums=('SKIP')
 
 pkgver() {
