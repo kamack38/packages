@@ -29,11 +29,11 @@ pkgver() {
 
 package() {
     if [[ "$CARCH" = 'x86_64' ]]; then
-        install -Dm 755 "posh-linux-amd64-${sha256sums_x86_64}" "${pkgdir}/usr/bin/oh-my-posh"
+        install -Dm 755 "${srcdir}/posh-linux-amd64-${sha256sums_x86_64}" "${pkgdir}/usr/bin/oh-my-posh"
     elif [[ "$CARCH" = 'armv7h' ]]; then
-        install -Dm 755 "posh-linux-arm-${sha256sums_armv7h}" "${pkgdir}/usr/bin/oh-my-posh"
+        install -Dm 755 "${srcdir}/posh-linux-arm-${sha256sums_armv7h}" "${pkgdir}/usr/bin/oh-my-posh"
     elif [[ "$CARCH" = 'aarch64' ]]; then
-        install -Dm 755 "posh-linux-arm64-${sha256sums_aarch64}" "${pkgdir}/usr/bin/oh-my-posh"
+        install -Dm 755 "${srcdir}/posh-linux-arm64-${sha256sums_aarch64}" "${pkgdir}/usr/bin/oh-my-posh"
     fi
 
     mkdir -p "${pkgdir}/usr/share/oh-my-posh/themes"
