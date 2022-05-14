@@ -14,12 +14,13 @@ source=("git+${url}.git")
 sha1sums=('SKIP')
 
 pkgver() {
-    cd "${_pkgname}"
+    cd "${srcdir}/${_pkgname}"
     printf "r%s.%s" "$(git rev-list --count HEAD)" "$(git rev-parse --short HEAD)"
 }
 
 package() {
-    cd "${_pkgname}"
+    cd "${srcdir}/${_pkgname}"
+    install -Dm 644 LICENSE -t "${pkgdir}/usr/share/licenses/${pkgname}/"
     go build
     install -Dm 755 "termdbms" "${pkgdir}/usr/bin/termdbms"
 }
