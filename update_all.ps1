@@ -1,7 +1,7 @@
 #!/usr/bin/env pwsh
 # AU Packages Template: https://github.com/majkinetor/au-packages-template
 
-param([string[]] $Name, [string] $ForcedPackages, [string] $Root = (Join-Path $PSScriptRoot "packages"), [bool] $NoCheckChocoVersion)
+param([string[]] $Name, [string] $ForcedPackages, [string] $Root = (Join-Path $PSScriptRoot "packages"), [switch] $NoCheckChocoVersion = $false)
 
 if (Test-Path $PSScriptRoot/update_vars.ps1) { . $PSScriptRoot/update_vars.ps1 }
 
