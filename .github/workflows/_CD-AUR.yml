@@ -28,11 +28,17 @@ on:
         required: true
         type: choice
         options:
-          - "['oh-my-posh-bin']"
           - "['dwall-git']"
+          - "['oh-my-posh-bin']"
+          - "['kawaiki-grub2-themes-git']"
           - "['openasar-git']"
           - "['solve3-cli']"
+          - "['termdbms-git']"
           - "['up-metro-for-steam-skin']"
+      force:
+        description: Force package push
+        type: boolean
+        required: false
 
 jobs:
   aur:
@@ -87,6 +93,7 @@ jobs:
 
       - name: 💄 Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
+        if: ${{ github.event.inputs.packages != true }}
         with:
           commit_message: 'feat: 🔼 Update ${{ matrix.pkgname }} from ${{ env.OLD-PKGVER }} to ${{ env.PKGVER }}'
 
