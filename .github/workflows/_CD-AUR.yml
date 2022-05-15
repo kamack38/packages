@@ -88,18 +88,18 @@ jobs:
         run: git pull
 
       - name: 🤔 Check if package updated
+        if: ${{ github.event.inputs.packages != true }}
         run: |
           if [[ $(git status --porcelain) ]]; then echo "UPDATED=true" >> $GITHUB_ENV; else echo "UPDATED=false" >> $GITHUB_ENV; fi
 
       - name: 💄 Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
-        if: ${{ github.event.inputs.packages != true }}
         with:
           commit_message: 'feat: 🔼 Update ${{ matrix.pkgname }} from ${{ env.OLD-PKGVER }} to ${{ env.PKGVER }}'
 
       - name: 🚀 Publish AUR package
         uses: KSXGitHub/github-actions-deploy-aur@master
-        if: env.UPDATED == 'true'
+        if: env.UPDATED != 'false'
         with:
           pkgname: ${{ matrix.pkgname }}
           pkgbuild: ./packages/${{ matrix.pkgname }}/PKGBUILD
