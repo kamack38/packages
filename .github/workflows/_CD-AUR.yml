@@ -54,12 +54,6 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 🔧 Install SSH key
-        uses: shimataro/ssh-key-action@v2
-        with:
-          key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
-          known_hosts: ${{ secrets.KNOWN_HOSTS }}
-
       - name: 🔃 Get old version
         id: old-ver
         run: |
