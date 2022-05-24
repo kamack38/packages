@@ -34,7 +34,7 @@ Simple. It swaps out files and registry values, pointing to your last logged in 
     ]]>
     </description>
     <dependencies>
-      <dependency id="webview2-runtime" version="101.0.1210.39" />
+      <dependency id="webview2-runtime" version="101.0.1210.53" />
       <dependency id="dotnet-6.0-runtime" version="6.0.1" />
       <dependency id="dotnet-6.0-aspnetruntime" version="6.0.1" />
     </dependencies>
