@@ -1,7 +1,7 @@
 # Maintainer: Kamack38 <kamack38.biznes@gmail.com>
 _pkgname='termdbms'
 pkgname="${_pkgname}-git"
-pkgver=r104.fb71ac6
+pkgver=r105.be6f397
 pkgrel=1
 pkgdesc="A TUI for viewing and editing database files. "
 arch=('x86_64' 'armv7h')
