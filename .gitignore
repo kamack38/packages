@@ -6,4 +6,3 @@ Update-AUPackages*.md
 *.nupkg
 /packages/*/src/**
 /packages/*/pkg/**
-/packages/spacedrive-git/**
