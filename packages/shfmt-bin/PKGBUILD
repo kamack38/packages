@@ -1,0 +1,36 @@
+# Maintainer: Kamack38 <kamack38.biznes@gmail.com>
+_pkgname='shfmt'
+pkgname="${_pkgname}-bin"
+pkgver=3.5.1
+pkgrel=1
+pkgdesc="Format shell programs"
+url="https://github.com/mvdan/sh"
+arch=('x86_64' 'i686' 'armv7h' 'aarch64')
+license=('BSD')
+depends=('glibc')
+makedepends=('curl' 'grep' 'sed')
+conflicts=('shfmt')
+provides=('shfmt')
+source=("https://raw.githubusercontent.com/mvdan/sh/v${pkgver}/LICENSE")
+sha256sums=('ce63850f77649f00d1394045e2794ffb09a5596beabac51c9548edd958845d7c')
+sha256sums_x86_64=('56099a689b68534f98e1f8f05d3df6750ab53e3db68f514ee45595bf5b79d158')
+sha256sums_i686=('a8022b48722150bf0437577d9a28ddb89dfffb5cea4c26ee1d3a341cc0197256')
+sha256sums_armv7h=('72e15f623862779633b226c08c3caeabe32eee3c683e181d6c2e96646e4a3f38')
+sha256sums_aarch64=('09d7902de04d52ebe0b332d84a9746d195f7e930806bdc2436f84d0de6a2d368')
+source_x86_64=("shfmt-${pkgver}-x86_64::https://github.com/mvdan/sh/releases/download/v${pkgver}/shfmt_v${pkgver}_linux_amd64")
+source_i686=("shfmt-${pkgver}-i686::https://github.com/mvdan/sh/releases/download/v${pkgver}/shfmt_v${pkgver}_linux_386")
+source_armv7h=("shfmt-${pkgver}-armv7h::https://github.com/mvdan/sh/releases/download/v${pkgver}/shfmt_v${pkgver}_linux_arm")
+source_aarch64=("shfmt-${pkgver}-aarch64::https://github.com/mvdan/sh/releases/download/v${pkgver}/shfmt_v${pkgver}_linux_arm64")
+noextract=('themes.zip')
+
+pkgver() {
+    curl --silent -L "https://api.github.com/repos/mvdan/sh/releases/latest" | # Get latest release from GitHub api
+        grep '"tag_name":' |                                                   # Get tag line
+        sed -E 's/.*"([^"]+)".*/\1/' |
+        sed 's/v//'
+}
+
+package() {
+    install -Dm 755 "${srcdir}/shfmt-${pkgver}-${CARCH}" "${pkgdir}/usr/bin/shfmt"
+    install -Dm 644 "${srcdir}/LICENSE" "${pkgdir}/usr/share/licenses/${pkgname}/LICENSE"
+}
