@@ -6,3 +6,5 @@ Update-AUPackages*.md
 *.nupkg
 /packages/*/src/**
 /packages/*/pkg/**
+*.tgz
+*.pkg.tar.zst
