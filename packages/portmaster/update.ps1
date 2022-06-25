@@ -14,7 +14,8 @@ function global:au_SearchReplace {
 function global:au_GetLatest {
     $tag = (Invoke-WebRequest -Uri $releases -UseBasicParsing | ConvertFrom-Json)[0].tag_name
     $ver = $tag.Replace('.', '-')
-    $url = "https://updates.safing.io/windows_amd64/packages/portmaster-installer_${ver}.exe"
+    $urlVer = "{0}-{1}-{2}" -f $ver.Split('-')
+    $url = "https://updates.safing.io/windows_amd64/packages/portmaster-installer_${urlVer}.exe"
 
     return @{
         URL32   = $url
