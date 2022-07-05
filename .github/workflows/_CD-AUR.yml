@@ -65,7 +65,7 @@ jobs:
         uses: kamack38/arch-package-action@main
         with:
           path: packages/${{ matrix.pkgname }}
-          aur: true
+          paru: true
 
       - name: 🔼 Update package sums
         uses: kamack38/arch-package-action@main
