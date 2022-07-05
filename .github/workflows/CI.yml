@@ -40,8 +40,8 @@ jobs:
       - name: Generate matrix
         id: gen-matrix
         run: |
-          echo "::set-output name=packages::$(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R . | jq -cs .)"
-          echo "Generated matrix: $(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R . | jq -cs .)"
+          echo "::set-output name=packages::$(find ./packages/ -type f -name '*PKGBUILD' -not -path '*spacedrive*' -not -path '*shfmt-bin*' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R . | jq -cs .)"
+          echo "Generated matrix: $(find ./packages/ -type f -name '*PKGBUILD' -not -path '*spacedrive*' -not -path '*shfmt-bin*' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R . | jq -cs .)"
     outputs:
       packages: ${{ steps.gen-matrix.outputs.packages }}
   aur:
