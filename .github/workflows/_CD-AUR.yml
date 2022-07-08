@@ -54,29 +54,18 @@ jobs:
         with:
           fetch-depth: 0
 
-      - name: 🔃 Get old version
-        id: old-ver
-        run: |
-          source packages/${{ matrix.pkgname }}/PKGBUILD
-          echo "$pkgver"
-          echo "OLD-PKGVER=$pkgver" >> $GITHUB_ENV
-
-      - name: 🔄 Validate package
+      - name: 🔄 Update package
         uses: kamack38/arch-package-action@main
+        id: update
         with:
           path: packages/${{ matrix.pkgname }}
           paru: true
-
-      - name: 🔼 Update package sums
-        uses: kamack38/arch-package-action@main
-        with:
-          path: packages/${{ matrix.pkgname }}
           updpkgsums: true
-
-      - name: 🔃 Get package version
-        run: |
-          source packages/${{ matrix.pkgname }}/PKGBUILD
-          echo "PKGVER=$pkgver" >> $GITHUB_ENV
+          srcinfo: true
+          aur_pkgname: ${{ matrix.pkgname }}
+          aur_commit_username: ${{ secrets.AUR_USERNAME }}
+          aur_commit_email: ${{ secrets.AUR_EMAIL }}
+          aur_ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
 
       - name: 🔃 Fetch newest repo version
         run: git pull
@@ -89,15 +78,4 @@ jobs:
       - name: 💄 Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'feat: 🔼 Update ${{ matrix.pkgname }} from ${{ env.OLD-PKGVER }} to ${{ env.PKGVER }}'
-
-      - name: 🚀 Publish AUR package
-        uses: KSXGitHub/github-actions-deploy-aur@master
-        if: env.UPDATED != 'false'
-        with:
-          pkgname: ${{ matrix.pkgname }}
-          pkgbuild: ./packages/${{ matrix.pkgname }}/PKGBUILD
-          commit_username: ${{ secrets.AUR_USERNAME }}
-          commit_email: ${{ secrets.AUR_EMAIL }}
-          ssh_private_key: ${{ secrets.AUR_SSH_PRIVATE_KEY }}
-          commit_message: Update ${{ matrix.pkgname }} package to ${{ env.PKGVER }}
+          commit_message: 'feat: 🔼 Update ${{ matrix.pkgname }} from ${{ steps.update.outputs.OLD_PKGVER }} to ${{ steps.update.outputs.NEW_PKGVER }}'
