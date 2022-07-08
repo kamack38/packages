@@ -70,6 +70,9 @@ jobs:
       - name: 🔃 Fetch newest repo version
         run: git pull
 
+      - name: Check action outputs
+        run: echo ${{ steps.update.outputs }}
+
       - name: 🤔 Check if package updated
         if: ${{ github.event.inputs.packages != true }}
         run: |
