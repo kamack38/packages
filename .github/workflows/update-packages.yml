@@ -37,8 +37,7 @@ jobs:
 
       - name: 🔃 Fetch newest repo version
         run: |
-          git branch --set-upstream-to=origin/main main
-          git pull
+          git pull origin main
 
       - name: 💄 Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
