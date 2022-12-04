@@ -53,7 +53,7 @@ NVM for Windows is a command line tool. Simply type `nvm` in the console for hel
     ]]>
     </description>
     <dependencies>
-      <dependency id="nvm.install" version="1.1.9" />
+      <dependency id="nvm.install" version="1.1.10" />
     </dependencies>
     <releaseNotes>https://github.com/coreybutler/nvm-windows/releases/latest</releaseNotes>
   </metadata>
