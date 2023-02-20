@@ -1,6 +1,6 @@
 Import-Module au
 
-$releases = 'https://github.com/Mr-Technician/BorderlessMinecraft/releases'
+$repo = 'Mr-Technician/BorderlessMinecraft'
 
 function global:au_SearchReplace {
     @{
@@ -12,18 +12,16 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $download_page = Invoke-WebRequest -Uri $releases -UseBasicParsing
+    $latest_release = "https://api.github.com/repos/$repo/releases/latest"
 
-    $url = $download_page.links | 
-    Where-Object href -match "BorderlessMinecraft.exe" | 
-    Select-Object -First 1 -expand href
-    $url = 'https://github.com' + $url
+    $tag = (Invoke-WebRequest -Uri $latest_release -UseBasicParsing | ConvertFrom-Json).tag_name    
 
-    $version = $url -split '/' | Select-Object -Last 1 -Skip 1
+    $file = "BorderlessMinecraft.exe" 
+    $url = "https://github.com/$repo/releases/download/$tag/$file"
 
     return @{
         URL32   = $url
-        Version = $version.Replace('v', '')
+        Version = $tag.Replace('v', '')
     }
 }
 
