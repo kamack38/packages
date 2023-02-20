@@ -6,8 +6,8 @@ $location = Join-Path $toolsDir 'BorderlessMinecraft.exe'
 
 $packageArgs = @{
   packageName  = $packageName
-  url          = 'https://github.com/Mr-Technician/BorderlessMinecraft/releases/download/v1.3.2/BorderlessMinecraft.exe'
-  checksum     = '6f8a72539ceebeb5d57c14b96c7b868ee8d1b6a8fc0e7ad2443883b3bafed28d'
+  url          = 'https://github.com/Mr-Technician/BorderlessMinecraft/releases/download/v1.3.4/BorderlessMinecraft.exe'
+  checksum     = 'b69f7eeff60c8149032a4b139ab4da831f837dcfeac480ce40972d7f620bc8d3'
   checksumType = 'sha256'
   fileFullPath = $location
 }

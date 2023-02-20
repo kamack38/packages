@@ -9,8 +9,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName   = $packageName
   fileType      = 'exe'
-  url           = 'https://github.com/o2sh/onefetch/releases/download/v2.12.0/onefetch-win.tar.gz'
-  checksum      = '76693b66642fefd1cf9729e82b58ee2c67644d91f4e4b0de2d072697e5afa03a'
+  url           = 'https://github.com/o2sh/onefetch/releases/download/2.15.1/onefetch-win.tar.gz'
+  checksum      = '5af41caa9e0549f850f33835827024af2ef042c91df4c5a94b9bf80a6c353f24'
   checksumType  = 'sha256'
   unzipLocation = $toolsDir
 }
