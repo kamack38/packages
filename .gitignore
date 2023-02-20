@@ -8,4 +8,5 @@ Update-AUPackages*.md
 /packages/*/pkg/**
 *.tgz
 *.pkg.tar.zst
+*.exe
 .SRCINFO
