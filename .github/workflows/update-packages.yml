@@ -15,8 +15,6 @@ jobs:
     steps:
       - name: 📚 Checkout
         uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
 
       - name: 🛠️ Install & Import AU
         shell: powershell
@@ -38,12 +36,12 @@ jobs:
       - name: 🔃 Fetch newest repo version
         run: |
           git pull origin main
-          git config --global push.autoSetupRemote true
 
       - name: 💄 Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'feat: 🔼 Update chocolatey packages'
+          branch: 'main'
 
   get-aur-packages:
     runs-on: ubuntu-latest
