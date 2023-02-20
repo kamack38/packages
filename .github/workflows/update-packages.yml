@@ -38,6 +38,7 @@ jobs:
       - name: 🔃 Fetch newest repo version
         run: |
           git pull origin main
+          git config --global push.autoSetupRemote true
 
       - name: 💄 Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
