@@ -1,6 +1,6 @@
 Import-Module au
 
-$repo = 'sileshn/ManjaroWSL'
+$repo = 'sileshn/ManjaroWSL2'
 
 function global:au_SearchReplace {
     @{
