@@ -18,10 +18,11 @@ function global:au_GetLatest {
 
     $file = "TcNo.Account.Switcher.-.Installer_$tag.exe" 
     $url = "https://github.com/$repo/releases/download/$tag/$file"
+    $tag = $tag.replace('-', '.')
 
     return @{
         URL32   = $url
-        Version = $tag -replace '-', '.'
+        Version = $tag.Substring(0, $tag.IndexOf('_'))
     }
 }
 

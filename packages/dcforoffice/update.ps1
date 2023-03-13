@@ -12,9 +12,9 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $latest_release = "https://api.github.com/repos/$repo/releases/latest"
+    $latest_release = "https://api.github.com/repos/$repo/releases"
 
-    $tag = (Invoke-WebRequest -Uri $latest_release -UseBasicParsing | ConvertFrom-Json).tag_name    
+    $tag = (Invoke-WebRequest -Uri $latest_release -UseBasicParsing | ConvertFrom-Json)[0].tag_name    
 
     $file = "DiscordForOffice.exe" 
     $url = "https://github.com/$repo/releases/download/$tag/$file"
