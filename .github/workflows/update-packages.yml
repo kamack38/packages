@@ -12,6 +12,7 @@ on:
 jobs:
   update-choco-packages:
     runs-on: windows-latest
+    needs: update-aur-packages
     steps:
       - name: 📚 Checkout
         uses: actions/checkout@v3
