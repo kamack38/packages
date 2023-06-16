@@ -11,9 +11,11 @@
 
 - [📦 Packages](#-packages)
   - [<img src="./assets/aur.png" height="32"/> AUR Packages](#-aur-packages)
+    - [asus-numberpad-driver](#asus-numberpad-driver)
     - [<img src="https://raw.githubusercontent.com/adi1090x/files/master/dynamic-wallpaper/logo.png" height="24"/> dwall](#-dwall)
     - [<img src="https://rawcdn.githack.com/jandedobbeleer/oh-my-posh/19b8cf2cf8401bba068f7d417a4fcc33947c64f2/docs/static/img/logo.png" height="24"/> oh-my-posh](#-oh-my-posh)
     - [OpenAsar](#openasar)
+    - [kawaiki-grub2-themes](#kawaiki-grub2-themes)
     - [solve3-cli](#solve3-cli)
     - [termdbms](#termdbms)
     - [up-metro-for-steam-skin](#up-metro-for-steam-skin)
@@ -38,6 +40,16 @@
 
 ## <img src="./assets/aur.png" height="32"/> AUR Packages
 
+### asus-numberpad-driver
+
+> Up-to-date feature-rich linux driver for NumberPad(2.0) on Asus laptops
+
+[[Source](https://github.com/asus-linux-drivers/asus-numberpad-driver)] [[AUR](https://aur.archlinux.org/pkgbase/asus-numberpad-driver-git)] [[Package](/packages/asus-numberpad-driver-git)]
+
+```shell
+paru -S asus-numberpad-driver-ux581l-git asus-numberpad-driver-ux433fa-git asus-numberpad-driver-up5401ea-git asus-numberpad-driver-gx701-git asus-numberpad-driver-gx551-git asus-numberpad-driver-g533-git asus-numberpad-driver-g513-git asus-numberpad-driver-e210ma-git asus-numberpad-driver-b7402-git
+```
+
 ### <img src="https://raw.githubusercontent.com/adi1090x/files/master/dynamic-wallpaper/logo.png" height="24"/> dwall
 
 > A simple bash script to set wallpapers according to current time, using cron job scheduler.
@@ -46,6 +58,16 @@
 
 ```shell
 paru -S dwall-git
+```
+
+### kawaiki-grub2-themes
+
+> Modern Design theme for Grub2
+
+[[Source](https://github.com/lucidtanooki/kawaiki-grub2-themes)] [[AUR](https://aur.archlinux.org/pkgbase/kawaiki-grub2-themes-git)] [[Package](/packages/kawaiki-grub2-themes-git)]
+
+```shell
+paru -S grub-theme-kawaiki-whitesur-ultrawide2k-git grub-theme-kawaiki-whitesur-ultrawide-git grub-theme-kawaiki-whitesur-4k-git grub-theme-kawaiki-whitesur-2k-git grub-theme-kawaiki-whitesur-1080p-git grub-theme-kawaiki-white-ultrawide2k-git grub-theme-kawaiki-white-ultrawide-git grub-theme-kawaiki-white-4k-git grub-theme-kawaiki-white-2k-git grub-theme-kawaiki-white-1080p-git grub-theme-kawaiki-color-ultrawide2k-git grub-theme-kawaiki-color-ultrawide-git grub-theme-kawaiki-color-4k-git grub-theme-kawaiki-color-2k-git grub-theme-kawaiki-color-1080p-git
 ```
 
 ### <img src="https://rawcdn.githack.com/jandedobbeleer/oh-my-posh/19b8cf2cf8401bba068f7d417a4fcc33947c64f2/docs/static/img/logo.png" height="24"/> oh-my-posh
