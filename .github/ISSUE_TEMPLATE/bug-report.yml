@@ -18,6 +18,8 @@ body:
       options:
         - 7tt
         - action
+        - asus-numberpad-driver
+        - dwall
         - betterdiscord
         - blitz.gg
         - borderlessminecraft
@@ -27,8 +29,11 @@ body:
         - nvm.install
         - nvm.portable
         - onefetch
+        - openasar
         - portmaster
+        - termdbms
         - tree-sitter
+        - up-metro-for-steam-skin
 
   - type: textarea
     id: what-happened
