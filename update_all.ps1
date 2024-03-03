@@ -51,11 +51,6 @@ $Options = [ordered]@{
         }
     }
 
-    Git                 = @{
-        User     = ''                                        # Git username, leave empty if github api key is used
-        Password = $Env:github_api_key                       # Password if username is not empty, otherwise api key
-    }
-
     GitReleases         = @{
         ApiToken    = $Env:github_api_key                    # Your github api key
         ReleaseType = 'package'                              # Either 1 release per date, or 1 release per package
