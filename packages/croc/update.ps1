@@ -20,10 +20,10 @@ function global:au_GetLatest {
     
     $version = $tag.Replace('v', '')
 
-    $file64 = "croc_$version`_Windows-64bit.zip"
+    $file64 = "croc_$tag`_Windows-64bit.zip"
     $url64 = "https://github.com/$repo/releases/download/$tag/$file64"
 
-    $file32 = "croc_$version`_Windows-32bit.zip"
+    $file32 = "croc_$tag`_Windows-32bit.zip"
     $url32 = "https://github.com/$repo/releases/download/$tag/$file32"
 
 
