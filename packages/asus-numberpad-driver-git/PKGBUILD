@@ -34,10 +34,11 @@ depends=(
     'python-libevdev'
     'i2c-tools'
     'python-libevdev'
-    'python-inotify'
+    'python-pyinotify'
     'python-xlib'
     'python-numpy'
     'python-evdev'
+    'python-smbus2'
     'xorg-xinput'
 )
 makedepends=('git')
