@@ -42,7 +42,7 @@ jobs:
     runs-on: windows-latest
     steps:
       - name: 📚 Checkout
-        uses: actions/checkout@v2.3.4
+        uses: actions/checkout@4
       - name: 🔧 Build package
         run: |
           .\build.ps1 ${{ matrix.package-name }}
