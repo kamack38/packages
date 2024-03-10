@@ -8,8 +8,8 @@ $installLocation = Join-Path $toolsDir "BetterDiscord.exe"
 $packageArgs = @{
   packageName  = $packageName
   fileFullPath = $installLocation
-  url          = 'https://github.com/BetterDiscord/Installer/releases/download/v1.2.0/BetterDiscord-Windows.exe'
-  checksum     = '62101b7f23db65cdeb32e572b25631aee3e47c41949846c0f9ad3697b86cabbe'
+  url          = 'https://github.com/BetterDiscord/Installer/releases/download/v1.3.0/BetterDiscord-Windows.exe'
+  checksum     = ''
   checksumType = 'sha256'
 }
 
