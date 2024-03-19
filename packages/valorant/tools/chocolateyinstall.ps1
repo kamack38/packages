@@ -6,7 +6,7 @@ $packageArgs = @{
   packageName  = $packageName
   fileType     = 'exe'
   url          = 'https://valorant.secure.dyn.riotcdn.net/channels/public/x/installer/current/live.live.eu.exe'
-  checksum     = '28e32df023ff8aab6cd6a00522d19edf39ea8bcbbe8c8f8eccfd3449a6144813'
+  checksum     = '04269554c0610e4fcee3a35a3d86705ea98239b38168c79037013382bed214e3'
   checksumType = 'sha256'
   silentArgs   = '--skip-to-install'
 }
