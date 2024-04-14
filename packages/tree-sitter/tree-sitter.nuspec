@@ -3,7 +3,7 @@
   <metadata>
     <title>tree-sitter</title>
     <id>tree-sitter</id>
-    <version>0.22.4</version>
+    <version>0.22.5</version>
     <authors>Max Brunsfeld, contributors</authors>
     <owners>Kamack38</owners>
     <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/tree-sitter</packageSourceUrl>
