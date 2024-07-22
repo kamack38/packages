@@ -82,3 +82,4 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'feat: 🔼 Update ${{ matrix.pkgname }} from ${{ steps.update.outputs.OLD_PKGVER }} to ${{ steps.update.outputs.NEW_PKGVER }}'
+          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
