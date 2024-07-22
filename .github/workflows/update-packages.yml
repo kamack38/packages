@@ -42,6 +42,7 @@ jobs:
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
           commit_message: 'feat: 🔼 Update chocolatey packages'
+          commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
           branch: 'main'
 
   get-aur-packages:
