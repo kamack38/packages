@@ -14,7 +14,7 @@ pkgname=(
 	"${_pkgbase}-ux433fa-git"
 	"${_pkgbase}-ux581l-git"
 )
-pkgver=r827.d2fc403
+pkgver=r845.317cd75
 pkgrel=1
 pkgdesc="Linux newest feature-rich configurable driver for Asus numberpad"
 arch=('any')
@@ -38,7 +38,7 @@ provides=("${_pkgbase}")
 replaces=('asus-touchpad-numpad-driver-git')
 source=("git+${url}.git" "service.patch")
 sha256sums=('SKIP'
-	'a9322b6176907076bc2ae8d5a79a8ef5745323121e4bea657063bf2dc358acbc')
+            'a9322b6176907076bc2ae8d5a79a8ef5745323121e4bea657063bf2dc358acbc')
 install="$pkgbase.install"
 
 pkgver() {
