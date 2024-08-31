@@ -1,0 +1,27 @@
+name: 🗓️ Outdated package
+description: Report an outdated package
+title: "[Outdated] Package name"
+labels: ["outdated"]
+assignees: 
+  - kamack38
+body:
+- type: input
+  attributes:
+    label: Package name
+    placeholder: Package name
+
+- type: input
+  attributes:
+    label: Current package version
+
+- type: input
+  attributes: 
+    label: Current latest version
+
+- type: input
+  attributes: 
+    label: Version source
+
+- type: textarea
+  attributes: 
+    label: Additional Info
