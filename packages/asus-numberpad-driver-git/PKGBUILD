@@ -32,13 +32,16 @@ depends=(
 	'python-evdev'
 	'python-smbus2'
 	'xorg-xinput'
+	'python-pyasyncore'
+	'python-xkbcommon'
+	'python-pywayland'
 )
 makedepends=('git')
 provides=("${_pkgbase}")
 replaces=('asus-touchpad-numpad-driver-git')
 source=("git+${url}.git" "service.patch")
 sha256sums=('SKIP'
-            'a9322b6176907076bc2ae8d5a79a8ef5745323121e4bea657063bf2dc358acbc')
+	'a9322b6176907076bc2ae8d5a79a8ef5745323121e4bea657063bf2dc358acbc')
 install="$pkgbase.install"
 
 pkgver() {
