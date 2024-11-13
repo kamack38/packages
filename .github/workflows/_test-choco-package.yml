@@ -47,15 +47,15 @@ jobs:
         run: |
           .\build.ps1 ${{ matrix.package-name }}
       - name: ➕ Add New Package Source
-        uses: crazy-max/ghaction-chocolatey@v1
+        uses: crazy-max/ghaction-chocolatey@v3
         with:
           args: source add --name='repo' --source='./dist/' --priority='1'
       - name: 🟢 Install ${{ matrix.package-name }}
-        uses: crazy-max/ghaction-chocolatey@v1
+        uses: crazy-max/ghaction-chocolatey@v3
         timeout-minutes: 4
         with:
           args: install ${{ matrix.package-name }} -dvy
       - name: 🔴 Uninstall ${{ matrix.package-name }}
-        uses: crazy-max/ghaction-chocolatey@v1
+        uses: crazy-max/ghaction-chocolatey@v3
         with:
           args: uninstall ${{ matrix.package-name }} -dvy
