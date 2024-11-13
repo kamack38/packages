@@ -16,7 +16,6 @@ jobs:
         [
           '7tt',
           'action',
-          'betterdiscord',
           'blitz.gg',
           'borderlessminecraft',
           'croc',
