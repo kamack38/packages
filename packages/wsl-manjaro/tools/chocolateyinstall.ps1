@@ -7,8 +7,8 @@ $rootfsPath = Join-Path $toolsDir 'rootfs.tar.gz'
 
 $packageArgs = @{
   packageName   = $packageName
-  url           = 'https://github.com/sileshn/ManjaroWSL2/releases/download/20241101/ManjaroWSL2.zip'
-  checksum      = '9525eb8e8ceb743d9431b7d4a54f56f507c8342e69d400278a18dbaf9d52d161'
+  url           = 'https://github.com/sileshn/ManjaroWSL2/releases/download/20241201/ManjaroWSL2.zip'
+  checksum      = 'd258688f3cc6ee1999d69eb4ea692dd98f3efc819057ba7cda2a94373ceea8f6'
   checksumType  = 'sha256'
   unzipLocation = $toolsDir
 }
