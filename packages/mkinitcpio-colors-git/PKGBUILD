@@ -8,7 +8,7 @@ url="https://github.com/evanpurkhiser/${_pkgname}"
 pkgver=11.ac5765f
 pkgrel=1
 
-source=("$pkgname::git+$url.git")
+source=("${_pkgname}::git+${url}.git")
 md5sums=('SKIP')
 install="usage.install"
 depends=('mkinitcpio' 'setcolors-git')
@@ -18,12 +18,12 @@ conflicts=("${_pkgname}")
 arch=('any')
 
 pkgver() {
-	cd "$srcdir/$pkgname"
+	cd "${srcdir}/${_pkgname}"
 	echo $(git rev-list --count HEAD).$(git rev-parse --short HEAD)
 }
 
 package() {
-	cd "$srcdir/$pkgname"
+	cd "${srcdir}/${_pkgname}"
 
 	install -Dm 644 hooks/colors "${pkgdir}/usr/lib/initcpio/hooks/colors"
 	install -Dm 644 install/colors "${pkgdir}/usr/lib/initcpio/install/colors"
