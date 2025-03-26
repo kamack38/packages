@@ -9,4 +9,5 @@ Update-AUPackages*.md
 *.tgz
 *.pkg.tar.zst
 *.exe
+*.tar
 .SRCINFO
