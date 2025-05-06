@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <title>rustic</title>
+    <id>rustic</id>
+    <version>0.9.4</version>
+    <authors>Alex Weiss, Rustic contributors</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/rustic</packageSourceUrl>
+    <docsUrl>https://rustic.cli.rs/docs/</docsUrl>
+    <bugTrackerUrl>https://github.com/rustic-rs/rustic/issues</bugTrackerUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/rustic-rs/assets@main/logos/readme_header.png</iconUrl>
+    <projectUrl>https://rustic.cli.rs/</projectUrl>
+    <projectSourceUrl>https://github.com/rustic-rs/rustic/tree/main</projectSourceUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/rustic-rs/rustic/blob/main/LICENSE-MIT</licenseUrl>
+    <copyright><![CDATA[Copyright (c) 2022 Alexander Weiss]]></copyright>
+    <tags>backup borg restic rust</tags>
+    <summary>A backup tool that provides fast, encrypted, deduplicated backups.</summary>
+    <description><![CDATA[
+# rustic
+
+`rustic` is a backup tool that provides fast, encrypted, deduplicated backups.
+
+It reads and writes the [restic](https://github.com/restic/restic) repo format described in the
+[design document](https://github.com/restic/restic/blob/master/doc/design.rst) and can be used as a *restic* replacement in most cases.
+
+It is implemented in [Rust](https://www.rust-lang.org/), a performant,
+memory-efficient, and reliable cross-platform systems programming language.
+
+Hence `rustic` supports all major operating systems (Linux, MacOs, *BSD), with
+Windows support still being experimental.
+
+### Stability
+
+`rustic` currently is in **beta** state and misses regression tests. It is not
+recommended to use it for production backups, yet.
+
+## Features
+
+- Backup data is **deduplicated** and **encrypted**.
+- Backup storage can be local or cloud storages, including cold storages.
+- Allows multiple clients to **concurrently** access a backup repository using
+  lock-free operations.
+- Backups by default are append-only on the repository.
+- The operations are robustly designed and can be **safely aborted** and
+  **efficiently resumed**.
+- Snapshot organization is possible by hostname, backup paths, label and tags.
+  Also a rich set of metadata is saved with each snapshot.
+- Retention policies and cleaning of old backups can be **highly customized**.
+- Follow-up backups only process changed files, but still create a complete
+  backup snapshot.
+- In-place restore only modifies files which are changed.
+- Uses config files for easy configuration of all every-day commands, see
+  [example config files](https://github.com/rustic-rs/rustic/config/).
+    ]]>    </description>
+    <releaseNotes>https://github.com/rustic-rs/rustic/blob/main/CHANGELOG.md</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\chocolateyinstall.ps1" target="tools" />
+  </files>
+</package>
