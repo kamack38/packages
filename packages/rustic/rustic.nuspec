@@ -3,7 +3,7 @@
   <metadata>
     <title>rustic</title>
     <id>rustic</id>
-    <version>0.9.4</version>
+    <version>0.9.5</version>
     <authors>Alex Weiss, Rustic contributors</authors>
     <owners>Kamack38</owners>
     <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/rustic</packageSourceUrl>
