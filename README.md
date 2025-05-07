@@ -36,7 +36,7 @@
     - [shfmt](#shfmt)
     - [<img src="https://rawcdn.githack.com/TcNobo/TcNo-Acc-Switcher/7490c2de7ff1e1a524c4357e9ba4b1e701b73ed8/other/img/icon/icon256.png" height="24" /> TcNo Account Switcher](#-tcno-account-switcher)
     - [<img src="https://rawcdn.githack.com/tree-sitter/tree-sitter/7bac34c925ac6fc5493c9ebd4cfc07cf5e1e92f0/docs/assets/images/tree-sitter-small.png" height="24" /> tree-sitter](#-tree-sitter)
-    - [<img src="https://rawcdn.githack.com/kamack38/chocopkgs/4068a86e0e709e70a4f71d720eccf6174ed16ebc/assets/valorant.png" height="24" /> Valorant](#-valorant)
+    - [<img src="./assets/Valorant.png" height="24" /> Valorant](#-valorant)
     - [<img src="https://raw.githubusercontent.com/kamack38/chocopkgs/master/assets/windhawk.png" height="24" /> Windhawk](#-windhawk)
     - [wsl-manjaro](#wsl-manjaro)
 
@@ -407,7 +407,7 @@ _This package is automatically updated using
 choco install tree-sitter
 ```
 
-### <img src="https://rawcdn.githack.com/kamack38/chocopkgs/4068a86e0e709e70a4f71d720eccf6174ed16ebc/assets/valorant.png" height="24" /> Valorant
+### <img src="./assets/Valorant.png" height="24" /> Valorant
 
 _This package is automatically updated using
 [AU](https://github.com/majkinetor/au)_
