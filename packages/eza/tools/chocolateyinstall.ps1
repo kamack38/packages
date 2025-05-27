@@ -3,8 +3,6 @@
 $packageName = $env:chocolateyPackageName
 $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
-
-
 $packageArgs = @{
   packageName    = $packageName
   fileType       = 'exe'
@@ -15,8 +13,7 @@ $packageArgs = @{
   checksum64     = '496e2c77b8ab6441bc0480dc21f99b04afff6fdf1befc5858f70a4d5eca4bc05'
   checksumType   = 'sha256'
   checksumType64 = 'sha256'
-  fileFullPath   = (Join-Path $toolsDir 'rustic.exe')
-  unzipLocation = $toolsDir
+  unzipLocation  = $toolsDir
 }
 
 Install-ChocolateyZipPackage @packageArgs
