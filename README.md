@@ -27,6 +27,7 @@
     - [<img src="./assets/BorderlessMinecraft.png" height="24" /> BorderlessMinecraft](#-borderlessminecraft)
     - [<img src="./assets/croc.png" height="24" /> Croc](#-croc)
     - [<img src="./assets/DiscordForOffice.png" height="24"/> DiscordForOffice](#-discordforoffice)
+    - [<img src="./assets/eza.png" height="24"/> Eza](#-eza)
     - [<img src="./assets/Jarfix.png" height="24"/> Jarfix](#-jarfix)
     - [<img src="./assets/nodejs.png" height="24" /> NVM](#-nvm)
     - [<img src="./assets/LeagueOfLegends.svg" height="24"/> League Of Legends](#-league-of-legends)
@@ -258,6 +259,21 @@ _This package is automatically updated using
 
 ```powershell
 choco install dcforoffice
+```
+
+### <img src="./assets/eza.png" height="24"/> Eza
+
+_This package is automatically updated using
+[AU](https://github.com/majkinetor/au)_
+
+> A modern alternative to ls
+
+[[Source](https://github.com/eza-community/eza)]
+[[Chocolatey](https://community.chocolatey.org/packages/eza/)]
+[[Package](/packages/eza)]
+
+```powershell
+choco install eza
 ```
 
 ### <img src="./assets/Jarfix.png" height="24"/> Jarfix
