@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <title>eza</title>
+    <id>eza</id>
+    <version>0.9.5</version>
+    <authors>Eza community</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/eza</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/eza-community/eza/issues</bugTrackerUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/kamack38/packages@main/assets/eza.png</iconUrl>
+    <projectUrl>https://eza.rocks/</projectUrl>
+    <projectSourceUrl>https://github.com/eza-community/eza/tree/main</projectSourceUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/eza-community/eza/blob/main/LICENSE.txt</licenseUrl>
+    <tags>eza exa modern ls rust</tags>
+    <summary>A modern alternative to ls</summary>
+    <description><![CDATA[
+# eza
+
+A modern replacement for ls.
+
+---
+
+**eza** is a modern alternative for the venerable file-listing command-line program `ls` that ships with Unix and Linux operating systems, giving it more features and better defaults.
+It uses colours to distinguish file types and metadata.
+It knows about symlinks, extended attributes, and Git.
+And it’s **small**, **fast**, and just **one single binary**.
+
+By deliberately making some decisions differently, eza attempts to be a more featureful, more user-friendly version of `ls`.
+
+---
+
+**eza** features not in exa (non-exhaustive):
+
+- Fixes [“The Grid Bug”](https://github.com/eza-community/eza/issues/66#issuecomment-1656758327) introduced in exa 2021.
+- Hyperlink support.
+- Mount point details.
+- Selinux context output.
+- Git repo status output.
+- Human readable relative dates.
+- Several security fixes.
+- Support for `bright` terminal colours.
+- Many smaller bug fixes/changes!
+- Configuration `theme.yml` file for customization of colors and icons.
+
+...and like, so much more that it became exhausting to update this all the time.
+Like seriously, we have a lot of good stuff.
+    ]]>    </description>
+    <releaseNotes>https://github.com/eza-community/eza/blob/main/CHANGELOG.md</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\chocolateyinstall.ps1" target="tools" />
+  </files>
+</package>
