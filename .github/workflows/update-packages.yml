@@ -52,7 +52,7 @@ jobs:
       - name: 🧬 Generate matrix
         id: gen-matrix
         run: |
-          matrix=$(find ./packages/ -type f -name '*PKGBUILD' -not -path '*spacedrive*' -not -path '*shfmt-bin*' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)
+          matrix=$(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)
           echo $matrix
           echo "::set-output name=packages::$matrix"
     outputs:
