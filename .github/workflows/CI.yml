@@ -19,17 +19,14 @@ jobs:
           'blitz.gg',
           'borderlessminecraft',
           'croc',
-          'dcforoffice',
+          'eza',
           'jarfix',
-          'leagueoflegendseune',
-          'nvm.install',
           'onefetch',
           'portmaster',
           'shfmt',
           'tcno-acc-switcher',
           'tree-sitter',
           'windhawk',
-          'valorant',
         ]
 
   generate-aur-matrix:
