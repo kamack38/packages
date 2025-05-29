@@ -28,11 +28,13 @@ on:
         required: true
         type: choice
         options:
+          - "['asus-numberpad-driver-git']"
           - "['dwall-git']"
-          - "['oh-my-posh-bin']"
           - "['kawaiki-grub2-themes-git']"
+          - "['mkinitcpio-colors-git']"
+          - "['oh-my-posh-bin']"
           - "['openasar-git']"
-          - "['solve3-cli']"
+          - "['sqruff-bin']"
           - "['termdbms-git']"
           - "['up-metro-for-steam-skin']"
       force:
