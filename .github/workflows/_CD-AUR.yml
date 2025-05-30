@@ -57,11 +57,10 @@ jobs:
           fetch-depth: 0
 
       - name: 🔄 Update package
-        uses: kamack38/arch-package-action@main
+        uses: kamack38/pkgbuild-update@v1
         id: update
         with:
           path: packages/${{ matrix.pkgname }}
-          paru: true
           updpkgsums: true
           srcinfo: true
           aur_pkgname: ${{ matrix.pkgname }}
@@ -83,5 +82,5 @@ jobs:
       - name: 💄 Commit changes
         uses: stefanzweifel/git-auto-commit-action@v4
         with:
-          commit_message: 'feat: 🔼 Update ${{ matrix.pkgname }} from ${{ steps.update.outputs.OLD_PKGVER }} to ${{ steps.update.outputs.NEW_PKGVER }}'
+          commit_message: 'feat: 🔼 Update ${{ matrix.pkgname }} from ${{ steps.update.outputs.old_pkgver }} to ${{ steps.update.outputs.new_pkgver }}'
           commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
