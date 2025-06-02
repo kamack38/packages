@@ -61,7 +61,7 @@ jobs:
   update-aur-packages:
     name: 🚀 Publish updated packages
     needs: get-aur-packages
-    uses: kamack38/packages/.github/workflows/_CD-AUR.yml@v2
+    uses: kamack38/packages/.github/workflows/_CD-AUR.yml@main
     with:
       packages: ${{ needs.get-aur-packages.outputs.packages }}
     secrets:

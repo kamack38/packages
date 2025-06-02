@@ -57,7 +57,7 @@ jobs:
           fetch-depth: 0
 
       - name: 🔄 Update package
-        uses: kamack38/pkgbuild-update@main
+        uses: kamack38/pkgbuild-update@v2
         id: update
         with:
           path: packages/${{ matrix.pkgname }}
