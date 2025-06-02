@@ -62,7 +62,6 @@ jobs:
         with:
           path: packages/${{ matrix.pkgname }}
           updpkgsums: true
-          srcinfo: true
           aur_pkgname: ${{ matrix.pkgname }}
           aur_commit_username: ${{ secrets.AUR_USERNAME }}
           aur_commit_email: ${{ secrets.AUR_EMAIL }}
