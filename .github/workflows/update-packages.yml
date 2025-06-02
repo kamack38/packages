@@ -54,7 +54,7 @@ jobs:
         run: |
           matrix=$(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)
           echo $matrix
-          echo "::set-output name=packages::$matrix"
+          echo "packages=$matrix" >>$GITHUB_OUTPUT
     outputs:
       packages: ${{ steps.gen-matrix.outputs.packages }}
 
