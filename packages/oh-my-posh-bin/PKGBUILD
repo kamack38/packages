@@ -7,7 +7,7 @@ pkgdesc="A prompt theme engine for any shell."
 arch=('x86_64' 'armv7h' 'aarch64')
 url="https://github.com/JanDeDobbeleer/oh-my-posh"
 license=('MIT')
-makedepends=('curl' 'grep' 'sed' 'unzip')
+makedepends=('7zip' 'curl')
 provides=("${_pkgname}")
 conflicts=("${_pkgname}")
 sha256sums=('f515a5a7bb2999f1e3a89b3dd6b1f7b8c22335af0447c5da4f7a1b5e17cb3b5e'
@@ -42,6 +42,6 @@ package() {
     fi
 
     mkdir -p "${pkgdir}/usr/share/oh-my-posh/themes"
-    unzip "${srcdir}/themes-${sha256sums}.zip" -d "${pkgdir}/usr/share/oh-my-posh/themes"
+    7z e "${srcdir}/themes-${sha256sums[0]}.zip" -o"${pkgdir}/usr/share/oh-my-posh/themes" > /dev/null
     find "${pkgdir}/usr/share/oh-my-posh/themes/" -type f -exec chmod 644 {} +
 }
