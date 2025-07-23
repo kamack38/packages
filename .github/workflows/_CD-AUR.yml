@@ -30,10 +30,12 @@ on:
         options:
           - "['asus-numberpad-driver-git']"
           - "['dwall-git']"
+          - "['famsa-bin']"
           - "['kawaiki-grub2-themes-git']"
           - "['mkinitcpio-colors-git']"
           - "['oh-my-posh-bin']"
           - "['openasar-git']"
+          - "['sptlrx-bin']"
           - "['sqruff-bin']"
           - "['termdbms-git']"
           - "['up-metro-for-steam-skin']"
