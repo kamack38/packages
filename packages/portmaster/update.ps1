@@ -1,6 +1,6 @@
 Import-Module au
 
-$releases = 'https://api.github.com/repos/safing/portmaster-packaging/releases'
+$releases = 'https://api.github.com/repos/safing/portmaster/releases'
 
 function global:au_SearchReplace {
     @{
@@ -12,14 +12,13 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $tag = (Invoke-WebRequest -Uri $releases -UseBasicParsing | ConvertFrom-Json)[0].tag_name
-    $ver = $tag.Replace('.', '-')
-    $urlVer = "{0}-{1}-{2}" -f $ver.Split('-')
-    $url = "https://updates.safing.io/windows_amd64/packages/portmaster-installer_${urlVer}.exe"
+    $tag = (Invoke-WebRequest -Uri $releases -UseBasicParsing | ConvertFrom-Json | Where-Object { $_.prerelease -eq $false })[0].tag_name
+    $ver = $tag.Replace('v', '')
+    $url = "https://updates.safing.io/latest/windows_amd64/packages/Portmaster_${ver}_x64-setup.exe"
 
     return @{
         URL32   = $url
-        Version = $tag.Replace('v', '')
+        Version = $ver
     }
 }
 
