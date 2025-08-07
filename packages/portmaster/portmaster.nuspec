@@ -13,7 +13,7 @@
     <projectUrl>https://safing.io/portmaster/</projectUrl>
     <projectSourceUrl>https://github.com/safing/portmaster</projectSourceUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
-    <licenseUrl>https://github.com/safing/portmaster/blob/develop/LICENSE</licenseUrl>
+    <licenseUrl>https://github.com/safing/portmaster/blob/development/LICENSE</licenseUrl>
     <copyright>Copyright (C) 2007 Free Software Foundation, Inc.</copyright>
     <tags>safing port network</tags>
     <summary>Portmaster is a free and open-source application that puts you back in charge over all your computer's network connections.</summary>
