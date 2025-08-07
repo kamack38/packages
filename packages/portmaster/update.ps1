@@ -12,7 +12,7 @@ function global:au_SearchReplace {
 }
 
 function global:au_GetLatest {
-    $tag = (Invoke-WebRequest -Uri $releases -UseBasicParsing | ConvertFrom-Json | Where-Object { $_.prerelease -eq $false })[0].tag_name
+    $tag = ((Invoke-WebRequest -Uri $releases -UseBasicParsing | ConvertFrom-Json) | Where-Object { $_.prerelease -eq $false })[0].tag_name
     $ver = $tag.Replace('v', '')
     $url = "https://updates.safing.io/latest/windows_amd64/packages/Portmaster_${ver}_x64-setup.exe"
 
