@@ -6,8 +6,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = $packageName
   fileType       = 'exe'
-  url            = 'https://github.com/eza-community/eza/releases/download/v0.23.1/eza.exe_x86_64-pc-windows-gnu.zip'
-  checksum       = 'b58d42b911ddb2d923bcbc986dedef8ad47f2192fb884a9230d4223e8d75622f'
+  url            = 'https://github.com/eza-community/eza/releases/download/v0.23.2/eza.exe_x86_64-pc-windows-gnu.zip'
+  checksum       = 'fa265f6857d7c91a9f412fd8eb2dc13b9036170e4e3d5746220957cdbcac22a4'
   checksumType   = 'sha256'
   unzipLocation  = $toolsDir
 }
