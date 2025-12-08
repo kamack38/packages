@@ -5,8 +5,8 @@ $packageName = $env:chocolateyPackageName
 $packageArgs = @{
   packageName  = $packageName
   fileType     = 'exe'
-  url          = 'https://github.com/ramensoftware/windhawk/releases/download/v1.7.1/windhawk_setup.exe'
-  checksum     = '43a799cfd02ec07a835d3bb0b76a0d019622c4483aad11f7a87a622fdf22363c'
+  url          = 'https://github.com/ramensoftware/windhawk/releases/download/v1.7.2/windhawk_setup.exe'
+  checksum     = 'ab9f389ae946c74611a34171f24e9302adf2949cd11b87a5c01aee35a5a4b09b'
   checksumType = 'sha256'
   silentArgs   = '/S'
 }
