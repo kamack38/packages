@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <title>ff2mpv-rust</title>
+    <id>ff2mpv-rust</id>
+    <version>1.1.7</version>
+    <authors>Ryze</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/ff2mpv-rust</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/ryze312/ff2mpv-rust/issues</bugTrackerUrl>
+    <iconUrl>https://cdn.jsdelivr.net/gh/kamack38/packages@main/assets/eza.png</iconUrl>
+    <projectSourceUrl>https://github.com/ryze312/ff2mpv-rust</projectSourceUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/ryze312/ff2mpv-rust/blob/main/LICENSE</licenseUrl>
+    <tags>ff2mpv rust firefox extension mpv</tags>
+    <summary>Native messaging host for ff2mpv written in Rust</summary>
+    <description><![CDATA[
+# ff2mpv-rust
+
+Native messaging host for ff2mpv written in Rust.
+
+This is a native compiled binary, so it runs much faster and doesn't require external dependencies by itself, unlike Python and Ruby scripts.
+    ]]>    </description>
+  </metadata>
+  <files>
+    <file src="tools\chocolateyinstall.ps1" target="tools" />
+    <file src="tools\chocolateybeforemodify.ps1" target="tools" />
+    <file src="tools\chocolateyuninstall.ps1" target="tools" />
+  </files>
+</package>
