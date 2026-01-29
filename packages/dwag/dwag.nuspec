@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package xmlns="http://schemas.microsoft.com/packaging/2015/06/nuspec.xsd">
+  <metadata>
+    <title>dwag</title>
+    <id>dwag</id>
+    <version>0.4.0</version>
+    <authors>8LWXpg</authors>
+    <owners>Kamack38</owners>
+    <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/dwag</packageSourceUrl>
+    <bugTrackerUrl>https://github.com/8LWXpg/dwag/issues</bugTrackerUrl>
+    <projectSourceUrl>https://github.com/8LWXpg/dwag/tree/main</projectSourceUrl>
+    <requireLicenseAcceptance>true</requireLicenseAcceptance>
+    <licenseUrl>https://github.com/8LWXpg/dwag/blob/main/LICENSE</licenseUrl>
+    <copyright><![CDATA[Copyright (c) 2025 8LWXpg]]></copyright>
+    <tags>drag terminal windows files copy</tags>
+    <summary>Drag and drop files/folders from your terminal on Windows</summary>
+    <description><![CDATA[
+# dwag
+
+Drag and drop files/folders from your terminal on Windows
+
+## Usage
+```
+Usage: dwag [options] [path]...
+Options:
+    -m  --move  Move files instead of copying
+    -h  --help  Show help
+```
+    ]]>    </description>
+    <releaseNotes>https://github.com/8LWXpg/dwag/blob/main/CHANGELOG.md</releaseNotes>
+  </metadata>
+  <files>
+    <file src="tools\chocolateyinstall.ps1" target="tools" />
+  </files>
+</package>
