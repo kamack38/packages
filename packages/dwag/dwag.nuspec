@@ -8,6 +8,7 @@
     <owners>Kamack38</owners>
     <packageSourceUrl>https://github.com/kamack38/packages/tree/main/packages/dwag</packageSourceUrl>
     <bugTrackerUrl>https://github.com/8LWXpg/dwag/issues</bugTrackerUrl>
+    <projectUrl>https://github.com/8LWXpg/dwag</projectUrl>
     <projectSourceUrl>https://github.com/8LWXpg/dwag/tree/main</projectSourceUrl>
     <requireLicenseAcceptance>true</requireLicenseAcceptance>
     <licenseUrl>https://github.com/8LWXpg/dwag/blob/main/LICENSE</licenseUrl>
