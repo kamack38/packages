@@ -7,10 +7,10 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 
 $packageArgs = @{
   packageName    = $packageName
-  url            = 'https://github.com/mvdan/sh/releases/download/v3.12.0/shfmt_v3.12.0_windows_386.exe'
-  url64bit       = 'https://github.com/mvdan/sh/releases/download/v3.12.0/shfmt_v3.12.0_windows_amd64.exe'
-  checksum       = '92c1ef0af344a10f2cefe3ce4bc6793ae8b3719ac08fc01802bbd8eae105e534'
-  checksum64     = 'c8bda517ba1c640ce4a715c0fa665439ddbe4357ba5e9b77b0e51e70e2b9c94b'
+  url            = 'https://github.com/mvdan/sh/releases/download/v3.13.0/shfmt_v3.13.0_windows_386.exe'
+  url64bit       = 'https://github.com/mvdan/sh/releases/download/v3.13.0/shfmt_v3.13.0_windows_amd64.exe'
+  checksum       = 'f3e32b2a320a3053837add32803d7fb3b730d3f10b84a867d327a549ef068fa0'
+  checksum64     = '62241aaf6b0ca236f8625d8892784b73fa67ad40bc677a1ad1a64ae395f6a7d5'
   checksumType   = 'sha256'
   checksumType64 = 'sha256'
   fileFullPath   = (Join-Path $toolsDir 'shfmt.exe')
