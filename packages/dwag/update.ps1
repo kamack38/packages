@@ -17,7 +17,7 @@ function global:au_GetLatest {
     $tag = (Invoke-WebRequest -Uri $releases -UseBasicParsing | ConvertFrom-Json)[0].tag_name
     $version = $tag.Replace('v', '')
 
-    $file64 = "dwag-$($version)-win-x64.zip"
+    $file64 = "dwag-x86_64-pc-windows-msvc.zip"
     $url64 = "https://github.com/$repo/releases/download/$tag/$file64"
 
     return @{
