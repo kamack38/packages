@@ -32,7 +32,7 @@ jobs:
   generate-aur-matrix:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v4
+      - uses: actions/checkout@v6
       - name: 🧬 Generate matrix
         id: gen-matrix
         env:
@@ -49,7 +49,7 @@ jobs:
         pkgname: ${{ fromJson(needs.generate-aur-matrix.outputs.packages) }}
     steps:
       - name: 📚 Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
       - name: 🛠️ Check PKGBUILD

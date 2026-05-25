@@ -54,7 +54,7 @@ jobs:
 
     steps:
       - name: 📚 Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0
 
@@ -78,7 +78,7 @@ jobs:
           if [[ $(git status --porcelain) ]]; then echo "UPDATED=true" >> $GITHUB_ENV; else echo "UPDATED=false" >> $GITHUB_ENV; fi
 
       - name: 💄 Commit changes
-        uses: stefanzweifel/git-auto-commit-action@v4
+        uses: stefanzweifel/git-auto-commit-action@v7
         with:
           commit_message: 'feat: 🔼 Update ${{ matrix.pkgname }} from ${{ steps.update.outputs.old_pkgver }} to ${{ steps.update.outputs.new_pkgver }}'
           commit_author: github-actions[bot] <41898282+github-actions[bot]@users.noreply.github.com>
