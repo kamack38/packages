@@ -33,11 +33,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Generate matrix
+      - name: 🧬 Generate matrix
         id: gen-matrix
-        run: |
-          echo "packages=$(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R . | jq -cs .)" >> $GITHUB_OUTPUT
-          echo "Generated matrix: $(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R . | jq -cs .)"
+        env:
+          EXCLUDE: "dwall-git kawaiki-grub2-themes-git termdbms-git up-metro-for-steam-skin"
+        run: bash ./gen-matrix.sh
     outputs:
       packages: ${{ steps.gen-matrix.outputs.packages }}
   aur:

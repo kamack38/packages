@@ -51,10 +51,9 @@ jobs:
       - uses: actions/checkout@v4
       - name: 🧬 Generate matrix
         id: gen-matrix
-        run: |
-          matrix=$(find ./packages/ -type f -name '*PKGBUILD' | sed -r 's|/[^/]+$||' | sort | uniq | cut -f3 -d'/' | jq -R | jq -cs)
-          echo $matrix
-          echo "packages=$matrix" >>$GITHUB_OUTPUT
+        env:
+          EXCLUDE: "dwall-git kawaiki-grub2-themes-git termdbms-git up-metro-for-steam-skin"
+        run: bash ./gen-matrix.sh
     outputs:
       packages: ${{ steps.gen-matrix.outputs.packages }}
 
