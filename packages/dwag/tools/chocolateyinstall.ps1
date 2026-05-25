@@ -8,8 +8,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = $packageName
   fileType64     = 'exe'
-  url64bit       = 'https://github.com/8LWXpg/dwag/releases/download/v0.4.0/dwag-0.4.0-win-x64.zip'
-  checksum64     = '4b730e77826e10662df1e210e45c305e7737c5057a65bf2f15c3e8cdf44c7304'
+  url64bit       = 'https://github.com/8LWXpg/dwag/releases/download/v1.0.1/dwag-x86_64-pc-windows-msvc.zip'
+  checksum64     = '9424caee35a127d8090fc14570ce72c3d26f18c503b024137aa5fde2484ad35e'
   checksumType64 = 'sha256'
   unzipLocation = $toolsDir
 }
