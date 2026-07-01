@@ -5,8 +5,8 @@ $packageName = $env:chocolateyPackageName
 $packageArgs = @{
   packageName  = $packageName
   fileType     = 'exe'
-  url          = 'https://updates.safing.io/latest/windows_amd64/packages/Portmaster_2.1.19_x64-setup.exe'
-  checksum     = '0b227790294a499762305cb235067dc6793a829050ae4e7b0985cdd93835ddeb'
+  url          = 'https://updates.safing.io/latest/windows_amd64/packages/Portmaster_2.2.1_x64-setup.exe'
+  checksum     = '721f066380b3f99c92e39b3286b9851c4d59119208f420b9998e7f70cbe70ec6'
   checksumType = 'sha256'
   silentArgs   = '/S'
 }
