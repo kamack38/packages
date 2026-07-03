@@ -18,7 +18,6 @@
     - [kawaiki-grub2-themes](#kawaiki-grub2-themes)
     - [solve3-cli](#solve3-cli)
     - [termdbms](#termdbms)
-    - [up-metro-for-steam-skin](#up-metro-for-steam-skin)
   - [<img src="./assets/Chocolatey.svg" height="32" /> Chocolatey Packages](#-chocolatey-packages)
     - [<img src="./assets/7tt.png" height="24"/> 7+ Taskbar Tweaker](#-7-taskbar-tweaker)
     - [<img src="./assets/Action.png" height="24"/> Action](#-action)
@@ -126,19 +125,6 @@ paru -S solve3-cli
 
 ```shell
 paru -S termdbms-git
-```
-
-### up-metro-for-steam-skin
-
-> This non-official addon for Metro for Steam fixes bugs with the current
-> version and adds optional content for you to choose from.
-
-[[Source](https://github.com/redsigma/UPMetroSkin)]
-[[AUR](https://aur.archlinux.org/packages/up-metro-for-steam-skin)]
-[[Package](/packages/up-metro-for-steam-skin)]
-
-```shell
-paru -S up-metro-for-steam-skin
 ```
 
 ## <img src="./assets/Chocolatey.svg" height="32" /> Chocolatey Packages
