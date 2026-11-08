@@ -6,8 +6,8 @@ $toolsDir = "$(Split-Path -parent $MyInvocation.MyCommand.Definition)"
 $packageArgs = @{
   packageName    = $packageName
   fileType       = 'exe'
-  url            = 'https://blitz-main.blitz.gg/Blitz-3.0.19.exe'
-  checksum       = '18b3ec8ffe6d82d4cc60e5dc7cd9f28f04fa9baf505692044e10456dd79a3b8f'
+  url            = 'https://blitz-main.blitz.gg/Blitz-3.0.21.exe'
+  checksum       = '7c05d49930cf5cfa84e218a6baa17307a1f133d79153db5fd0c273d693490bef'
   checksumType   = 'sha256'
   silentArgs     = '/S'
 }
